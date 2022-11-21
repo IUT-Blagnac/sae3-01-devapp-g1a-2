@@ -58,7 +58,7 @@ Projet est réalisé par::
 - https://github.com/mathislht[Mathis Lahitte]
 
 
-Tuteur/tutrice enseignant(e) de l'équipe:: mailto:andre.peninou@univ-tlse2.fr[AP]
+Tuteur/tutrice enseignant(e) de l'équipe:: mailto:andre.peninou@univ-tlse2.fr[Andre Peninou]
 
 == Contexte général
 
