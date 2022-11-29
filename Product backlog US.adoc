@@ -3,5 +3,9 @@
 
 |=============
 | *Users Story* | *Priorité*
-| créer un compte | 
+| Créer un compte | 
+| Se déconnecter |
+| Rechercher | 
+| Modifier compte | 
+|  | 
 |=============
