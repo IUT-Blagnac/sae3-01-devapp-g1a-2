@@ -9,7 +9,13 @@
 
 ===   a. Prérequis
 
-Installer la biliothéque paho
+Pour pouvoir lancer l'application est utilisé les bibliothéque nécessaire au fonctionneùent de cette dernière, il faut la lancer sur une machine Ubuntu.
+
+===   b. Installation
+
+Installer la bibliothèque paho mqtt 
+
+''pip install paho-mqtt''
 
 
 [[id,Explication]]
