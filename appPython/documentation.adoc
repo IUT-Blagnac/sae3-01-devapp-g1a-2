@@ -1,4 +1,6 @@
 = Documentation d'installation et d'explication de l'application Python
 
+:toc:
+test
 == Installation
 == Explication
