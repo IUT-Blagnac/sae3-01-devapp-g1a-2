@@ -14,9 +14,12 @@ Pour pouvoir lancer l'application est utilisé les bibliothéque nécessaire au 
 ===   b. Installation
 
 Installer la bibliothèque paho mqtt :
-+ 
-``pip install paho-mqtt``
+ 
+** ``pip install paho-mqtt``
 
+* The header in AsciiDoc must start with a document title.
++
+The header is optional.
 
 [[id,Explication]]
 == II. Explication
