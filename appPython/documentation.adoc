@@ -14,8 +14,8 @@ Pour pouvoir lancer l'application est utilisé les bibliothéque nécessaire au 
 ===   b. Installation
 
 Installer la bibliothèque paho mqtt :
-
-+ ``pip install paho-mqtt``
++ 
+``pip install paho-mqtt``
 
 
 [[id,Explication]]
