@@ -1,7 +1,8 @@
 = Documentation d'installation et d'explication de l'application Python
 
-:toc:
-test
+== Sommaire
+<<id,Installation>> +
+<<id,Analyse de l'existant>> +
 
-== Installation
+== [id,Installation]
 == Explication
