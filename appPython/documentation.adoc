@@ -15,7 +15,7 @@ Pour pouvoir lancer l'application est utilisé les bibliothéque nécessaire au 
 
 Installer la bibliothèque paho mqtt 
 
-''' pip install paho-mqtt '''
+A ``std::vector```'s size is the number of items it contains.
 
 
 [[id,Explication]]
