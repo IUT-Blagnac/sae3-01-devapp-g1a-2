@@ -12,4 +12,9 @@
 [[id,Explication]]
 == II. Explication
 
-===   a. code
+===   a. Bibliothèque utilisé
+===   b. Lecture du fichier de configuration
+===   c. Le fichier de données
+===   d. Récupération des données
+===   e. Abonnement
+===   f. Fréquence et écriture
