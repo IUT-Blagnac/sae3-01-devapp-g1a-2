@@ -2,8 +2,10 @@
 
 === Sommaire
 <<id,Installation>> +
-<<id,Analyse de l'existant>> +
+<<id,Explication>> +
 
 [[id,Installation]]
-= I. Installation
+== I. Installation
+
+[[id,Explication]]
 == Explication
