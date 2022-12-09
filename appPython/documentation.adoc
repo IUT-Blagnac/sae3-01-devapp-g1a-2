@@ -1,8 +1,9 @@
 = Documentation d'installation et d'explication de l'application Python
 
-== Sommaire
+=== Sommaire
 <<id,Installation>> +
 <<id,Analyse de l'existant>> +
 
-== [[id,Installation]]
+[[id,Installation]]
+= I. Installation
 == Explication
