@@ -1,0 +1,21 @@
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: blue;
+  color: #fff;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
