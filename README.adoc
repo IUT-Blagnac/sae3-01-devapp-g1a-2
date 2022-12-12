@@ -97,6 +97,8 @@ TIP: Pensez à utiliser les salons Discord dédiés pour poser vos questions.
 |CDCF |https://docs.google.com/document/d/1IU6dr1NM6qHMl-TdcAE7Pqclu0MrQrqmcuWVcIt_VLo/edit
 |CDCT |https://docs.google.com/document/d/1ZTP3Ixq39regdlD_80VxalwgXkqIwEX00pqX56ker8Y/edit
 |Doc python |https://github.com/IUT-Blagnac/sae3-01-devapp-g1a-2/blob/master/appPython/documentation.adoc
+|Lien du site (interne IUT)|http://192.168.224.138/~SAESYS02/SAE/Index/
+|Lien du site (externe IUT)|http://193.54.227.164/~SAESYS02/SAE/Index/
 |=============
 
 Liste des US en cours :
