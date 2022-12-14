@@ -32,5 +32,5 @@ image::https://github.com/IUT-Blagnac/sae3-01-devapp-g1a-2/blob/master/appPython
 ===   e. Abonnement
 image::https://github.com/IUT-Blagnac/sae3-01-devapp-g1a-2/blob/master/appPython/Screens/Abonnement.png[Librairies, 400(largeur), auto(100)]
 ===   f. Fréquence et écriture
-image::https://github.com/IUT-Blagnac/sae3-01-devapp-g1a-2/blob/master/appPython/Screens/Ecriture.png[Librairies, 400(largeur), auto(100)]
+image::https://github.com/IUT-Blagnac/sae3-01-devapp-g1a-2/blob/master/appPython/Screens/Ecriture.png[Librairies, 600(largeur), auto(200)]
 image::https://github.com/IUT-Blagnac/sae3-01-devapp-g1a-2/blob/master/appPython/Screens/Fréquence.png[Librairies, 400(largeur), auto(100)]
