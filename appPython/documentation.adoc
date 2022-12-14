@@ -26,9 +26,9 @@ image::https://github.com/IUT-Blagnac/sae3-01-devapp-g1a-2/blob/master/appPython
 ===   b. Lecture du fichier de configuration
 image::https://github.com/IUT-Blagnac/sae3-01-devapp-g1a-2/blob/master/appPython/Screens/Lecture_fichier_config.png[Librairies, 700(largeur), auto(200)]
 ===   c. Le fichier de données
-image::https://github.com/IUT-Blagnac/sae3-01-devapp-g1a-2/blob/master/appPython/Screens/Le_fichier_de_données.png[Librairies, 800(largeur), auto(300)]
+image::https://github.com/IUT-Blagnac/sae3-01-devapp-g1a-2/blob/master/appPython/Screens/Le_fichier_de_données.png[Librairies, 900(largeur), auto(300)]
 ===   d. Récupération des données
-image::https://github.com/IUT-Blagnac/sae3-01-devapp-g1a-2/blob/master/appPython/Screens/Récupération_des_données.png[Librairies, 800(largeur), auto(300)]
+image::https://github.com/IUT-Blagnac/sae3-01-devapp-g1a-2/blob/master/appPython/Screens/Récupération_des_données.png[Librairies, 900(largeur), auto(300)]
 ===   e. Abonnement
 image::https://github.com/IUT-Blagnac/sae3-01-devapp-g1a-2/blob/master/appPython/Screens/Abonnement.png[Librairies, 600(largeur), auto(200)]
 ===   f. Fréquence et écriture
