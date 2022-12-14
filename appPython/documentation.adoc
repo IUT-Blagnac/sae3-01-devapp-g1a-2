@@ -21,16 +21,16 @@ Installer la bibliothèque paho mqtt :
 [[id,Explication]]
 == II. Explication
 
-===   a. Bibliothèque utilisé
+===   a. Bibliothèques utilisées
 image::https://github.com/IUT-Blagnac/sae3-01-devapp-g1a-2/blob/master/appPython/Screens/Ajout_Librairies.png[Librairies, 400(largeur), auto(100)]
 ===   b. Lecture du fichier de configuration
-https://github.com/IUT-Blagnac/sae3-01-devapp-g1a-2/blob/master/appPython/Screens/Lecture_fichier_config.png
+image::https://github.com/IUT-Blagnac/sae3-01-devapp-g1a-2/blob/master/appPython/Screens/Lecture_fichier_config.png[Librairies, 400(largeur), auto(100)]
 ===   c. Le fichier de données
-https://github.com/IUT-Blagnac/sae3-01-devapp-g1a-2/blob/master/appPython/Screens/Le_fichier_de_données.png
+image::https://github.com/IUT-Blagnac/sae3-01-devapp-g1a-2/blob/master/appPython/Screens/Le_fichier_de_données.png[Librairies, 400(largeur), auto(100)]
 ===   d. Récupération des données
-https://github.com/IUT-Blagnac/sae3-01-devapp-g1a-2/blob/master/appPython/Screens/Récupération_des_données.png
+image::https://github.com/IUT-Blagnac/sae3-01-devapp-g1a-2/blob/master/appPython/Screens/Récupération_des_données.png[Librairies, 400(largeur), auto(100)]
 ===   e. Abonnement
-https://github.com/IUT-Blagnac/sae3-01-devapp-g1a-2/blob/master/appPython/Screens/Abonnement.png
+image::https://github.com/IUT-Blagnac/sae3-01-devapp-g1a-2/blob/master/appPython/Screens/Abonnement.png[Librairies, 400(largeur), auto(100)]
 ===   f. Fréquence et écriture
-https://github.com/IUT-Blagnac/sae3-01-devapp-g1a-2/blob/master/appPython/Screens/Ecriture.png
-https://github.com/IUT-Blagnac/sae3-01-devapp-g1a-2/blob/master/appPython/Screens/Fréquence.png
+image::https://github.com/IUT-Blagnac/sae3-01-devapp-g1a-2/blob/master/appPython/Screens/Ecriture.png[Librairies, 400(largeur), auto(100)]
+image::https://github.com/IUT-Blagnac/sae3-01-devapp-g1a-2/blob/master/appPython/Screens/Fréquence.png[Librairies, 400(largeur), auto(100)]
