@@ -18,15 +18,19 @@ Installer la bibliothèque paho mqtt :
 +
 ``pip install paho-mqtt``
 
-+
-The header is optional.
-
 [[id,Explication]]
 == II. Explication
 
 ===   a. Bibliothèque utilisé
+https://github.com/IUT-Blagnac/sae3-01-devapp-g1a-2/blob/master/appPython/Screens/Ajout_Librairies.png
 ===   b. Lecture du fichier de configuration
+https://github.com/IUT-Blagnac/sae3-01-devapp-g1a-2/blob/master/appPython/Screens/Lecture_fichier_config.png
 ===   c. Le fichier de données
+https://github.com/IUT-Blagnac/sae3-01-devapp-g1a-2/blob/master/appPython/Screens/Le_fichier_de_données.png
 ===   d. Récupération des données
+https://github.com/IUT-Blagnac/sae3-01-devapp-g1a-2/blob/master/appPython/Screens/Récupération_des_données.png
 ===   e. Abonnement
+https://github.com/IUT-Blagnac/sae3-01-devapp-g1a-2/blob/master/appPython/Screens/Abonnement.png
 ===   f. Fréquence et écriture
+https://github.com/IUT-Blagnac/sae3-01-devapp-g1a-2/blob/master/appPython/Screens/Ecriture.png
+https://github.com/IUT-Blagnac/sae3-01-devapp-g1a-2/blob/master/appPython/Screens/Fréquence.png
