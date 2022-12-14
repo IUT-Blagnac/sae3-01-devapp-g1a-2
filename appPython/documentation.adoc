@@ -22,7 +22,7 @@ Installer la bibliothèque paho mqtt :
 == II. Explication
 
 ===   a. Bibliothèque utilisé
-image::Ajout_Librairies.png[Librairies, 400(largeur), auto(100)]
+image::master/appPython/Screens/Ajout_Librairies.png[Librairies, 400(largeur), auto(100)]
 ===   b. Lecture du fichier de configuration
 https://github.com/IUT-Blagnac/sae3-01-devapp-g1a-2/blob/master/appPython/Screens/Lecture_fichier_config.png
 ===   c. Le fichier de données
