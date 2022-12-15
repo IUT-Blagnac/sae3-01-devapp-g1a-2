@@ -52,16 +52,7 @@ Projet est réalisé par::
 
 Tuteur/tutrice enseignant(e) de l'équipe:: mailto:andre.peninou@univ-tlse2.fr[Andre Peninou]
 
-
-== Réalisations du sprint 
-
-=== Python
-
-=== Web
-
-=== BD
-
-== Informations globales
+== Réalisations
 
 |=============
 |Nom fichier|Liens
