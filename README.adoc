@@ -89,7 +89,7 @@ TIP: Adaptez ces fichiers à votre projet et à votre organisation. Et inspirez-
 
 TIP: Pensez à utiliser les salons Discord dédiés pour poser vos questions.
 
-== Réalisations 
+== Réalisations globale
 
 |=============
 |Nom fichier|Liens
@@ -108,6 +108,8 @@ Version courante : https://github.com/IUT-Blagnac/sae3-01-devapp-g1a-2/releases/
 
 
 TIP: Mettez ici toutes les informations nécessaire à l'utilisation de votre dépôt (comment on installe votre application, où sont les docs, etc.)
+
+== Réalisations du sprint
 
 == Gestion de projet & Qualité
 
