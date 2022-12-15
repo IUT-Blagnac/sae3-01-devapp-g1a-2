@@ -64,15 +64,6 @@ Tuteur/tutrice enseignant(e) de l'équipe:: mailto:andre.peninou@univ-tlse2.fr[A
 
 TIP: Cette partie de votre `README.adoc` peut être supprimée ou mise ailleurs.
 
-[[liensUtiles]]
-=== Liens utiles
-
-- Le https://webetud.iut-blagnac.fr/course/view.php?id=841[cours Moodle] sur la SAE
-- Le dépôt https://github.com/IUT-Blagnac/sae3-01-template[template] qui sert de base à tous les dépôts étudiants.
-- Le lien https://classroom.github.com/a/OUF7gxEa[classroom] si besoin.
-
-TIP: Pensez à utiliser les salons Discord dédiés pour poser vos questions.
-
 == Réalisations globale
 
 |=============
