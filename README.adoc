@@ -1,3 +1,11 @@
+* Technologies front 
+** JavaScript
+** CSS
+* Technologies back
+** Java
+** Node JS
+
+
 = SAÉ 3.01 2022-2023
 :icons: font
 :models: models
