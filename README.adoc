@@ -60,10 +60,6 @@ Projet est réalisé par::
 
 Tuteur/tutrice enseignant(e) de l'équipe:: mailto:andre.peninou@univ-tlse2.fr[Andre Peninou]
 
-== Contexte général
-
-TIP: Cette partie de votre `README.adoc` peut être supprimée ou mise ailleurs.
-
 == Réalisations globale
 
 |=============
