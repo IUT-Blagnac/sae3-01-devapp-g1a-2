@@ -60,7 +60,9 @@ Projet est réalisé par::
 
 Tuteur/tutrice enseignant(e) de l'équipe:: mailto:andre.peninou@univ-tlse2.fr[Andre Peninou]
 
-== Réalisations globale
+== Réalisations du sprint
+
+== Informations globales
 
 |=============
 |Nom fichier|Liens
@@ -80,7 +82,7 @@ Version courante : https://github.com/IUT-Blagnac/sae3-01-devapp-g1a-2/releases/
 
 TIP: Mettez ici toutes les informations nécessaire à l'utilisation de votre dépôt (comment on installe votre application, où sont les docs, etc.)
 
-== Réalisations du sprint
+
 
 == Gestion de projet & Qualité
 
