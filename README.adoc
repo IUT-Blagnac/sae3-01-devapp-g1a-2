@@ -104,7 +104,7 @@ TIP: Pensez à utiliser les salons Discord dédiés pour poser vos questions.
 Liste des US en cours :
 https://github.com/IUT-Blagnac/sae3-01-devapp-g1a-2/milestone/3
 
-Version courante : https://github.com/IUT-Blagnac/sae3-01-devapp-g1a-2/releases/tag/V0.03[V0.03]
+Version courante : https://github.com/IUT-Blagnac/sae3-01-devapp-g1a-2/releases/tag/V0.03[V3.0]
 
 
 TIP: Mettez ici toutes les informations nécessaire à l'utilisation de votre dépôt (comment on installe votre application, où sont les docs, etc.)
