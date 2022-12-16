@@ -1,6 +1,13 @@
 
 DROP SEQUENCE "SAEBD02"."SEQ_Article";
+DROP SEQUENCE "SAEBD02"."SEQ_CLIENT";
+DROP SEQUENCE "SAEBD02"."SEQ_Relais";
+
 CREATE SEQUENCE  "SAEBD02"."SEQ_Article"  MINVALUE 1 MAXVALUE 9999999999999999999999999999 INCREMENT BY 1 START WITH 1 CACHE 20 NOORDER  NOCYCLE ;
+
+CREATE SEQUENCE  "SAEBD02"."SEQ_CLIENT"  MINVALUE 1 MAXVALUE 999999999999999999999999999 INCREMENT BY 1 START WITH 21 CACHE 20 NOORDER  NOCYCLE ;
+
+CREATE SEQUENCE  "SAEBD02"."SEQ_Relais"  MINVALUE 1 MAXVALUE 9999999999999999999999999999 INCREMENT BY 1 START WITH 1 CACHE 20 NOORDER  NOCYCLE ;
 
 INSERT INTO Article VALUES 
 ("SEQ_Article".NEXTVAL,'Gants','standard','Gants de protection de ski, couleur unie ',14.99,'Disponible',0,'Noir','XS');
@@ -122,6 +129,90 @@ INSERT INTO Article VALUES
 ("SEQ_Article".NEXTVAL,'Skis','standard','Des skis parfaits pour vos escapades en montagnes  ',399.99,'Disponible',0,'Custom','L');
 INSERT INTO Article VALUES
 ("SEQ_Article".NEXTVAL,'Skis','standard','Des skis parfaits pour vos escapades en montagnes  ',399.99,'Disponible',0,'Custom','XL');
+
+
+INSERT INTO Article VALUES
+("SEQ_Article".NEXTVAL,'Snowboard','standard','Un snowboard parfait pour vos escapades en montagnes  ',399.99,'Disponible',0,'Noir','XS');
+INSERT INTO Article VALUES
+("SEQ_Article".NEXTVAL,'Snowboard','standard','Un snowboard parfait pour vos escapades en montagnes  ',399.99,'Disponible',0,'Noir','S');
+INSERT INTO Article VALUES
+("SEQ_Article".NEXTVAL,'Snowboard','standard','Un snowboard parfait pour vos escapades en montagnes  ',399.99,'Disponible',0,'Noir','M');
+INSERT INTO Article VALUES
+("SEQ_Article".NEXTVAL,'Snowboard','standard','Un snowboard parfait pour vos escapades en montagnes  ',399.99,'Disponible',0,'Noir','L');
+INSERT INTO Article VALUES
+("SEQ_Article".NEXTVAL,'Snowboard','standard','Un snowboard parfait pour vos escapades en montagnes  ',399.99,'Disponible',0,'Noir','XL');
+
+INSERT INTO Article VALUES
+("SEQ_Article".NEXTVAL,'Snowboard','standard','Un snowboard parfait pour vos escapades en montagnes  ',399.99,'Disponible',0,'Rouge','XS');
+INSERT INTO Article VALUES
+("SEQ_Article".NEXTVAL,'Snowboard','standard','Un snowboard parfait pour vos escapades en montagnes  ',399.99,'Disponible',0,'Rouge','S');
+INSERT INTO Article VALUES
+("SEQ_Article".NEXTVAL,'Snowboard','standard','Un snowboard parfait pour vos escapades en montagnes  ',399.99,'Disponible',0,'Rouge','M');
+INSERT INTO Article VALUES
+("SEQ_Article".NEXTVAL,'Snowboard','standard','Un snowboard parfait pour vos escapades en montagnes  ',399.99,'Disponible',0,'Rouge','L');
+INSERT INTO Article VALUES
+("SEQ_Article".NEXTVAL,'Snowboard','standard','Un snowboard parfait pour vos escapades en montagnes  ',399.99,'Disponible',0,'Rouge','XL');
+
+INSERT INTO Article VALUES
+("SEQ_Article".NEXTVAL,'Snowboard','standard','Un snowboard parfait pour vos escapades en montagnes  ',399.99,'Disponible',0,'Custom','XS');
+INSERT INTO Article VALUES
+("SEQ_Article".NEXTVAL,'Snowboard','standard','Un snowboard parfait pour vos escapades en montagnes  ',399.99,'Disponible',0,'Custom','S');
+INSERT INTO Article VALUES
+("SEQ_Article".NEXTVAL,'Snowboard','standard','Un snowboard parfait pour vos escapades en montagnes  ',399.99,'Disponible',0,'Custom','M');
+INSERT INTO Article VALUES
+("SEQ_Article".NEXTVAL,'Snowboard','standard','Un snowboard parfait pour vos escapades en montagnes  ',399.99,'Disponible',0,'Custom','L');
+INSERT INTO Article VALUES
+("SEQ_Article".NEXTVAL,'Snowboard','standard','Un snowboard parfait pour vos escapades en montagnes  ',399.99,'Disponible',0,'Custom','XL');
+
+
+INSERT INTO Article VALUES
+("SEQ_Article".NEXTVAL,'Raquette','standard','Des raquettes parfaites pour vos escapades en montagnes  ',399.99,'Disponible',0,'Noir','XS');
+INSERT INTO Article VALUES
+("SEQ_Article".NEXTVAL,'Raquette','standard','Des raquettes parfaites pour vos escapades en montagnes  ',399.99,'Disponible',0,'Noir','S');
+INSERT INTO Article VALUES
+("SEQ_Article".NEXTVAL,'Raquette','standard','Des raquettes parfaites pour vos escapades en montagnes  ',399.99,'Disponible',0,'Noir','M');
+INSERT INTO Article VALUES
+("SEQ_Article".NEXTVAL,'Raquette','standard','Des raquettes parfaites pour vos escapades en montagnes  ',399.99,'Disponible',0,'Noir','L');
+INSERT INTO Article VALUES
+("SEQ_Article".NEXTVAL,'Raquette','standard','Des raquettes parfaites pour vos escapades en montagnes  ',399.99,'Disponible',0,'Noir','XL');
+
+INSERT INTO Article VALUES
+("SEQ_Article".NEXTVAL,'Raquette','standard','Des raquettes parfaites pour vos escapades en montagnes  ',399.99,'Disponible',0,'Rouge','XS');
+INSERT INTO Article VALUES
+("SEQ_Article".NEXTVAL,'Raquette','standard','Des raquettes parfaites pour vos escapades en montagnes  ',399.99,'Disponible',0,'Rouge','S');
+INSERT INTO Article VALUES
+("SEQ_Article".NEXTVAL,'Raquette','standard','Des raquettes parfaites pour vos escapades en montagnes  ',399.99,'Disponible',0,'Rouge','M');
+INSERT INTO Article VALUES
+("SEQ_Article".NEXTVAL,'Raquette','standard','Des raquettes parfaites pour vos escapades en montagnes  ',399.99,'Disponible',0,'Rouge','L');
+INSERT INTO Article VALUES
+("SEQ_Article".NEXTVAL,'Raquette','standard','Des raquettes parfaites pour vos escapades en montagnes  ',399.99,'Disponible',0,'Rouge','XL');
+
+INSERT INTO Article VALUES
+("SEQ_Article".NEXTVAL,'Raquette','standard','Des raquettes parfaites pour vos escapades en montagnes  ',399.99,'Disponible',0,'Bleu','XS');
+INSERT INTO Article VALUES
+("SEQ_Article".NEXTVAL,'Raquette','standard','Des raquettes parfaites pour vos escapades en montagnes  ',399.99,'Disponible',0,'Bleu','S');
+INSERT INTO Article VALUES
+("SEQ_Article".NEXTVAL,'Raquette','standard','Des raquettes parfaites pour vos escapades en montagnes  ',399.99,'Disponible',0,'Bleu','M');
+INSERT INTO Article VALUES
+("SEQ_Article".NEXTVAL,'Raquette','standard','Des raquettes parfaites pour vos escapades en montagnes  ',399.99,'Disponible',0,'Bleu','L');
+INSERT INTO Article VALUES
+("SEQ_Article".NEXTVAL,'Raquette','standard','Des raquettes parfaites pour vos escapades en montagnes  ',399.99,'Disponible',0,'Bleu','XL');
+
+INSERT INTO Article VALUES
+("SEQ_Article".NEXTVAL,'Raquette','standard','Des raquettes parfaites pour vos escapades en montagnes  ',399.99,'Disponible',0,'Jaune','XS');
+INSERT INTO Article VALUES
+("SEQ_Article".NEXTVAL,'Raquette','standard','Des raquettes parfaites pour vos escapades en montagnes  ',399.99,'Disponible',0,'Jaune','S');
+INSERT INTO Article VALUES
+("SEQ_Article".NEXTVAL,'Raquette','standard','Des raquettes parfaites pour vos escapades en montagnes  ',399.99,'Disponible',0,'Jaune','M');
+INSERT INTO Article VALUES
+("SEQ_Article".NEXTVAL,'Raquette','standard','Des raquettes parfaites pour vos escapades en montagnes  ',399.99,'Disponible',0,'Jaune','L');
+INSERT INTO Article VALUES
+("SEQ_Article".NEXTVAL,'Raquette','standard','Des raquettes parfaites pour vos escapades en montagnes  ',399.99,'Disponible',0,'Jaune','XL');
+
+
+
+
+
 
 INSERT INTO Article VALUES
 ("SEQ_Article".NEXTVAL,'Casques','standard','Un casque résistant même au chutes les plus graves',49.99,'Disponible',0,'Noir','XS');
@@ -362,8 +453,33 @@ INSERT INTO Article VALUES
 
 SELECT * FROM Article;
 
+INSERT INTO Livraison
+VALUES ('Relais');
 
+INSERT INTO RELAIS VALUES
+("SEQ_Relais".NEXTVAL,'FRIPE BROC AND SHOP','10 RUE MALBEC','31000','Toulouse','Relais');
 
+INSERT INTO RELAIS VALUES
+("SEQ_Relais".NEXTVAL,'AMIECO','7 RUE BAOUR LORMIAN','31000','Toulouse','Relais');
 
+INSERT INTO RELAIS VALUES
+("SEQ_Relais".NEXTVAL,'LE TEMPS DU CBD','69 AVENUE DES PYRENEES','31830','PLAISANCE-DU-TOUCH','Relais');
 
+INSERT INTO RELAIS VALUES
+("SEQ_Relais".NEXTVAL,'SHOP COIFFURE','9 PLACE D OCCITANIE','31770','Colomiers','Relais');
 
+INSERT INTO RELAIS VALUES
+("SEQ_Relais".NEXTVAL,'IUT Blagnac','1 Pl. Georges Brassens','31700','Blagnac','Relais');
+
+INSERT INTO RELAIS VALUES
+("SEQ_Relais".NEXTVAL,'CARREFOUR CITY MATABIAU','33-35 RUE MATABIAU','31000','Toulouse','Relais');
+
+INSERT INTO RELAIS VALUES
+("SEQ_Relais".NEXTVAL,'YM BEAUTY','45 RUE DE LA REPUBLIQUE','31000','Toulouse','Relais');
+
+INSERT INTO RELAIS VALUES
+("SEQ_Relais".NEXTVAL,'LA FABRICA','13 PLACE INTERIEURE SAINT-CYP','31000','Toulouse','Relais');
+
+SELECT * FROM Relais;
+
+ROLLBACK;
