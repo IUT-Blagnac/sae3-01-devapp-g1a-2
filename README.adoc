@@ -113,7 +113,11 @@ Voici le travail de communcation que nous avons fait cette semaine :
 
 === Semaine 49
 
-Ordre du jour https://github.com/IUT-Blagnac/sae3-01-devapp-g1a-2/blob/master/Livrables/Communication/semaine49/Ordre_du_jour_G1A-2.pdf
+Voici le travail de communcation que nous avons fait cette semaine : 
+
+* https://github.com/IUT-Blagnac/sae3-01-devapp-g1a-2/blob/master/Livrables/Communication/semaine49/Ordre_du_jour_G1A-2.pdf[Ordre du jour]
+
+
 Compte rendu de la réunion et analyse : https://github.com/IUT-Blagnac/sae3-01-devapp-g1a-2/blob/master/Livrables/Communication/semaine49/CR_r%C3%A9union%2Banalyse_G1A-2.pdf
 
 === Semaine 50
