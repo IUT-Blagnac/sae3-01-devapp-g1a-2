@@ -93,6 +93,7 @@ Tuteur/tutrice enseignant(e) de l'équipe:: mailto:andre.peninou@univ-tlse2.fr[A
 
 |=============
 |Nom fichier|Liens
+|Script création BD|https://github.com/IUT-Blagnac/sae3-01-devapp-g1a-2/blob/master/BD/CreationBDSAE3.sql
 |=============
 
 === Tests
