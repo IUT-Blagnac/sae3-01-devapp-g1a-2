@@ -35,7 +35,7 @@ image::objet.png[]
 
 |=============
 |Nom de la donnée|Seuil critique|justification
-|Activité|80|Au dessus de 80 d'activité, on considère qu'il y a une personne dans l'entrepôt
+|Activité ou _activity_ |80|Au dessus de 80 d'activité, on considère qu'il y a une personne dans l'entrepôt
 |=============
 
 === 2) Le code
