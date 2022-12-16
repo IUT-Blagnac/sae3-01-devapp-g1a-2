@@ -24,9 +24,9 @@ image::bibliotheque.png[]
 ===   b. Lecture du fichier de configuration
 image::fichierconfig.png[]
 ===   c. Le fichier de données
-image::fichierdonnées.png[]
+image::fichierdonnée.png[]
 ===   d. Récupération des données
-image::recuperationdonnées.png[]
+image::recuperationdonnée.png[]
 ===   e. Abonnement
 image::abonnement.png[]
 ===   f. Fréquence et écriture
