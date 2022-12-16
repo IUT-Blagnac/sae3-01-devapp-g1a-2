@@ -82,11 +82,31 @@ Tuteur/tutrice enseignant(e) de l'équipe:: mailto:andre.peninou@univ-tlse2.fr[A
 |Lien du site (externe IUT)|http://193.54.227.164/~SAESYS02/SAE/Index/
 |=============
 
-=== Application
+=== Applications
 
 |=============
 |Nom fichier|Liens
 |Application Python|https://github.com/IUT-Blagnac/sae3-01-devapp-g1a-2/tree/master/Applications/Web
+|=============
+
+=== BD
+
+|=============
+|Nom fichier|Liens
+|=============
+
+=== Tests
+
+|=============
+|Nom fichier|Liens
+|=============
+
+=== Livrable
+
+|=============
+|Nom fichier|Liens
+|Rendu 1 BD|https://github.com/IUT-Blagnac/sae3-01-devapp-g1a-2/blob/master/Livrables/BD/BD_de_Noskia_G1A-2%20(1).pdf[Présentation de la BD]
+|Diapo oral com|https://github.com/IUT-Blagnac/sae3-01-devapp-g1a-2/blob/master/Livrables/Communication/Diapo_Dev_App.pdf[V1.0]
 |=============
 
 
