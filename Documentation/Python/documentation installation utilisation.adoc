@@ -1,8 +1,8 @@
-= Documentation d'installation et d'explication de l'application Python
+= Documentation d'installation et d'utilisation de l'application Python
 
 === Sommaire
 <<id,Installation>> +
-<<id,Explication>> +
+<<id,Utilisation>> +
 
 [[id,Installation]]
 == I. Installation
@@ -16,18 +16,26 @@ Pour pouvoir lancer l'application est utilisé les bibliothéque nécessaire au 
 Installer la bibliothèque paho mqtt :
 ``pip install paho-mqtt``
 
-[[id,Explication]]
-== II. Explication
+===   c. Version de Python
 
-===   a. Bibliothèques utilisées
+[[id,Explication]]
+== II. Utilisation
+
+=== 1) Le code
+====   a. Bibliothèques utilisées
 image::bibliotheque.png[]
-===   b. Lecture du fichier de configuration
+====   b. Lecture du fichier de configuration
 image::fichierconfig.png[]
-===   c. Le fichier de données
+====   c. Le fichier de données
 image::fichierdonnée.png[]
-===   d. Récupération des données
+====   d. Récupération des données
 image::recuperationdonnée.png[]
-===   e. Abonnement
+====   e. Abonnement
 image::abonnement.png[]
-===   f. Fréquence et écriture
+====   f. Fréquence et écriture
 image::freqetecriture.png[]
+
+=== 1) Les données
+==== a. Explication
+==== b. Seuil critique
+
