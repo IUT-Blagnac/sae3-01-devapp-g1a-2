@@ -23,7 +23,16 @@ Il faut utiliser à minima la ``version 3.2`` de Python (Pour que les _interpola
 [[id,Explication]]
 == II. Utilisation
 
-=== 1) Le code
+=== 1) Les données
+==== a. Explication
+==== b. Seuil critique
+
+|=============
+|Nom de la donnée|Seuil critique|justification
+|Activité|80|Au dessus de 80 d'activité, on considère qu'il y a une personne dans l'entrepôt
+|=============
+
+=== 2) Le code
 ====   a. Bibliothèques utilisées
 image::bibliotheque.png[]
 ====   b. Lecture du fichier de configuration
@@ -37,11 +46,4 @@ image::abonnement.png[]
 ====   f. Fréquence et écriture
 image::freqetecriture.png[]
 
-=== 2) Les données
-==== a. Explication
-==== b. Seuil critique
 
-|=============
-|Nom de la donnée|Seuil critique|justification
-|Activité|80|Au dessus de 80 d'activité, on considère qu'il y a une personne dans l'entrepôt
-|=============
