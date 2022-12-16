@@ -77,12 +77,6 @@ Tuteur/tutrice enseignant(e) de l'équipe:: mailto:andre.peninou@univ-tlse2.fr[A
 |Script création BD|https://github.com/IUT-Blagnac/sae3-01-devapp-g1a-2/blob/master/BD/CreationBDSAE3.sql
 |=============
 
-=== Tests
-
-|=============
-|*Nom fichier*|*Liens*
-|=============
-
 === Livrable
 
 |=============
@@ -110,6 +104,13 @@ Tuteur/tutrice enseignant(e) de l'équipe:: mailto:andre.peninou@univ-tlse2.fr[A
 |=============
 |*Nom fichier*|*Liens*
 |Doc installation et utilisation python |https://github.com/IUT-Blagnac/sae3-01-devapp-g1a-2/blob/master/Documentation/Python/documentation%20installation%20utilisation.adoc
+|=============
+
+
+=== Tests
+
+|=============
+|*Nom fichier*|*Liens*
 |=============
 
 Chaque sprint (semaine) vous devrez livrer une nouvelle version de votre application (release).
