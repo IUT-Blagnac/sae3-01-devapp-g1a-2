@@ -35,7 +35,7 @@ image::abonnement.png[]
 ====   f. Fréquence et écriture
 image::freqetecriture.png[]
 
-=== 1) Les données
+=== 2) Les données
 ==== a. Explication
 ==== b. Seuil critique
 
