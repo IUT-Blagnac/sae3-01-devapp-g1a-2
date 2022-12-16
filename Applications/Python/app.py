@@ -39,7 +39,8 @@ else:
 def get_data(mqtt, obj, msg):
     #On récupère les données json du message recu du bus
     jsonMsg = json.loads(msg.payload)
-    
+    fichier = ""
+    alarm = False
     #On rajoute une clé date au dictionnaire des donnés récuperé qui à pour valeur la date/heure/min/seconde à laquelle la fonction à été appellé
     jsonMsg["object"]["date"] = datetime.now().strftime("%D %H:%M:%S")
     #S'il n'existe pas de clé nommé comme l'appareil qu'a émis le message, on créer une clé a son nom qui a pour valeur une liste vide 
@@ -50,7 +51,25 @@ def get_data(mqtt, obj, msg):
     ''' ======== TEST ========
     data[datetime.now().strftime("%H:%M:%S")]= jsonMsg["rxInfo"]["time"]
     '''
-
+    if(not os.path.exists("./alarmes.txt")):
+        os.open("./alarmes.txt", os.O_CREAT)
+    
+    if jsonMsg["object"]["co2"] > int (config['seuils']['co2']):
+        fichier += "\nAttention le seuil de co2 a été dépassé"
+        alarm = True
+    if jsonMsg["object"]["humidity"] > int (config['seuils']['humidity-2']) or jsonMsg["object"]["humidity"] < int (config['seuils']['humidity-1']) :
+        fichier += "\nAttention le seuil d'humidité' à été dépasé"
+        alarm = True
+    if jsonMsg["object"]["temperature"] > int (config['seuils']['temp-2']) or jsonMsg["object"]["temperature"] < int (config['seuils']['temp-1']) :
+        fichier += "\nAttention le seuil de température à été dépasé"
+        alarm = True
+    if jsonMsg["object"]["activity"] > int (config['seuils']['activity']) :
+        fichier += "\nAttention le seuil d'activité à été dépassé"
+        alarm = True
+    
+    if alarm == True :
+        with open("alarmes.txt", "w") as f:  
+            f.write ("alarmes :\n"+ fichier)
 
 #On se connecte au serveur sur le port 1883
 mqttc = mqtt.Client()
@@ -86,4 +105,5 @@ while True:
     #On attend n+1(=frequence+1) secondes
     time.sleep(frequence+1)
     #On réinitialise le tableau de donnée à 0
-    data = {}
+    #data = {}
+    
