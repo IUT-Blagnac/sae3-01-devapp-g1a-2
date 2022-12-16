@@ -38,7 +38,7 @@ image::objet.png[]
 |Activité ou _activity_ |80|Au dessus de 80 d'activité, on considère qu'il y a une personne dans l'entrepôt
 |co2|1000|Au dessus de 1000 ppm, on considère que la concentration d'air n'est plus de bonne qualité car il n'est pas renouvellement assez fréquemment.
 |temperature| <15 ou >30 |On veut que la température soit comprise entre 15 et 30 degrès pour qu'un employé puisse convenablemment allez dans les entrep
-|humidité ou _humididty_||
+|humidité ou _humididty_|<40 ou >70| On veut que l'humidité soit entre 40% et 70%, sinon il risquerait d'y avoir de la condensation / secheresse qui risquerait d'abimer les produits
 |=============
 
 === 2) Le code
