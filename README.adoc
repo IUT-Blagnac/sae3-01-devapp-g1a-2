@@ -113,7 +113,7 @@ Tuteur/tutrice enseignant(e) de l'équipe:: mailto:andre.peninou@univ-tlse2.fr[A
 |*Nom fichier*|*Liens*
 |=============
 
-=== Évaluations hebdomadaires
+==Évaluations hebdomadaires
 
 NOTE: Les notes ci-dessous sont mises à jour directement par les enseignants responsables de la compétence 5.
 
