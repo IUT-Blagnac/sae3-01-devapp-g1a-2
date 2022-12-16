@@ -113,19 +113,6 @@ Tuteur/tutrice enseignant(e) de l'équipe:: mailto:andre.peninou@univ-tlse2.fr[A
 |*Nom fichier*|*Liens*
 |=============
 
-Chaque sprint (semaine) vous devrez livrer une nouvelle version de votre application (release).
-Utilisez pour cela les fonctionnalités de GitHub pour les https://docs.github.com/en/repositories/releasing-projects-on-github[Releases].
-
-De plus ce fichier `README.adoc` devra être à jour des informations suivantes :
-
-- Version courante : https://github.com/IUT-Blagnac/sae3-01-devapp-g1a-2/releases/tag/V3.0[v3.0]
-- Lien vers la doc technique
-- Lien vers la doc utilisateur
-- Liste des (ou lien vers les) User Stories (ToDo/Ongoing/Done) et % restant
-- Tests unitaires et plans de test
-- Indicateurs de qualité du code (dette technique)
-- ... tout autre élément que vous jugerez utiles pour démontrer la qualité de votre application
-
 === Évaluations hebdomadaires
 
 NOTE: Les notes ci-dessous sont mises à jour directement par les enseignants responsables de la compétence 5.
