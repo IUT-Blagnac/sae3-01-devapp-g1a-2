@@ -22,13 +22,12 @@ Installer la bibliothèque paho mqtt :
 ===   a. Bibliothèques utilisées
 image::bibliotheque.png[]
 ===   b. Lecture du fichier de configuration
-image::https://github.com/IUT-Blagnac/sae3-01-devapp-g1a-2/blob/master/appPython/Screens/Lecture_fichier_config.png[Librairies, 700(largeur), auto(200)]
+image::fichierconfig.png[]
 ===   c. Le fichier de données
-image::https://github.com/IUT-Blagnac/sae3-01-devapp-g1a-2/blob/master/appPython/Screens/Le_fichier_de_données.png[Librairies, 900(largeur), auto(400)]
+image::fichierdonnées.png[]
 ===   d. Récupération des données
-image::https://github.com/IUT-Blagnac/sae3-01-devapp-g1a-2/blob/master/appPython/Screens/Récupération_des_données.png[Librairies, 900(largeur), auto(400)]
+image::recuperationdonnées.png[]
 ===   e. Abonnement
-image::https://github.com/IUT-Blagnac/sae3-01-devapp-g1a-2/blob/master/appPython/Screens/Abonnement.png[Librairies, 600(largeur), auto(200)]
+image::abonnement.png[]
 ===   f. Fréquence et écriture
-image::https://github.com/IUT-Blagnac/sae3-01-devapp-g1a-2/blob/master/appPython/Screens/Ecriture.png[Librairies, 600(largeur), auto(200)]
-image::https://github.com/IUT-Blagnac/sae3-01-devapp-g1a-2/blob/master/appPython/Screens/Fréquence.png[Librairies, 400(largeur), auto(100)]
+image::freqetecriture.png[]
