@@ -103,7 +103,7 @@ Tuteur/tutrice enseignant(e) de l'équipe:: mailto:andre.peninou@univ-tlse2.fr[A
 |*Nom fichier*|*Liens*
 |=============
 
-== Travail d'équipe
+== Travail d'équipe / Méthode AGILE
 
 === Semaine 48
 
