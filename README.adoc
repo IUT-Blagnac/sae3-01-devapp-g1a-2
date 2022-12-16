@@ -56,6 +56,13 @@ Tuteur/tutrice enseignant(e) de l'équipe:: mailto:andre.peninou@univ-tlse2.fr[A
 
 === Gestion de projet
 
+|=============
+|Nom fichier|Liens
+|Liste des US en cours |https://github.com/IUT-Blagnac/sae3-01-devapp-g1a-2/milestone/3
+|Backlog du sprint |
+|Version courante du projet|https://github.com/IUT-Blagnac/sae3-01-devapp-g1a-2/releases/tag/V0.03[V3.0]
+|=============
+
 === Documentation
 
 |=============
@@ -64,26 +71,23 @@ Tuteur/tutrice enseignant(e) de l'équipe:: mailto:andre.peninou@univ-tlse2.fr[A
 |CDCF |https://docs.google.com/document/d/1IU6dr1NM6qHMl-TdcAE7Pqclu0MrQrqmcuWVcIt_VLo/edit
 |CDCT |https://docs.google.com/document/d/1ZTP3Ixq39regdlD_80VxalwgXkqIwEX00pqX56ker8Y/edit
 |Doc python |https://github.com/IUT-Blagnac/sae3-01-devapp-g1a-2/blob/master/appPython/documentation.adoc
-|Lien du site (interne IUT)|http://192.168.224.138/~SAESYS02/SAE/Index/
-|Lien du site (externe IUT)|http://193.54.227.164/~SAESYS02/SAE/Index/
 |=============
 
 === Web
 
 |=============
 |Nom fichier|Liens
-|Fichier de code|https://github.com/IUT-Blagnac/sae3-01-devapp-g1a-2/tree/master/Applications/Web
+|Code du site web|https://github.com/IUT-Blagnac/sae3-01-devapp-g1a-2/tree/master/Applications/Web
 |Lien du site (interne IUT)|http://192.168.224.138/~SAESYS02/SAE/Index/
 |Lien du site (externe IUT)|http://193.54.227.164/~SAESYS02/SAE/Index/
 |=============
 
 === Application
 
-
-Liste des US en cours :
-https://github.com/IUT-Blagnac/sae3-01-devapp-g1a-2/milestone/3
-
-Version courante : https://github.com/IUT-Blagnac/sae3-01-devapp-g1a-2/releases/tag/V0.03[V3.0]
+|=============
+|Nom fichier|Liens
+|Application Python|https://github.com/IUT-Blagnac/sae3-01-devapp-g1a-2/tree/master/Applications/Web
+|=============
 
 
 TIP: Mettez ici toutes les informations nécessaire à l'utilisation de votre dépôt (comment on installe votre application, où sont les docs, etc.)
