@@ -9,7 +9,7 @@
 
 ===   a. Prérequis
 
-Pour pouvoir lancer l'application est utilisé les bibliothéque nécessaire au fonctionneùent de cette dernière, il faut la lancer sur une machine Ubuntu.
+Pour pouvoir lancer l'application, il faut la lancer sur une machine Ubuntu dans un environnement UNIX car une machine window ne reconnaitra pas les _signal.alarm()_ . 
 
 ===   b. Installation
 
@@ -17,6 +17,8 @@ Installer la bibliothèque paho mqtt :
 ``pip install paho-mqtt``
 
 ===   c. Version de Python
+
+Il faut utiliser à minima la ``version 3.2`` de Python (Pour que les _interpolation_ de _configparser_ fonctionne).
 
 [[id,Explication]]
 == II. Utilisation
