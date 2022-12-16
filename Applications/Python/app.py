@@ -39,7 +39,10 @@ else:
 def get_data(mqtt, obj, msg):
     #On récupère les données json du message recu du bus
     jsonMsg = json.loads(msg.payload)
-    fichier = ""
+    
+    with open("alarmes.txt", "r") as f:  
+        fichier = f.read()
+
     alarm = False
     #On rajoute une clé date au dictionnaire des donnés récuperé qui à pour valeur la date/heure/min/seconde à laquelle la fonction à été appellé
     jsonMsg["object"]["date"] = datetime.now().strftime("%D %H:%M:%S")
@@ -55,21 +58,21 @@ def get_data(mqtt, obj, msg):
         os.open("./alarmes.txt", os.O_CREAT)
     
     if jsonMsg["object"]["co2"] > int (config['seuils']['co2']):
-        fichier += "\nAttention le seuil de co2 a été dépassé le" + jsonMsg["object"]["date"] + ":" + jsonMsg["object"]["co2"] + "/" + config['seuils']['co2']
+        fichier += "\nAttention le seuil de co2 a été dépassé le " + str (jsonMsg["object"]["date"]) + " (" + str (jsonMsg["object"]["co2"]) + "/" + config['seuils']['co2'] + " ppm)"
         alarm = True
     if jsonMsg["object"]["humidity"] > int (config['seuils']['humidity-2']) or jsonMsg["object"]["humidity"] < int (config['seuils']['humidity-1']) :
-        fichier += "\nAttention le seuil d'humidité' à été dépasé le" + jsonMsg["object"]["date"]
+        fichier += "\nAttention le seuil d'humidité à été dépassé le " + str (jsonMsg["object"]["date"]) + " (" + str (jsonMsg["object"]["humidity"]) + "%)"
         alarm = True
     if jsonMsg["object"]["temperature"] > int (config['seuils']['temp-2']) or jsonMsg["object"]["temperature"] < int (config['seuils']['temp-1']) :
-        fichier += "\nAttention le seuil de température à été dépasé le" + jsonMsg["object"]["date"]
+        fichier += "\nAttention le seuil de température à été dépassé le " + str (jsonMsg["object"]["date"]) + " (" + str (jsonMsg["object"]["temperature"]) + "°C)"
         alarm = True
     if jsonMsg["object"]["activity"] > int (config['seuils']['activity']) :
-        fichier += "\nAttention le seuil d'activité à été dépassé le" + jsonMsg["object"]["date"] + ":" + jsonMsg["object"]["activity"] + "/" + config['seuils']['activity']
+        fichier += "\nAttention le seuil d'activité à été dépassé le " + str (jsonMsg["object"]["date"]) + "(" + str (jsonMsg["object"]["activity"]) + "/" + config['seuils']['activity'] + ")"
         alarm = True 
     
     if alarm == True :
         with open("alarmes.txt", "w") as f:  
-            f.write ("alarmes :\n"+ fichier)
+            f.write (""+ fichier)
 
 #On se connecte au serveur sur le port 1883
 mqttc = mqtt.Client()
@@ -104,5 +107,4 @@ while True:
     signal.alarm(frequence)
     #On attend n+1(=frequence+1) secondes
     time.sleep(frequence+1)
-    #On réinitialise le tableau de donnée à 0
-    #data = {}
+    
