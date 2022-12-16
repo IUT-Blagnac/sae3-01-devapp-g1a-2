@@ -27,9 +27,9 @@ Il faut utiliser à minima la ``version 3.2`` de Python (Pour que les _interpola
 
 ==== a. Explication
  
- Nous recevons des données toute les 10 min sur un bus. Voici la partie du bus que nous garond et utilisons
+Nous recevons des données toute les 10 min sur un bus. Voici la partie du bus que nous garond et utilisons
  
- image::objet.png[]
+image::objet.png[]
 
 ==== b. Seuil critique
 
