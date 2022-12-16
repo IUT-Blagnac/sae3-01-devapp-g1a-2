@@ -108,7 +108,7 @@ Tuteur/tutrice enseignant(e) de l'équipe:: mailto:andre.peninou@univ-tlse2.fr[A
 === Semaine 48
 
 Voici le travail de communcation que nous avons fait cette semaine : 
-* https://github.com/IUT-Blagnac/sae3-01-devapp-g1a-2/blob/master/Livrables/Communication/semaine48/Compte_rendu_de_speed_dating.pdf[Compte rendu du speed dating]
+* [Compte rendu du speed dating](https://github.com/IUT-Blagnac/sae3-01-devapp-g1a-2/blob/master/Livrables/Communication/semaine48/Compte_rendu_de_speed_dating.pdf)
 
 === Semaine 49
 
