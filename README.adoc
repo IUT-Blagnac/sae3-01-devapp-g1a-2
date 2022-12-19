@@ -130,7 +130,7 @@ Analyse :
 |*Nom fichier*|*Liens*
 |Rendu 1 BD|https://github.com/IUT-Blagnac/sae3-01-devapp-g1a-2/blob/master/Livrables/BD/BD_de_Noskia_G1A-2%20(1).pdf[Présentation de la BD]
 |Diapo oral com|https://github.com/IUT-Blagnac/sae3-01-devapp-g1a-2/blob/master/Livrables/Communication/Diapo_Dev_App.pdf[V1.0]
-|L'appel d'offre réalisé|https://github.com/IUT-Blagnac/sae3-01-devapp-g1a-2/tree/master/Livrables/Appel%20d'offre
+|L'appel d'offre réalisé|https://github.com/IUT-Blagnac/sae3-01-devapp-g1a-2/tree/master/Livrables/AppelOffre
 |=============
 
 == Évaluations hebdomadaires
