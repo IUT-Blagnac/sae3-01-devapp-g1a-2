@@ -124,7 +124,7 @@ Ordre du jour :
 Compte rendu de la réunion : 
 Analyse : 
 
-== Livrable
+== Livrables
 
 |=============
 |*Nom fichier*|*Liens*
