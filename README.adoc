@@ -59,7 +59,7 @@ Tuteur/tutrice enseignant(e) de l'équipe:: mailto:andre.peninou@univ-tlse2.fr[A
 |=============
 |*Nom fichier*|*Liens*
 |Code du site web|https://github.com/IUT-Blagnac/sae3-01-devapp-g1a-2/tree/master/Applications/Web
-|Lien du site (interne IUT)|http://192.168.224.138/~SAESYS02/SAE/Index/
+|Lien du site (interne IUT)|http://192.168.224.139/~SAESYS02/SAE/Index/
 |Lien du site (externe IUT)|http://193.54.227.164/~SAESYS02/SAE/Index/
 |=============
 
