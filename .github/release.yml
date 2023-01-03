@@ -25,3 +25,8 @@ changelog:
   categories:
     - title: 'Python'
       label: 'r: code PYTHON'
+      
+version-resolver:
+  major:
+    labels:
+      - 'r: code PYTHON'
