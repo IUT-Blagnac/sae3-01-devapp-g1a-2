@@ -1,20 +1,36 @@
 #JMB 2022 -- Taken from https://docs.github.com/en/repositories/releasing-projects-on-github/automatically-generated-release-notes
-changelog:
-  exclude:
+# changelog:
+#   exclude:
+#     labels:
+#       - ignore-for-release
+#     authors:
+#       - octocat
+#   categories:
+#     - title: Nouvelles User Stories & Features 🎉
+#       labels:
+#         - us
+#         - feature
+#         - enhancement
+#     - title: Fix et améliorations 🛠
+#       labels:
+#         - bug
+#         - improve
+#     - title: Autres changements
+#       labels:
+#         - "*"
+
+# **Full Changelog**: https://github.com/$OWNER/$REPOSITORY/compare/$PREVIOUS_TAG...v$RESOLVED_VERSION
+
+changelog :
+  categorie : 
+  - title: Breaking Changes
     labels:
-      - ignore-for-release
-    authors:
-      - octocat
-  categories:
-    - title: Nouvelles User Stories & Features 🎉
-      labels:
-        - us
-        - feature
-        - enhancement
-    - title: Fix et améliorations 🛠
-      labels:
-        - bug
-        - improve
-    - title: Autres changements
-      labels:
-        - "*"
+    - Semver-Major
+    - breaking-change
+- title: New feature
+    labels:
+    - Semver-Minor
+    - enhancement
+- title: Other changes
+    labels:
+    - "*"
