@@ -14,7 +14,7 @@ toc::[]
 
 === Explication
  
-Nous recevons des données toute les 10 min sur un bus. Voici la partie du bus que nous garond et utilisons
+Nous recevons des données toute les 10 min sur un bus. Voici la partie du bus que nous gardons et utilisons
  
 image::./images/objet.png[Images d'un objet MQTT]
 
