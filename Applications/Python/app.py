@@ -11,13 +11,15 @@ import signal
 
 #On créer un objet 
 config = configparser.ConfigParser(interpolation=ExtendedInterpolation())
-config.read('config.ini')
+config.read('./config.ini')
 
 #On récupère les différent paramètre nécessaire au fonctionnement
 #Le serveur
 mqttServer = config['server']['server-1']
 #Les appareils choisi
 devicesChoisi = config["devices"]["device_choisi"].split(",")
+#Les appareils choisi
+dataChoisi = config["data"]["data_choisi"].split(",")
 #L'application
 app = config['application']['appID-1']
 #La fréquence
@@ -73,6 +75,12 @@ def get_data(mqtt, obj, msg):
     if alarm == True :
         with open("alarmes.txt", "w") as f:  
             f.write (""+ fichier)
+        
+    for donnee in dataChoisi:
+        donnee = donnee.split(":")
+        if donnee[1] == 'False' : 
+            data.pop(donnee[0])   
+
 
 #On se connecte au serveur sur le port 1883
 mqttc = mqtt.Client()
@@ -94,6 +102,10 @@ mqttc.on_message = get_data
 mqttc.loop_start()
 
 
+
+
+
+
 def sendData(sig,code):
     #On écrit dans le fichier json les données lu entre l'intervale de temps (la fréquence)
     with open("data.json", "w") as outfile:
@@ -108,4 +120,3 @@ while True:
     #On attend n+1(=frequence+1) secondes
     time.sleep(frequence+1)
     
-#test
