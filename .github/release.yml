@@ -21,6 +21,7 @@
 
 # **Full Changelog**: https://github.com/$OWNER/$REPOSITORY/compare/$PREVIOUS_TAG...v$RESOLVED_VERSION
 
-categories:
-  - title: 'Python'
-    label: 'r: code PYTHON'
+changelog:
+  categories:
+    - title: 'Python'
+      label: 'r: code PYTHON'
