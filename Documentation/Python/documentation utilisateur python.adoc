@@ -28,4 +28,6 @@ image::objet.png[]
 |humidité ou _humididty_|<40 ou >70| On veut que l'humidité soit entre 40% et 70%, sinon il risquerait d'y avoir de la condensation / secheresse qui risquerait d'abimer les produits
 |=============
 
-== Explication du code
+== Fonctionnement
+
+image::./images/config.png[Images des paramètres de configuration]
