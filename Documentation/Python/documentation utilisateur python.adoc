@@ -47,7 +47,7 @@ Partie ``devices`` ::
 - Le champs _device_choisi_ sera la liste des devices choisis d'être suivi par un administrateur (utilisateur de l'application Java)
 
 Partie ``frequences`` ::
-- Ici sera stocker la fréquence (en seconde) à laquelle l'utilisateur recevra des données. Il recevrea tout les messages reçu dura l'intervalle de temps car nous avons choisi de ne pas perdre de la donnée. L'heure indiqué sur le message reçu pendant un intervalle de temps sera la valeur réelle à laquelle l'application à reçu le message et non le moment ou l'utilisateur recevra les informations. +
+- Ici sera stocké la fréquence (en seconde) à laquelle l'utilisateur recevra des données. Il recevrea tout les messages reçu dura l'intervalle de temps car nous avons choisi de ne pas perdre de la donnée. L'heure indiqué sur le message reçu pendant un intervalle de temps sera la valeur réelle à laquelle l'application à reçu le message et non le moment ou l'utilisateur recevra les informations. +
 Ces choix ont été réalisé car nous ne voulions pas perdre la véracité de l'information, ici nous gardons tous les messages et leur horaires réelles.
 
 Partie ``seuils`` ::
