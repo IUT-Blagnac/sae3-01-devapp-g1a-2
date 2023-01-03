@@ -52,3 +52,7 @@ Ces choix ont été réalisé car nous ne voulions pas perdre la véracité de l
 
 Partie ``seuils`` ::
 - Nous avons ici les différents seuil critique, qui, lorsqu'un sera dépassé, déclenchera l'envoie d'une alarme dans un fichier texte.
+
+=== le code de l'application
+
+=== Structure du fichier de donnée
