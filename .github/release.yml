@@ -19,17 +19,18 @@
 #       labels:
 #         - "*"
 
-  **Full Changelog**: https://github.com/$OWNER/$REPOSITORY/compare/$PREVIOUS_TAG...v$RESOLVED_VERSION
-categories:
-  - title: 'Code JAVA'
-    label: 'type: JAVA'
-  - title: 'Code PYTHON'
-    label: 'type: PYTHON'
-  - title: 'Documentation'
-    label: 'type: DOCS'
-  - title: 'Code BD'
-    label: 'type: BD'
-  - title: 'Code WEB'
-    label: 'type: WEB'
-  - title: 'Other changes'
-    collapse-after: 6
+# **Full Changelog**: https://github.com/$OWNER/$REPOSITORY/compare/$PREVIOUS_TAG...v$RESOLVED_VERSION
+
+changelog :
+  categorie : 
+  - title: Breaking Changes
+    labels:
+    - Semver-Major
+    - breaking-change
+- title: New feature
+    labels:
+    - Semver-Minor
+    - enhancement
+- title: Other changes
+    labels:
+    - "*"
