@@ -21,12 +21,34 @@
 
 # **Full Changelog**: https://github.com/$OWNER/$REPOSITORY/compare/$PREVIOUS_TAG...v$RESOLVED_VERSION
 
-changelog:
-  categories:
-    - title: 'Python'
-      label: 'r: code PYTHON'
-      
+name-template: 'v$RESOLVED_VERSION'
+tag-template: 'v$RESOLVED_VERSION'
+template: |
+  # What's Changed
+  $CHANGES
+  **Full Changelog**: https://github.com/$OWNER/$REPOSITORY/compare/$PREVIOUS_TAG...v$RESOLVED_VERSION
+categories:
+  - title: 'Code JAVA'
+    label: 'type: JAVA'
+  - title: 'Code PYTHON'
+    label: 'type: PYTHON'
+  - title: 'Documentation'
+    label: 'type: DOCS'
+  - title: 'Code BD'
+    label: 'type: BD'
+  - title: 'Code WEB'
+    label: 'type: WEB'
+  - title: 'Other changes'
+    collapse-after: 6
+
 version-resolver:
   major:
     labels:
-      - 'r: code PYTHON'
+      - 'type: JAVA'
+      - 'type: PYTHON'
+      - 'type: DOCS' 
+      - 'type: BD' 
+      - 'type: WEB'
+
+exclude-labels:
+  - 'skip-changelog'
