@@ -25,6 +25,14 @@ app = config['application']['appID-1']
 #La fréquence
 frequence = int(config["frequences"]["freq-1"])
 
+#les seuils
+s_co2 = int (config['seuils']['co2'])
+s_humidity_min = int (config['seuils']['humidity-1'])
+s_humidity_max = int (config['seuils']['humidity-2'])
+s_temperature_min = int (config['seuils']['temp-1'])
+s_temperature_max = int (config['seuils']['temp-2'])
+s_activity = int (config['seuils']['activity'])
+
 # Si le fichier de donnée n'existe pas, on le crée; s'il existe et que ca taille n'existe pas, on initialise le tableau des données à un tableau vide; 
 # et s'il existe et qu'il n'est pas vide, on récupère les données qu'il contient dans la tableau des données
 if(not os.path.exists("./data.json")):
@@ -59,16 +67,16 @@ def get_data(mqtt, obj, msg):
     if(not os.path.exists("./alarmes.txt")):
         os.open("./alarmes.txt", os.O_CREAT)
     
-    if jsonMsg["object"]["co2"] > int (config['seuils']['co2']):
+    if jsonMsg["object"]["co2"] > s_co2:
         fichier += "\nAttention le seuil de co2 a été dépassé le " + str (jsonMsg["object"]["date"]) + " (" + str (jsonMsg["object"]["co2"]) + "/" + config['seuils']['co2'] + " ppm)"
         alarm = True
-    if jsonMsg["object"]["humidity"] > int (config['seuils']['humidity-2']) or jsonMsg["object"]["humidity"] < int (config['seuils']['humidity-1']) :
+    if jsonMsg["object"]["humidity"] > s_humidity_max or jsonMsg["object"]["humidity"] < s_humidity_min :
         fichier += "\nAttention le seuil d'humidité à été dépassé le " + str (jsonMsg["object"]["date"]) + " (" + str (jsonMsg["object"]["humidity"]) + "%)"
         alarm = True
-    if jsonMsg["object"]["temperature"] > int (config['seuils']['temp-2']) or jsonMsg["object"]["temperature"] < int (config['seuils']['temp-1']) :
+    if jsonMsg["object"]["temperature"] > s_temperature_max or jsonMsg["object"]["temperature"] < s_temperature_min :
         fichier += "\nAttention le seuil de température à été dépassé le " + str (jsonMsg["object"]["date"]) + " (" + str (jsonMsg["object"]["temperature"]) + "°C)"
         alarm = True
-    if jsonMsg["object"]["activity"] > int (config['seuils']['activity']) :
+    if jsonMsg["object"]["activity"] > s_activity :
         fichier += "\nAttention le seuil d'activité à été dépassé le " + str (jsonMsg["object"]["date"]) + "(" + str (jsonMsg["object"]["activity"]) + "/" + config['seuils']['activity'] + ")"
         alarm = True 
     
@@ -92,19 +100,14 @@ for device in devicesChoisi:
     print("On s'abonne à : ",device)
     mqttc.subscribe("application/"+app+"/device/"+device+"/event/up")
 
-''' ======== TEST ========
-mqttc.subscribe("gateway/3170000000000010/event/up")
-'''
 #lorsque l'on recoit un message, 
 mqttc.on_message = get_data
 
-
 mqttc.loop_start()
 
-
-
-
-
+''' ======== TEST ========
+mqttc.subscribe("gateway/3170000000000010/event/up")
+'''
 
 def sendData(sig,code):
     #On écrit dans le fichier json les données lu entre l'intervale de temps (la fréquence)

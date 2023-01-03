@@ -53,6 +53,64 @@ Ces choix ont été réalisé car nous ne voulions pas perdre la véracité de l
 Partie ``seuils`` ::
 - Nous avons ici les différents seuil critique, qui, lorsqu'un sera dépassé, déclenchera l'envoie d'une alarme dans un fichier texte.
 
+Partie ``data`` ::
+- Ici sera indiquer si nous devons récupérer une donnée ou non. Si c'est le cas, elle sera à True et sinon elle sera à False.
+- En dernier, nous avons un champ qui contient tous les noms de données avec pour information True ou False. Ce champ sera parcouru dans une boucle pour éviter de faire trop de _if_ imbriqué.
+
 === le code de l'application
+
+==== Lecture du fichier de configuration
+
+image::./images/lectureConfig.png[Image de lecture des paramètres de configuration]
+
+- On commence par créer un objet _config_ qui va lire le fichier ``config.ini``
+- On récupère chaque champs qui nous intéresse (serveur, appareil choisi, application et fréquences)
+
+==== Création du fichier de donnée
+
+image::./images/fichierData.png[Image de lecture des paramètres de configuration]
+
+Cette partie de code permmetra de soit créer un fichier de donnée vide s'il n'existe pas. S'il existe mais qu'il est vide, ne pas récupérer de donnée. Et s'il existe et contient des/une donnée, récupérer ces données pour ne pas les perdre.
+
+On initialise ici la varaible *_data_* en fonction des différents cas.
+
+==== Action lorsque l'on recoit un message
+
+``Partie 1 : Récupération de la données``
+
+image::./images/data_p1.png[Image gestion de message reçu, partie 1]
+
+Dans cette première partie de la fonction _get_data()_, nous commencons par récupérer entièremment le message que nous stockons dans la variable *_data_*. Cette variable est très importante car elle contient toute les données qui seront envoyé plus tard (cf. section "Fréquence et écriture"). 
+
+La variable *_data_* est donc un tableau associatif qui associe en clé une chaine de caractère (qui représente le nom de l'appareil dont vient le message) et qui a pour valeur une liste, qui contient chaque message de données. Pour les différencier, nous avons rajouté à chaque message la date et l'heure à laquelle le message a été reçu.
+
+``Partie 2 : Gestion des dépassement de seuil``
+
+image::./images/data_p2.png[Image gestion de message reçu, partie 2]
+
+- Pour gérer les seuils, nous commencons par créer un fichier alarme.txt s'il n'existe pas.
+- Ensuite, nous testons si chaque seuil est depassé. Si c'est le cas, nous écrivons un message adéquat au dépassement dans le fichier.
+
+``Partie 3 : Gestion du choix des données gardées``
+
+image::./images/data_p3.png[Image gestion de message reçu, partie 3]
+
+- Pour le choix des données, nous avons donc en ``partie 1`` récupérer toute les données du message. 
+- Ici, nous testons donc si les données du fichier de configuration sont en 'False'. Si c'est le cas, on retire l'information du message (car nous l'avons pas encore envoyé dans le fichier de donnée)
+
+==== Abonnement
+
+image::./images/abonnement.png[Image abonnement]
+
+Ici, on se connecte au serveur sur le bon port. Puis on s'abonne aux différents topics que l'utilisateur aura sélectionné, c'est-à-dire aux différents capteurs sélectionnés.
+
+==== Fréquence et écriture dans le fichier de donnée
+
+image::./images/ecriture.png[Image écriture et gestion des fréquences]
+
+Pour gérer les fréquences, nous avons décider d'envoyer une alarme chaque _n secondes_ (n = fréquence en seconde). Cette alarme déclenchera une fonction qui enverra les données sur le fichier de donnée.
+
+- On commence donc pas substituer l'usage normal du signal alarme pour le remplacer par la fonction _sendData_ qui permet d'écrire dans le fichier de configuration
+- On commence ensuite une boucle infine qui envoie une alarme, attend _n secondes_ (n = fréquence en seconde) et attend ensuite pour en renvoyer une autre.
 
 === Structure du fichier de donnée
