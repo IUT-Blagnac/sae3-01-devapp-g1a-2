@@ -35,11 +35,8 @@ categories:
 version-resolver:
   major:
     labels:
-      - 'type: JAVA'
-      - 'type: PYTHON'
-      - 'type: DOCS' 
-      - 'type: BD' 
-      - 'type: WEB'
+      - 'r: code PYTHON'
+
 
 exclude-labels:
   - 'skip-changelog'
