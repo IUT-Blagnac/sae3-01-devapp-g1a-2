@@ -30,4 +30,15 @@ image::./images/objet.png[Images d'un objet MQTT]
 
 == Fonctionnement
 
+=== Fichier de configuration
+
 image::./images/config.png[Images des paramètres de configuration]
+
+Partie ``server`` : 
+* Ce champ contient les différents serveur que l'application recouvre. Pour l'instant, il n'y en a qu'un.
+* Ce champ du fichier de configuration sera utile pour une éventuelle amélioration de l'application et si elle a besoin d'un jour couvrir plusieurs serveurs.
+
+Partie ``application`` : 
+* Ici les différente application du serveur. 
+* Ce champ sera aussi plus utile dans le futur, si l'application à besoin de couvrir plusieurs applications différentes.
+
