@@ -31,12 +31,5 @@ categories:
   - title: 'Code PYTHON'
     label: 'r: code PYTHON'
 
-
-version-resolver:
-  major:
-    labels:
-      - 'r: code PYTHON'
-
-
 exclude-labels:
   - 'skip-changelog'
