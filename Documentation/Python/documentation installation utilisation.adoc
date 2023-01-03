@@ -1,4 +1,12 @@
 = Documentation Installation Python
+:icons: font
+:models: models
+:experimental:
+:incremental:
+:numbered:
+:toc: macro
+:window: _blank
+:correction!:
 
 toc::[]
 
