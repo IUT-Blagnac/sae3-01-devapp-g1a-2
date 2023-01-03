@@ -21,16 +21,6 @@
 
 # **Full Changelog**: https://github.com/$OWNER/$REPOSITORY/compare/$PREVIOUS_TAG...v$RESOLVED_VERSION
 
-changelog :
-  categorie : 
-  - title: Breaking Changes
-    labels:
-    - Semver-Major
-    - breaking-change
-- title: New feature
-    labels:
-    - Semver-Minor
-    - enhancement
-- title: Other changes
-    labels:
-    - "*"
+categories:
+  - title: 'Python'
+    label: 'r: code PYTHON'
