@@ -28,7 +28,8 @@ Si s'affiche un message d'erreur, c'est que python n'est pas installé ou si s'a
 Installer la bibliothèque paho mqtt :
 ``pip install paho-mqtt``
 
+Les autres bibliothèque utilsé sont des import en python.
 
 
-
+== Lancement
 
