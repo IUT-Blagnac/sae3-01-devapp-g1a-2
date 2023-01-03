@@ -16,14 +16,16 @@ toc::[]
 
 Pour pouvoir lancer l'application, il faut la lancer sur une machine Ubuntu dans un environnement UNIX car une machine window ne reconnaitra pas les _signal.alarm()_ . 
 
+===  Version de Python
+
+Il faut utiliser à minima la ``version 3.2`` de Python (Pour que les _interpolation_ de _configparser_ fonctionne).
+
+Pour cela, faire la commande ``python --version``. Si s'affiche un message d'erreur, c'est que python n'est pas installé ou si s'affiche une version de python antérieur à la version 3.2, faire la commande ``sudo apt-get install python3._X_`` avec X pour le numéro de version (soit 2 ou plus).
 ===  Installation
 
 Installer la bibliothèque paho mqtt :
 ``pip install paho-mqtt``
 
-===  Version de Python
-
-Il faut utiliser à minima la ``version 3.2`` de Python (Pour que les _interpolation_ de _configparser_ fonctionne).
 
 
 
