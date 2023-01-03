@@ -1,35 +1,19 @@
-= Documentation d'installation et d'utilisation de l'application Python
+= Documentation Installation Python
 
-=== Sommaire
-<<id,Installation>> +
-<<id,Utilisation>> +
+toc::[]
 
-ifndef::env-github[:icons: font]
-// Specific to GitHub
-ifdef::env-github[]
-:correction:
-:!toc-title:
-:caution-caption: :fire:
-:important-caption: :exclamation:
-:note-caption: :paperclip:
-:tip-caption: :bulb:
-:warning-caption: :warning:
-:icongit: Git
-endif::[]
+== Installation
 
-[[id,Installation]]
-== I. Installation
-
-===   a. Prérequis
+===  Prérequis
 
 Pour pouvoir lancer l'application, il faut la lancer sur une machine Ubuntu dans un environnement UNIX car une machine window ne reconnaitra pas les _signal.alarm()_ . 
 
-===   b. Installation
+===  Installation
 
 Installer la bibliothèque paho mqtt :
 ``pip install paho-mqtt``
 
-===   c. Version de Python
+===  Version de Python
 
 Il faut utiliser à minima la ``version 3.2`` de Python (Pour que les _interpolation_ de _configparser_ fonctionne).
 
