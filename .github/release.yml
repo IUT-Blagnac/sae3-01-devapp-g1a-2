@@ -28,18 +28,9 @@ template: |
   $CHANGES
   **Full Changelog**: https://github.com/$OWNER/$REPOSITORY/compare/$PREVIOUS_TAG...v$RESOLVED_VERSION
 categories:
-  - title: 'Code JAVA'
-    label: 'type: JAVA'
   - title: 'Code PYTHON'
-    label: 'type: PYTHON'
-  - title: 'Documentation'
-    label: 'type: DOCS'
-  - title: 'Code BD'
-    label: 'type: BD'
-  - title: 'Code WEB'
-    label: 'type: WEB'
-  - title: 'Other changes'
-    collapse-after: 6
+    label: 'r: code PYTHON'
+
 
 version-resolver:
   major:
