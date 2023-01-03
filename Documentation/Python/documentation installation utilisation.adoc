@@ -33,3 +33,5 @@ Les autres bibliothèque utilsé sont des import en python.
 
 == Lancement
 
+Une fois installé correctement, voici la commande qu'il faut exécuter pour lancer l'application : +
+``python3 app.py``
