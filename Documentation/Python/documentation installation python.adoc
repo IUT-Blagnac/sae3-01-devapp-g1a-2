@@ -35,6 +35,6 @@ Les autres bibliothèque utilsé sont des import en python.
 
 Une fois installé correctement, récuperer la fichier de l'application https://github.com/IUT-Blagnac/sae3-01-devapp-g1a-2/blob/master/Applications/Python/app.py[ici], le fichier de configuration https://github.com/IUT-Blagnac/sae3-01-devapp-g1a-2/blob/master/Applications/Python/config.ini[ici], le fichier d'alarmes https://github.com/IUT-Blagnac/sae3-01-devapp-g1a-2/blob/master/Applications/Python/alarmes.txt[ici] et le fichier des données https://github.com/IUT-Blagnac/sae3-01-devapp-g1a-2/blob/master/Applications/Python/data.json[ici] +
 
-Mettre tout ses fichier dans un dossier.
+Mettre tout ses fichier dans un dossier. 
 Et voici la commande qu'il faut exécuter pour lancer l'application : +
 ``python3 app.py``
