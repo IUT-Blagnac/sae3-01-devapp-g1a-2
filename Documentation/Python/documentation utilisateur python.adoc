@@ -38,7 +38,17 @@ Partie ``server`` ::
 - Ce champ contient les différents serveur que l'application recouvre. Pour l'instant, il n'y en a qu'un.
 - Ce champ du fichier de configuration sera utile pour une éventuelle amélioration de l'application et si elle a besoin d'un jour couvrir plusieurs serveurs.
 
-Partie ``application`` : +
-* Ici les différente application du serveur. 
-* Ce champ sera aussi plus utile dans le futur, si l'application à besoin de couvrir plusieurs applications différentes.
+Partie ``application`` ::
+- Ici les différente application du serveur. 
+- Ce champ sera aussi plus utile dans le futur, si l'application à besoin de couvrir plusieurs applications différentes.
 
+Partie ``devices`` ::
+- Nous avons ici les différents appareils que couvre nos capteurs. La clef représente la nom de la salle dans laquel le capteur est et en valeur représente la valeur concrete du capteur sur le serveur.
+- Le champs _device_choisi_ sera la liste des devices choisis d'être suivi par un administrateur (utilisateur de l'application Java)
+
+Partie ``frequences`` ::
+- Ici sera stocker la fréquence (en seconde) à laquelle l'utilisateur recevra des données. Il recevrea tout les messages reçu dura l'intervalle de temps car nous avons choisi de ne pas perdre de la donnée. L'heure indiqué sur le message reçu pendant un intervalle de temps sera la valeur réelle à laquelle l'application à reçu le message et non le moment ou l'utilisateur recevra les informations. +
+Ces choix ont été réalisé car nous ne voulions pas perdre la véracité de l'information, ici nous gardons tous les messages et leur horaires réelles.
+
+Partie ``seuils`` ::
+- Nous avons ici les différents seuil critique, qui, lorsqu'un sera dépassé, déclenchera l'envoie d'une alarme dans un fichier texte.
