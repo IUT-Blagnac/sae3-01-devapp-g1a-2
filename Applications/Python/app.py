@@ -108,3 +108,4 @@ while True:
     #On attend n+1(=frequence+1) secondes
     time.sleep(frequence+1)
     
+#test
