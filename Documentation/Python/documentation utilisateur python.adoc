@@ -114,3 +114,5 @@ Pour gérer les fréquences, nous avons décider d'envoyer une alarme chaque _n 
 - On commence ensuite une boucle infine qui envoie une alarme, attend _n secondes_ (n = fréquence en seconde) et attend ensuite pour en renvoyer une autre.
 
 === Structure du fichier de donnée
+
+A compléter
