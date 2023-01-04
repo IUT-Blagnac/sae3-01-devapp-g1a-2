@@ -1,4 +1,4 @@
-#JMB 2022 -- Taken from https://docs.github.com/en/repositories/releasing-projects-on-github/automatically-generated-release-notes
+JMB 2022 -- Taken from https://docs.github.com/en/repositories/releasing-projects-on-github/automatically-generated-release-notes
 changelog:
   exclude:
     labels:
@@ -18,3 +18,7 @@ changelog:
     - title: Autres changements
       labels:
         - "*"
+
+# **Full Changelog**: https://github.com/$OWNER/$REPOSITORY/compare/$PREVIOUS_TAG...v$RESOLVED_VERSION
+
+
