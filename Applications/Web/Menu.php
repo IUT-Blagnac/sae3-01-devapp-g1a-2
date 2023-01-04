@@ -11,9 +11,19 @@
     </head>
 
 <body>
+<style>
+  @font-face {
+    font-family: 'grottamedium';
+    src: url('../font/grotta-medium-webfont.woff2') format('woff2'),
+        url('../font/grotta-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  * {
+    font-family: 'grottamedium';
+  } 
+</style>
 <header>
-
-
 <div class="header">
   <a href="../Index/index.php"><img src="../Image/logo.png" alt="Logo" class="logo"></a>
   <span class="title">Noskia</span>
