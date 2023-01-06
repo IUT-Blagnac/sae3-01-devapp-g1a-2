@@ -1,0 +1,30 @@
+= Documentation des tests python
+:icons: font
+:models: models
+:experimental:
+:incremental:
+:numbered:
+:toc: macro
+:window: _blank
+:correction!:
+
+toc::[]
+
+== Comment lancer les tests
+
+=== Installation
+
+====  Version de Python
+
+Aucune version spéciale de python n'est nécessaire pour lancer les tests mais nous recommandons d'installer les versions de python les plus 
+
+Pour cela, faire la commande ``python --version``. +
+Si s'affiche un message d'erreur, c'est que python n'est pas installé ou si s'affiche une version de python antérieur à la version 3.2, faire la commande ``sudo apt-get install python3._X_`` avec X pour le numéro de version voulu.
+
+====  Récupération des test
+
+Récupérer le fichier de test xref:../../Tests/Python/test.py[ici] et les télécharger.
+
+Pour lancer le programme, lancer la commande ``python test.py``
+
+== Résultats
