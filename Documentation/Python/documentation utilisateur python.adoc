@@ -116,3 +116,10 @@ Pour gérer les fréquences, nous avons décider d'envoyer une alarme chaque _n 
 === Structure du fichier de donnée
 
 A compléter
+
+image::./images/structuredata.png[Image du fichier de données]
+
+Nous avons ici la structure du fichier de données. On voit bien ici la forme du dictionnaire clé / valeur. +
+
+- En clé, le nom du capteur
+- En valeur, les données sous forme de liste qui contient en plus la date et l'heure du message en plus des données.
