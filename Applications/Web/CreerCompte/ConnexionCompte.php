@@ -1,6 +1,8 @@
 <?php 
+        session_start();
          include_once("../Menu.php");
          include_once("../Footer.php");
+         require_once("../include/connect.inc.php")
 ?>
 
 
@@ -24,16 +26,23 @@
 <!--  <form action="TraitConnexion.php" method="POST">  
     avec la base de donné on pourras l'utiliser -->
 
-    <form class="formulaire" method="post">
+
+<form class="formulaire" method="post">
+    <h1>Connexion :</h1>
+    <?php
+        if (isset($_GET["msg"])){
+            echo htmlentities($_GET["msg"]);
+        }
+    ?>
     <label for="login">Adresse mail :</label>
-    <input type="text" id="login" name="login" required>
+    <input class="input"type="text" id="login" name="login" required>
     <label for="mdp">Mot de passe:</label>
-    <input type="password" id="mdp" name="mdp" required>
-    <input type='submit' name='valider' value='valider' />
+    <input class="input" type="password" id="mdp" name="mdp" required>
+    <input class="input" type='submit' name='valider' value='valider' />
     <div class="creercompte">
             <a href="CreerCompte.php" ><p>Créer un compte </p></a><br><br><br>
 <?php
-    session_start();
+    /*session_start(); J'ai mis la meme ligne tout en haut car il y avait une erreur sur la page*/
     if(isset($_POST['valider'])){
         $req = "SELECT * FROM Client";
         $lesComptes = oci_parse($connect, $req);

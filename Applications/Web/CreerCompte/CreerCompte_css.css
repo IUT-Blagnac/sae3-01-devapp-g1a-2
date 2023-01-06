@@ -1,3 +1,4 @@
+
 body{
   overflow-y: scroll;
 }
@@ -24,12 +25,13 @@ body{
   margin: 0 auto;
   margin-top: 1%;
   margin-left: 30%;
-  margin-right: 20%;
+  margin-right: 20%; 
   z-index: -999;
   background-color: aliceblue;
   box-shadow: 2px 2px 2px #CCC;
-
 }
+
+
 
 
   form {
@@ -46,7 +48,7 @@ body{
   label[for="password2"]{
     margin-top: 0px;
   }
-  input {
+  .input {
       width: 100%;
       padding: 10px;
       vertical-align: middle;
@@ -54,12 +56,12 @@ body{
       box-sizing: border-box;
       font-size: 14px;
   }
-  input[id="ConfirmPassword"]{
+  .input[id="ConfirmPassword"]{
     margin-top: 0;
   }
 
 
-  input[type="submit"] {
+  .input[type="submit"] {
     margin-top: 5%;
     background-color: #4CAF50;
     color: white;
