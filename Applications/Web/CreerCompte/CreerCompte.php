@@ -1,6 +1,7 @@
 <?php 
          include_once("../Menu.php");
          include_once("../Footer.php");
+         require_once("../include/connect.inc.php")
 ?>
 
 
@@ -20,7 +21,8 @@
 
 <div class="background-image"></div>
 <div class="content">
-<form method="POST">
+    
+    <form method="POST" class="creercompte">
     <h1>Créer un compte</h1>
     <?php
             if(isset($_POST["Valider"])){
@@ -90,48 +92,48 @@
                 }          
             }
         ?>
-        <label for="name">Nom:</label>
-        <input type="text" id="name" name="name" required>
-        <label for="surname">Prenom:</label>
-        <input type="text" id="surname" name="surname" required>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-        <label for="phone">Téléphone:</label>
-        <input type="tel" id="phone" name="phone" required>
-        <label for="Genre"> Genre :</label>
-        <select name='LD_genre' required>
-            <option value='homme'>Homme</option>
-            <option value='femme'>Femme</option>
-        </select><BR>
-        <label for="dteNaissance"> Date de naissance :</label>
-        <input type="date" id="date" name="date" required>
+            
+            <label for="name">Nom:</label>
+            <input class="input" type="text" id="name" name="name" required>
+            <label for="surname">Prenom:</label>
+            <input class="input"type="text" id="surname" name="surname" required>
+            <label for="email">Email:</label>
+            <input class="input" type="email" id="email" name="email" required>
+            <label for="phone">Téléphone:</label>
+            <input class="input" type="tel" id="phone" name="phone" required>
+            <label for="Genre"> Genre :</label>
+            <select name='LD_genre' required>
+                <option value='homme'>Homme</option>
+                <option value='femme'>Femme</option>
+            </select><BR>
+            <label for="dteNaissance"> Date de naissance :</label>
+            <input class="input" type="date" id="date" name="date" required>
+            
+            <label for="password">Mot de passe :</label>
+            <input class="input" type="password" name="password"id="password" onkeyup="checkPasswordStrength()"><br>
+            <meter id="passwordStrengthMeter" value="0" min="0" max="5"></meter>
+            <p id="passwordStrength"></p><br>
+            <label for="password2">Confirmer le mot de passe:</label>
+            <input class="input" type="password" name="password2" id="ConfirmPassword">
+            <BR><BR><BR>
+            <h2>Votre adresse :</h2>
+            <label for="name">Adresse:</label>
+            <input class="input" type="text" id="adresse" name="adresse" required>
+            <label for="name">Code postal:</label>
+            <input class="input" type="text" id="cpostal" name="cpostal" required>
+            <label for="name">Ville:</label>
+            <input class="input" type="text" id="ville" name="ville" required>            
         
-        <label for="password">Mot de passe :</label>
-        <input type="password" name="password"id="password" onkeyup="checkPasswordStrength()"><br>
-        <meter id="passwordStrengthMeter" value="0" min="0" max="5"></meter>
-        <p id="passwordStrength"></p><br>
-        <label for="password2">Confirmer le mot de passe:</label>
-        <input type="password" name="password2" id="ConfirmPassword">
-        <BR><BR><BR>
-        <h2>Votre adresse :</h2>
-        <label for="name">Adresse:</label>
-        <input type="text" id="adresse" name="adresse" required>
-        <label for="name">Code postal:</label>
-        <input type="text" id="cpostal" name="cpostal" required>
-        <label for="name">Ville:</label>
-        <input type="text" id="ville" name="ville" required>
-        
-    
-        <input type="submit" name="Valider" value="Valider"> 
-        
-        <div class="Seconnecter">
-            <a href="ConnexionCompte.php" ><p>Se connecter </p></a>
-        </div>
+            <input class="input" type="submit" name="Valider" value="Valider"> 
+            
+            <div class="Seconnecter">
+                <a href="ConnexionCompte.php" ><p>Se connecter </p></a>
+            </div>
         
     </form>
+    
+
 </div>
-
-
 <script>
 function checkPasswordStrength() {
   // Récupérer la valeur du champ mot de passe
@@ -183,6 +185,8 @@ function checkPasswordStrength() {
 }
 </script>
 
+
+
 </body>     
 
-
+</html>
