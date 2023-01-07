@@ -55,6 +55,8 @@
             if($unCompte['EMAILC'] == htmlentities($_POST["login"]) && password_verify(htmlentities($_POST["mdp"]),$unCompte['MDPC']) ) {
                 $_SESSION['acces'] = "OK";
 				$_SESSION['nom'] = $unCompte['PRENOMC'];
+                $_SESSION['prenom'] = $unCompte['NOMC'];
+                $_SESSION['numc'] = $unCompte['NUMC'];
                 header('location:MonCompte.php');
             }
         }
