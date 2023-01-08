@@ -8,32 +8,40 @@ import java.util.Properties;
 
 public class config {
 	
-	public static void reader() {
+	public static void reader(String key) {
 		
 		Properties fich = new Properties();
-		try (InputStream input = new FileInputStream("config.ini")) {
-			fich.load(input);
-			for (String key : fich.stringPropertyNames()) {
-			    String value = fich.getProperty(key);
-			    System.out.println(key + "=" + value);
-			}
+		try (InputStream config = new FileInputStream("config.ini")) {
+			fich.load(config);
+			String v = fich.getProperty(key);
+			System.out.println(v);
+			
+			/*lit tout les couples clés valeurs
+			 * 
+			 * for (String k : fich.stringPropertyNames()) {
+			 *  String value1 = fich.getProperty(k);
+			 *  System.out.println(k + "=" + value1);
+			 *  }
+			 */
+			
 		} catch (IOException ex) {
 			ex.printStackTrace();
 		}
 	}
 	
-	public static void writer() {
+
+
+	public static void writer(String key, String value) {
 		Properties fich = new Properties();
-		fich.setProperty("clé", "valeur");
-		//exemple: fich.setProperty("temp-1", "15");
-		try (OutputStream output = new FileOutputStream("config.ini")) {
-		    fich.store(output, null);
+		fich.setProperty(key, value);
+		try (OutputStream newconfig = new FileOutputStream("config.ini")) {
+		    fich.store(newconfig, null);
 		} catch (IOException ex) {
 		    ex.printStackTrace();
 		}
 	}
 
 	public static void main(String args[]) {
-		reader();
+		reader("server-1");
 	}
 }
