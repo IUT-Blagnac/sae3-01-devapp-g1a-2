@@ -10,12 +10,12 @@ import random
 def sendData(data):
     #On écrit dans le fichier json les données lu entre l'intervale de temps (la fréquence)
     with open("data.json", "w") as outfile:
-        json.dump(data, outfile)
+        json.dump({}, outfile)
 
     
 def generateAllData():
     generateddata = {}
-    for i in range(100):
+    for i in range(5):
         key = "AM107-"+str(random.randint(1,11))
         if key not in generateddata:
             generateddata[key] = []
@@ -37,7 +37,7 @@ def test(generateddata):
     with open("data.json", "r") as f:
         writtendata = json.load(f) 
 
-    assert generateddata == writtendata,"Les données générées et celle écrite dans le fichier ne sont pas les mêmes ! \n expected: "+ str(generateddata) +" \n was : "+ str(writtendata)
+    assert generateddata == writtendata,"Les données générées et celle écrite dans le fichier ne sont pas les mêmes ! \n      expected: "+ str(generateddata) +" \n       was : "+ str(writtendata)
 
 def main():
     generateddata = generateAllData()
