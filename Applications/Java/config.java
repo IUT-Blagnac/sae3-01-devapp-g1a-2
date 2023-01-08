@@ -8,13 +8,19 @@ import java.util.Properties;
 
 public class config {
 	
-	public static void reader(String key) {
+	/*
+	 * Méthode permettant de retourner une valeur à partir de sa clé donnée
+	 * en paramètre en utilisant la méthode load() qui lit l'InputStream "config.ini" 
+	 * et le sépare en couples clé valeurs pour pouvoir obtenir la valeur correspondante à la clé
+	 * 
+	 */
+	public static String getValue(String key) {
 		
+		String v = "";
 		Properties fich = new Properties();
 		try (InputStream config = new FileInputStream("config.ini")) {
 			fich.load(config);
-			String v = fich.getProperty(key);
-			System.out.println(v);
+			v = fich.getProperty(key);
 			
 			/*lit tout les couples clés valeurs
 			 * 
@@ -27,11 +33,17 @@ public class config {
 		} catch (IOException ex) {
 			ex.printStackTrace();
 		}
+		return v;
 	}
 	
 
-
-	public static void writer(String key, String value) {
+	/*
+	 * Méthode permettant de réécrire une valeur à partir de sa clé donnée
+	 * par celle en paramètre (value) en utilisant la méthode store() 
+	 * qui écrit le contenu de l'objet fich dans l'OutputStream "config.ini"
+	 * 
+	 */
+	public static void setValue(String key, String value) {
 		Properties fich = new Properties();
 		fich.setProperty(key, value);
 		try (OutputStream newconfig = new FileOutputStream("config.ini")) {
@@ -42,6 +54,6 @@ public class config {
 	}
 
 	public static void main(String args[]) {
-		reader("server-1");
+		System.out.println(getValue("server-1"));
 	}
 }
