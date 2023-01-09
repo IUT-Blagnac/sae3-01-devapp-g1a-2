@@ -88,6 +88,11 @@ def get_data(mqtt, obj, msg):
         donnee = donnee.split(":")
         if donnee[1] == 'False' : 
             data.pop(donnee[0])   
+    
+    print(mqtt)
+    print(obj)
+    print(msg)
+    print("===")
 
 
 #On se connecte au serveur sur le port 1883
@@ -115,11 +120,12 @@ def sendData(sig,code):
         json.dump(data, outfile)
 
 #Lorsque l'on recoit un signal d'alarme, on appel la fonction sendData
-signal.signal(signal.SIGALRM, sendData)
+# signal.signal(signal.SIGALRM, sendData)
 
 while True:
     #On envoie un signal d'alarme toute les n(=frequence) secondes
-    signal.alarm(frequence)
+    # signal.alarm(frequence)
+    sendData(0,0)
     #On attend n+1(=frequence+1) secondes
     time.sleep(frequence+1)
     
