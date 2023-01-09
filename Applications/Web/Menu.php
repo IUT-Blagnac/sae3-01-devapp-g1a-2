@@ -12,7 +12,7 @@
 
 <body>
 <header>
-
+ 
 
 <div class="head">
 
@@ -34,7 +34,7 @@
 </div>
 <nav class="menu">
             <ul>
-                <li><a href="../Categorie/Categorie.php">nom a trouver</a></li>
+                <li><a href="../Categorie/Categorie.php">Tous les produits</a></li>
                     <li class="deroulant"><a href="../Categorie/Categorie.php">Protection</a>
                         <ul class="sous">
                             <li><a href="../Categorie/CategorieParArticle.php?cat=Masques">Masques</a></li>
@@ -53,27 +53,7 @@
             </ul>
         </nav>
 
-<!--
-        <nav class="menu">
-            <ul>
-                <li><a href="../Index/index.php">Accueil</a></li>
-                    <li class="deroulant"><a href="../Categorie/Categorie.php">Categorie</a>
-                        <ul class="sous">
-                            <li><a href="#">Protection</a></li>
-                            <li><a href="#">Equipement</a></li>
-                            <li><a href="../Categorie/CategorieParArticle.php?cat=Skis">Skis</a></li>
-                            <li><a href="../Categorie/CategorieParArticle.php?cat=Snowboard">Snowboard</a></li>
-                            <li><a href="#">Vetements</a></li>
-                            <li><a href="../Categorie/CategorieParArticle.php?cat=Luges">Luges</a></li>
-                            <li><a href="../Categorie/CategorieParArticle.php?cat=Bobsleighs">Bobsleigh</a></li>
-                        </ul>
-                    </li>
-                <li><a href="../NotreEntreprise/NotreEntreprise.php">Notre Entreprise</a></li>   
-                <li><a href="../Contact/Contact.php">Contact</a></li>
-                <li><a href="../CreerCompte/CreerCompte.php">Connexion/Deconnexion</a></li>
-            </ul>
-        </nav>
--->
+
       </header>
 </html>
 
