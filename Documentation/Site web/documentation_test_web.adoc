@@ -44,17 +44,17 @@ Pour plus d'information sur le fonctionnement du projet, voici le lien de la xre
 === Connexion/deconnexion
 
 |=============
-|*Nom du test*|*Préconditions*|*Conditions de satisfaction*|*Résultats du test*
-| 1 | couple email/mot de passe correcte (corresponde à un compte créer) | l'utilisateur est redirigé vers son espace membre a| image::./images/icon_test_valider.png[test validé] 
-| 2 | couple email/mot de passe incorrecte (ne correspond à aucun compte valide) | l'utilisateur reste sur la même page et recoit un message d'erreur a| image::./images/icon_test_valider.png[test validé] 
-| 3 | accès à la création de compte via le lien _"création de compte"_ | l'utilisateur est redirigé vers la page de formulaire de création de compte a| image::./images/icon_test_valider.png[test validé] 
+|*N°*|*Nom du test*|*Préconditions*|*Conditions de satisfaction*|*Résultats du test*
+| 1 | Connexion correcte |couple email/mot de passe correcte (corresponde à un compte créer) | l'utilisateur est redirigé vers son espace membre a| image::./images/icon_test_valider.png[test validé] 
+| 2 | Connexion incorrecte | couple email/mot de passe incorrecte (ne correspond à aucun compte valide) | l'utilisateur reste sur la même page et recoit un message d'erreur a| image::./images/icon_test_valider.png[test validé] 
+
 |=============
 
 === Création de compte
 
 |=============
 |*N°*|*Nom du test*|*Préconditions*|*Conditions de satisfaction*|*Résultats du test*
-| |||
+| 1 | Accès formulaire crétion de compte |accès à la création de compte via le lien _"création de compte"_ | l'utilisateur est redirigé vers la page de formulaire de création de compte a| image::./images/icon_test_valider.png[test validé] 
 |=============
 
 
