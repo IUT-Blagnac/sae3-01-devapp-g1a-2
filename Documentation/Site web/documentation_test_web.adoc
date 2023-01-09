@@ -1,4 +1,4 @@
-= Documentation Technique Web
+= Documentation des tests web
 :icons: font
 :models: models
 :experimental:
@@ -15,11 +15,11 @@ toc::[]
 === Equipe
 
 L'équipe était composé de 5 membres et voici les rôles que chaque personne occupés : ::
-* Mathis : Product Owner
-* Quentin : Developper
-* Jordan : Developper
-* Adriel : Developper
-* Antoine : Scrum Master
+* *Mathis* : Product Owner
+* *Quentin* : Developper
+* *Jordan* : Developper
+* *Adriel* : Developper
+* *Antoine* : Scrum Master
 
 === Contexte du projet
 
@@ -33,42 +33,44 @@ Avec la digitalisation des entreprises ces dernières années, Noskia a besoin d
 
 ``Objectif :`` Le but de ce projet est donc de relancer les ventes de Noskia tout en permettant à cette dernière de s'étendre dans tout l'Europe. Le projet permettra à Noskia de récupérer les parts de marché qu'elle a perdu en rattrapant son retard digital. 
 
-== Architecture du projet 
 
-=== Architecture générale
+== Fonctiennement du projet Web
 
-Le projet sera donc un site web de e-commerce en lien avec une base de donnée : ::
+Pour plus d'information sur le fonctionnement du projet, voici le lien de la xref:documentation_technique_web.adoc[documentation technique] et la xref:documentation_utilisateur_web.adoc[documentation utilisateur].
 
-Le site web sera codé en HTML/CSS/JAVASCRIPT/PHP et sera héberger sur un serveur apache prété par l'IUT. +
-La base de donnée sera une base de donnée Orcale en SQL.
+== Test
 
-=== Organisation du site web
 
-Voici l'arborescence du site web.
+=== Connexion/deconnexion
 
-image::./images/arborescence_web.png[arborescence des fichiers du site web]
+|=============
+|*Nom du test*|*Préconditions*|*Conditions de satisfaction*|*Résultats du test*
+| 1 | couple email/mot de passe correcte (corresponde à un compte créer) | l'utilisateur est redirigé vers son espace membre a| image::./images/icon_test_valider.png[test validé] 
+| 2 | couple email/mot de passe incorrecte (ne correspond à aucun compte valide) | l'utilisateur reste sur la même page et recoit un message d'erreur a| image::./images/icon_test_valider.png[test validé] 
+| 3 | accès à la création de compte via le lien _"création de compte"_ | l'utilisateur est redirigé vers la page de formulaire de création de compte a| image::./images/icon_test_valider.png[test validé] 
+|=============
 
-On remarque en bas les fichiers les plus important qui sera inclue dans chaque page. On retrouve l'_header_ et le _footer_ qui sont respectivement le menu et le bas de page du site web.
+=== Création de compte
 
-Chaque dossier contient une partie du site web. Par exemple la partie _CreerCompte_ contient qui seront en rappart avec la gestion de compte (créer un compte, se connecter, espace membre, déconnexion) qui sont les suivants : 
+|=============
+|*N°*|*Nom du test*|*Préconditions*|*Conditions de satisfaction*|*Résultats du test*
+| |||
+|=============
 
-image::./images/arborescence_web_creercompte.png[arborescence des fichiers de création de compte du site web]
 
-Description de chaque sous-dossier ::
-``Categorie`` : +
-``Contact`` : +
-``CreerCompte`` : les fichiers qui géreront la création de compte, la connexion, l'espace membre (historique des commandes, modifier les informations) et la deconnexion. +
-``font`` : +
-``Image`` : +
-``include`` : +
-``Index`` : +
-``NotreEntreprise`` : +
-``Panier`` : les fichiers qui géreront le panier et le traitement de ce dernier +
 
-=== Organisation de la base de donnée
+=== Espace membre 
 
-Schéma du digramme de classe : 
+==== Historique des achats
 
-image::./images/diagramme_de_classe_BD.png[diagramme de classe de la BD]
+|=============
+|*Nom du test*|*Préconditions*|*Conditions de satisfaction*|*Résultats du test*
+| 
+|=============
 
-== Fonctionnalités
+==== Modifier ses informations
+
+|=============
+|*Nom du test*|*Préconditions*|*Conditions de satisfaction*|*Résultats du test*
+| 
+|=============
