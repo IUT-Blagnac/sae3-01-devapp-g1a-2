@@ -1,74 +1,74 @@
 .background-image {
-    position: fixed;
-    left: 0;
-    right: 0;
-    z-index: -9999;
-    display: block;
-    background-image: url("../Image/imgmontagne.jpg");
-    width: 100vw;
-    height: 100vw;
-    filter: blur(2px);
-  }
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: -9999;
+  display: block;
+  background-image: url("../Image/imgmontagne.jpg");
+  width: 100vw;
+  height: 100vw;
+  filter: blur(2px);
+}
 
 .formulaire{
-    filter: none;
+  filter: none;
 }
 .content{
-    border-radius: 20px;
-    height: 5%;
-    width: 40%;
-    margin: 0 auto;
-    margin-top: 5%;
-    margin-left: 30%;
-    margin-right: 20%;
-    background-color: aliceblue;
-    box-shadow: 2px 2px 2px #CCC;
+  border-radius: 20px;
+  height: 5%;
+  width: 40%;
+  margin: 0 auto;
+  margin-top: 5%;
+  margin-left: 30%;
+  margin-right: 20%;
+  background-color: aliceblue;
+  box-shadow: 2px 2px 2px #CCC;
 
 }
 
 
-  form {
-    padding-top: 8%;
-    margin-top: 10%;
-    z-index: 999;
-    max-width: 400px;
-    margin: 0 auto;
-  }
-  label {
-    display: block;
-    margin-top: 5%;
-    margin-bottom: 2%;
-  }
-  input {
-      width: 100%;
-      padding: 10px;
-      vertical-align: middle;
-      border: 1px solid #ccc;
-      box-sizing: border-box;
-      font-size: 14px;
-  }
-  input[type="submit"] {
-    margin-top: 5%;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    cursor: pointer;
-  }
+form {
+  padding-top: 8%;
+  margin-top: 10%;
+  z-index: 999;
+  max-width: 400px;
+  margin: 0 auto;
+}
+label {
+  display: block;
+  margin-top: 5%;
+  margin-bottom: 2%;
+}
+.input {
+    width: 100%;
+    padding: 10px;
+    vertical-align: middle;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+.input[type="submit"] {
+  margin-top: 5%;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
 
-  .creercompte{
-    padding-bottom: 10%;
-    margin-bottom: 25%;
-    margin-top: 5%;
-    text-align: center;
-  }
+.creercompte{
+  padding-bottom: 10%;
+  margin-bottom: 25%;
+  margin-top: 5%;
+  text-align: center;
+}
 
 .creercompte:hover {
-    cursor:pointer;
-  }
+  cursor:pointer;
+}
 
-  
-  @media (max-width: 600px) {
-    form {
-      width: 90%;
-    }
+
+@media (max-width: 600px) {
+  form {
+    width: 90%;
   }
+}
