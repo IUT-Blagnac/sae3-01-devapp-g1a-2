@@ -65,7 +65,6 @@ Pour plus d'information sur le fonctionnement du projet, voici le lien de la xre
 
 |=============
 |*Nom du test*|*Préconditions*|*Conditions de satisfaction*|*Résultats du test*
-| 
 |=============
 
 ==== Modifier ses informations
