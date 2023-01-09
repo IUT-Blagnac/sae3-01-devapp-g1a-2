@@ -106,7 +106,8 @@ Tuteur/tutrice enseignant(e) de l'équipe:: mailto:andre.peninou@univ-tlse2.fr[A
 
 |=============
 |*Nom fichier*|*Liens*
-|Test automatique python|xref:Tests/Python/test.py[ici]
+|Test automatique python|xref:Tests/Python/test.py[fichier de code] / xref:Documentation/Python/documentation des tests python.adoc[Documentation des tests]
+|Documentation test web |xref:Documentation/Site Web/documentation_test_web.adoc[ici]
 |=============
 
 == Travail d'équipe / Méthode AGILE
