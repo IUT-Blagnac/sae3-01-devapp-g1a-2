@@ -82,10 +82,15 @@ Tuteur/tutrice enseignant(e) de l'équipe:: mailto:andre.peninou@univ-tlse2.fr[A
 
 === Gestion de projet
 
-``*Liste des US en cours*`` https://github.com/IUT-Blagnac/sae3-01-devapp-g1a-2/milestone/4 +
-``*Backlog du sprint E-commerce*``https://github.com/orgs/IUT-Blagnac/projects/29[classique] / https://github.com/orgs/IUT-Blagnac/projects/29/views/2[Par priorité] +
-``*Backlog du sprint IoT*``https://github.com/orgs/IUT-Blagnac/projects/44/views/1[classique] / https://github.com/orgs/IUT-Blagnac/projects/44/views/2[par priorité] +
+``*Liste des US en cours*`` https://github.com/IUT-Blagnac/sae3-01-devapp-g1a-2/milestone/5 +
 ``*Version courante du projet*``https://github.com/IUT-Blagnac/sae3-01-devapp-g1a-2/releases/tag/V5.0[V5.0]
+
+
+[.underline]#*Backlog*# : ::
+``Backlog produit E-commerce`` : xref:Documentation/GestionProjet/Backlog_produit_E-commerce.pdf[ici] +
+``Backlog sprint 6 E-commerce`` : https://github.com/orgs/IUT-Blagnac/projects/29[classique] / https://github.com/orgs/IUT-Blagnac/projects/29/views/2[Par priorité] +
+``Backlog produit Iot`` : xref:Documentation/GestionProjet/Backlog_produit_python.pdf[ici] +
+``Backlog sprint 6 Iot`` : *//_TERMINÉ_//* +
 
 === Documentation
 
