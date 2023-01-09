@@ -15,11 +15,11 @@ toc::[]
 === Equipe
 
 L'équipe était composé de 5 membres et voici les rôles que chaque personne occupés : ::
-* Mathis : Product Owner
-* Quentin : Developper
-* Jordan : Developper
-* Adriel : Developper
-* Antoine : Scrum Master
+* *Mathis* : Product Owner
+* *Quentin* : Developper
+* *Jordan* : Developper
+* *Adriel* : Developper
+* *Antoine* : Scrum Master
 
 === Contexte du projet
 
