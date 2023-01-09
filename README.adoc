@@ -150,4 +150,3 @@ endif::[]
 
 =retour sprint 3 : 
 Il manque la prorité sur les US des backlogs. Le backlog E commerce reste incomplet. Les tâches ne sont pas assez décomposées, je dois avoir les tâches techniques … peu de tâches dans ce sprint et … rien en done ! Backlog IOT très limité ! Doc : uniquement le schéma web, pas de doc tech, pas de doc user. Release à V0 ... dans le readme. Rien sur les tests
-
