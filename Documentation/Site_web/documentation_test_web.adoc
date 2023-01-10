@@ -44,33 +44,32 @@ Pour plus d'information sur le fonctionnement du projet, voici le lien de la xre
 === Connexion/deconnexion
 
 |=============
-|*Nom du test*|*Préconditions*|*Conditions de satisfaction*|*Résultats du test*
+|*N°*|*Préconditions*|*Conditions de satisfaction*|*Résultats du test*
 | 1 | couple email/mot de passe correcte (corresponde à un compte créer) | l'utilisateur est redirigé vers son espace membre a| image::./images/icon_test_valider.png[test validé] 
 | 2 | couple email/mot de passe incorrecte (ne correspond à aucun compte valide) | l'utilisateur reste sur la même page et recoit un message d'erreur a| image::./images/icon_test_valider.png[test validé] 
 | 3 | accès à la création de compte via le lien _"création de compte"_ | l'utilisateur est redirigé vers la page de formulaire de création de compte a| image::./images/icon_test_valider.png[test validé] 
+| 4 | on est connecté et on clique sur le bouton "déconnexion" | on retourne à l'écran de connexion, les informations de la session sont supprimé a| image::./images/icon_test_valider.png[test validé] 
 |=============
 
 === Création de compte
 
 |=============
-|*N°*|*Nom du test*|*Préconditions*|*Conditions de satisfaction*|*Résultats du test*
-| |||
+|*N°*|*Préconditions*|*Conditions de satisfaction*|*Résultats du test*
+| 1 | Formulaire remplie correctement | l'utilisateur reste sur la même page et voit un message d'information de succès a| image::./images/icon_test_valider.png[test validé] 
+| 2 | Formulaire pas remplie correctement : il manque un champ | l'utilisateur reste sur la même page et voit un pop-up qui indique que le champ est requis a| image::./images/icon_test_valider.png[test validé] 
+| 3 | Formulaire pas remplie correctement : mot de passe est confirmation de mot de passe différent| l'utilisateur reste sur la même page et voit un message d'information de l'erreur rencontré (mot de passe doivent être indentique) a| image::./images/icon_test_valider.png[test validé] 
+| 4 | Adresse email rentré déjà utilisé par un compte| l'utilisateur reste sur la même page et voit un message d'information qui propose à l'utilisateur de se connecter a| image::./images/icon_test_valider.png[test validé] 
 |=============
 
 
 
 === Espace membre 
 
-==== Historique des achats
-
-|=============
-|*Nom du test*|*Préconditions*|*Conditions de satisfaction*|*Résultats du test*
-| 
-|=============
-
 ==== Modifier ses informations
 
 |=============
-|*Nom du test*|*Préconditions*|*Conditions de satisfaction*|*Résultats du test*
-| 
+|*N°*|*Préconditions*|*Conditions de satisfaction*|*Résultats du test*
+| 1 | on arrive sur la page modifier ses informations | les champs sont pré-remplies avec les informations du client a| image::./images/icon_test_valider.png[test validé] 
+| 2 | on modifie un ou plusieurs champs | les informations sont modifié lorsque l'on retourne sur la page, les modifications sont enregistrés sur la BD a| image::./images/icon_test_valider.png[test validé] 
+| 3 | on modifie les informations mais on laisse un ou plusieurs champs | on ne modifie pas les informations et on informe que les champs vide doivent être remplie a| image::./images/icon_test_valider.png[test validé] 
 |=============
