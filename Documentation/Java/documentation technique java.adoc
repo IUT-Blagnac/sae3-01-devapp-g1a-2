@@ -23,8 +23,3 @@ toc::[]
 === Pour l'utilisateur
 
 == Explication des fonctionalités
-
-
-
-
-
