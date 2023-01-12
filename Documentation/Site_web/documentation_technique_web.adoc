@@ -140,12 +140,14 @@ image::./images/UC_deconnexion.png[UC deconnexion]
 
 Use case de la fonctionnalité :
 
-image::./images/UC_deconnexion.png[UC deconnexion]
+image::./images/UC_modifierinfo.png[UC modifier ses informations]
 
 *Localisation des fichiers de code* ::
-
+    ``MonCompte.php`` => CreerCompte/ +
 
 *Fonctionnement* ::
+    Pour pouvoir modifier ses informations, il faut accéder à la page ``MonCompte.php`` puis cliquer sur l'onglet "modifier mes informations". Une fois cela fais, un formulaire apparaîtra à l'écran avec toute les informations que l'utilisateur poura modifier. Ce dernier sera près remplie avec les informations du client. +
+    Ce fichier traite son propre traitement. Il va, à la pression du bouton "modifier", enregistrer dans la BD les modification et redirigé vers la page d'accueil de l'espace membre.
 
     
 *Accessibilité* ::
