@@ -27,3 +27,6 @@ CREATE TABLE Panier
     CONSTRAINT fk_Panier_refA FOREIGN KEY (refA) REFERENCES Article(refA),
     CONSTRAINT ck_Panier_quantite CHECK (quantite >0)
 );
+
+ALTER TABLE article
+ADD categorieArticle VARCHAR(25);

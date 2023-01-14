@@ -55,15 +55,15 @@ Chaque dossier contient une partie du site web. Par exemple la partie _CreerComp
 image::./images/arborescence_web_creercompte.png[arborescence des fichiers de création de compte du site web]
 
 Description de chaque sous-dossier ::
-``Categorie`` : +
-``Contact`` : +
-``CreerCompte`` : les fichiers qui géreront la création de compte, la connexion, l'espace membre (historique des commandes, modifier les informations) et la deconnexion. +
-``font`` : +
-``Image`` : +
-``include`` : +
-``Index`` : +
-``NotreEntreprise`` : +
-``Panier`` : les fichiers qui géreront le panier et le traitement de ce dernier +
+``Categorie :`` les fichiers qui géreront l'affichage des différents articles et catégorie +
+``Contact :`` les fichiers qui géreront la partie qui permet de contacter l'entreprise +
+``CreerCompte :`` les fichiers qui géreront la création de compte, la connexion, l'espace membre (historique des commandes, modifier les informations) et la deconnexion. +
+``font :`` les polices utilisés pour le site +
+``Image :`` les images utilisés pour le site +
+``include :`` +
+``Index :`` +
+``NotreEntreprise :`` les fichiers qui géreront la partie nouventé + présentation de l'entreprise +
+``Panier :`` les fichiers qui géreront le panier et le traitement de ce dernier +
 
 === Organisation de la base de donnée
 
@@ -72,3 +72,84 @@ Schéma du digramme de classe :
 image::./images/diagramme_de_classe_BD.png[diagramme de classe de la BD]
 
 == Fonctionnalités
+
+=== Création d'un compte
+
+
+Use case de la fonctionalité : 
+
+image::./images/UC_creercompte.png[UC créer un compte]
+
+*Localisation des fichiers de code* ::
+    ``CreerCompte.php`` => CreerCompte/CreerCompte.php +
+    ``ConnexionCompte.php`` => CreerCompte/CreerCompte.php +
+
+*Fonctionnement* ::
+    Pour afficher le formulaire, le fichier ``CreerCompte.php`` va donc créer un formulaire qui comportera les différents champs requis pour créer un compte(nom, prénom, email, téléphone, genre, date de naissance, mot de passe, adresse, code postal et ville). +
+    Une fois tout les champs remplies (il est nécessaire qu'il les soit), ce même fichier va traier le formulaire. Pour cela, il faut tester d'abord que le mail n'appartient pas déjà à un compte, si c'est le cas, le création de compte est refusée. Si ce n'est pas le pas, nous allons donc insérer dans la BD une nouvelle entré dans la table _Client_ et _Domicile_. + 
+    Pour acceder à l'espace de création de compte, il suffit de cliquer sur le lien "creer un compte" sur la page de formulaire de connexion ``ConnexionCompte.php``.
+
+*Accessibilité* ::
+    Visiteur du site / Page connexion à mon compte (pictogramme de personnage à droite de l'header) / lien _"creer un compte"_ en bas de l'écran 
+
+=== Connexion à son compte
+
+Use case de la fonctionalité : 
+
+image::./images/UC_connexion.png[UC connexion]
+
+*Localisation des fichiers de code* ::
+    ``ConnexionCompte.php`` => CreerCompte/
+    ``MonCompte.php`` => CreerCompte/
+
+*Fonctionnement* ::
+    Pour traiter une connexion, la page ``ConnexionCompte.php`` va d'abord afficher un formulaire. Ce dernier comporte deux champs, le champs email et le champs mot de passe. + 
+    Ce même fichier traite son propre envoie. Pour cela, il va recupérer tout les comptes clients présent sur la base de données puis va récupérer l'email et le mot de passe(qui est haser, va donc le dé-haser). +
+    Si le couple email/mdp rentré dans le formulaire correspond à un couple de la base de données, une session sera donc créer ou nous retiendrons le nom, prénom et numéro client du membre connecté. L'utilisateur sera ensuite redirigé vers la page ``MonCompte.php``. + 
+    Si une session est ouverte et que l'on veut se connecter, on sera automatiquement redirigé vers l'espace membre (page ``MonCompte.php``).
+
+*Accessibilité* ::
+    Visiteur du site / pourra se connecté uniquement s'il a créer un compte / pictogramme de personnage à droite de l'header.
+
+
+=== Espace membre 
+
+Use case de l'espace membre du membre connecté : 
+
+image::./images/UC_espacemembre.png[UC espace membre]
+
+==== Deconnexion
+
+Use case de la fonctionnalité :
+
+image::./images/UC_deconnexion.png[UC deconnexion]
+
+*Localisation des fichiers de code* ::
+    ``MonCompte.php`` => CreerCompte/ +
+    ``TraitDeconnexion.php`` => CreerCompte/ +
+    ``ConnexionCompte.php`` => CreerCompte/ +
+
+*Fonctionnement* ::
+    Une fois sur l'espace membre (page ``MonCompte.php``), l'utilisateur à la possibilité. Pour cela, il lui suffit de cliquer sur le pictogramme ou texte _"deconnexion"_. Cela lancera la page ``TraitDeconnexion.php`` + 
+    La page ``TraitDeconnexion.php`` va terminer la session et redirige vers la page de ``ConnexionCompte.php``. 
+
+*Accessibilité* ::
+   Membre noskia connecté / page espace membre / pictogramme en haut à droite.
+
+==== Modifier ses informations
+
+Use case de la fonctionnalité :
+
+image::./images/UC_modifierinfo.png[UC modifier ses informations]
+
+*Localisation des fichiers de code* ::
+    ``MonCompte.php`` => CreerCompte/ +
+
+*Fonctionnement* ::
+    Pour pouvoir modifier ses informations, il faut accéder à la page ``MonCompte.php`` puis cliquer sur l'onglet "modifier mes informations". Une fois cela fais, un formulaire apparaîtra à l'écran avec toute les informations que l'utilisateur poura modifier. Ce dernier sera près remplie avec les informations du client. +
+    Ce fichier traite son propre traitement. Il va, à la pression du bouton "modifier", enregistrer dans la BD les modification et redirigé vers la page d'accueil de l'espace membre.
+
+    
+*Accessibilité* ::
+   Membre noskia connecté / page espace membre (onglet _"modifier mes information"_).
+
