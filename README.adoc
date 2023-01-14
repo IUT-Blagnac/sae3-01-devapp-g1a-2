@@ -86,21 +86,21 @@ Tuteur/tutrice enseignant(e) de l'équipe:: mailto:andre.peninou@univ-tlse2.fr[A
 ``*Version courante du projet*``https://github.com/IUT-Blagnac/sae3-01-devapp-g1a-2/releases/tag/V5.0[V5.0]
 
 
-[.underline]#*Backlog produit*# : ::
-``Backlog produit E-commerce :`` xref:Documentation/GestionProjet/Backlog_produit_E-commerce.pdf[ici] +
-``Backlog produit Iot :`` xref:Documentation/GestionProjet/Backlog_produit_python.pdf[ici] +
-``Backlog produit java :`` xref:Documentation/GestionProjet/Backlog_produit_java.pdf[ici] +
+``*Backlog produit*`` : ::
+Backlog produit E-commerce : xref:Documentation/GestionProjet/Backlog_produit_E-commerce.pdf[ici] +
+Backlog produit Iot : xref:Documentation/GestionProjet/Backlog_produit_python.pdf[ici] +
+Backlog produit java : xref:Documentation/GestionProjet/Backlog_produit_java.pdf[ici] +
 
 
-[.underline]#*Backlog sprint*# : ::
+``*Backlog sprint*`` : ::
 Sprint 6 :: 
 xref:Documentation/GestionProjet/Backlog_sprint6_java[Java] + 
 xref:Documentation/GestionProjet/Backlog_sprint6_web[Web] + 
 
-[.underline]#*Backlog sprint en cours*# : ::
-``Backlog sprint 6 E-commerce :`` https://github.com/orgs/IUT-Blagnac/projects/29[classique] / https://github.com/orgs/IUT-Blagnac/projects/29/views/2[Par priorité] +
-``Backlog sprint 6 Iot :`` *//_TERMINÉ_//* +
-``Backlog sprint 6 java :`` https://github.com/orgs/IUT-Blagnac/projects/47/views/1[classique] / https://github.com/orgs/IUT-Blagnac/projects/47/views/2[Par priorité]+
+``*Backlog sprint en cours* :`` ::
+Backlog sprint 6 E-commerce : https://github.com/orgs/IUT-Blagnac/projects/29[classique] / https://github.com/orgs/IUT-Blagnac/projects/29/views/2[Par priorité] +
+Backlog sprint 6 Iot : *//_TERMINÉ_//* +
+Backlog sprint 6 java : https://github.com/orgs/IUT-Blagnac/projects/47/views/1[classique] / https://github.com/orgs/IUT-Blagnac/projects/47/views/2[Par priorité]+
 
 === Documentation
 
