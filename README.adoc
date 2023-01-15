@@ -83,7 +83,7 @@ Tuteur/tutrice enseignant(e) de l'équipe:: mailto:andre.peninou@univ-tlse2.fr[A
 === Gestion de projet
 
 ``*Liste des US en cours*`` https://github.com/IUT-Blagnac/sae3-01-devapp-g1a-2/milestone/5 +
-``*Version courante du projet*``https://github.com/IUT-Blagnac/sae3-01-devapp-g1a-2/releases/tag/V5.0[V5.0]
+``*Version courante du projet*``https://github.com/IUT-Blagnac/sae3-01-devapp-g1a-2/releases/tag/V6.0[V6.0]
 
 
 ``*Backlog produit*`` : ::
