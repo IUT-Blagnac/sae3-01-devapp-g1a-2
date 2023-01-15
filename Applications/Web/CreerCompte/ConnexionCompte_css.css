@@ -12,6 +12,11 @@
 
 .formulaire{
   filter: none;
+  padding-top: 8%;
+  margin-top: 10%;
+  z-index: 999;
+  max-width: 400px;
+  margin: 0 auto;
 }
 .content{
   border-radius: 20px;
@@ -27,13 +32,7 @@
 }
 
 
-form {
-  padding-top: 8%;
-  margin-top: 10%;
-  z-index: 999;
-  max-width: 400px;
-  margin: 0 auto;
-}
+
 label {
   display: block;
   margin-top: 5%;

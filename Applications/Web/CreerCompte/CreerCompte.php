@@ -102,7 +102,7 @@
             <label for="phone">Téléphone:</label>
             <input class="input" type="tel" id="phone" name="phone" required>
             <label for="Genre"> Genre :</label>
-            <select name='LD_genre' required>
+            <select class="genre" name='LD_genre' required>
                 <option value='homme'>Homme</option>
                 <option value='femme'>Femme</option>
             </select><BR>

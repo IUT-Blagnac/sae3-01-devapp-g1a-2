@@ -1,13 +1,13 @@
 <?php 
-   session_start();
-   include_once("../Menu.php");
-   include_once("../Footer.php");
-   if(!isset($_SESSION["acces"]) && !$_SESSION["acces"] == "OK") {
+
+   
+   require_once("../Menu.php");
+   require_once("../Footer.php");
+   require_once("../include/connect.inc.php");
+   if(!isset($_SESSION["acces"]) ) {   
       header("location:ConnexionCompte.php?msg=Vous n'êtes pas connecté.");
-      
-   } else {
-      echo "Bonjour ".$_SESSION["nom"]." !";
-   }
+}
+   
 ?>
 
 <!DOCTYPE html>
@@ -151,6 +151,7 @@
                   echo "Informations modifier avec succès."; 
                }
 
+               
             ?>
 
          </div>
