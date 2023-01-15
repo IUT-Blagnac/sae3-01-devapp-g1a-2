@@ -25,14 +25,20 @@
         include("./fonction.php");
     ?>
 </div>
-
-
-
   
-<?php
 
+<?php
+if(isset($_GET['cat'])){
     $nom = htmlentities($_GET['cat']);
-    $req1 = 'SELECT DISTINCT categoriea, souscategoriea, couleura, desca, prixunita FROM article where categoriea = :cat';
+    $cate =  'categoriea';
+}
+if(isset($_GET['scat'])){
+    $nom = htmlentities($_GET['scat']);
+    $cate =  'categorieArticle';
+}
+
+    
+    $req1 = 'SELECT DISTINCT categoriea, souscategoriea, couleura, desca, prixunita, nbetoilesa FROM article where '.$cate.' = :cat '.$var;
 
     $produit = oci_parse($connect, $req1);
     oci_bind_by_name($produit, ":cat", $nom);
@@ -45,9 +51,25 @@
     echo " <div class='product-list'>";
     while (($Lesproduits=oci_fetch_assoc($produit))!=false) {
         echo '<div class="product">
-                <a href="Produit.php?nom='.$Lesproduits['CATEGORIEA'].'&couleur='.$Lesproduits['COULEURA'].'"><img src="../ImageArticle/'.$Lesproduits['CATEGORIEA'].'_'.$Lesproduits['SOUSCATEGORIEA'].'_'.$Lesproduits['COULEURA'].'.jpg" alt="Titre de l image 1"></a>
+                <a href="Produit.php?nom='.$Lesproduits['CATEGORIEA'].'&couleur='.$Lesproduits['COULEURA'].'"><img src="../ImageArticle/'.$Lesproduits['CATEGORIEA'].'_'.$Lesproduits['SOUSCATEGORIEA'].'_'.$Lesproduits['COULEURA'].'.jpg" alt="Titre de l image 1" class="imageproduit"></a>
                 <h3>'.$Lesproduits['CATEGORIEA'].' '. $Lesproduits['SOUSCATEGORIEA'] .' '.$Lesproduits['PRIXUNITA'].'</h3>
                 <p>'.$Lesproduits['DESCA'].'</p>
+                <div class="avisetoile">';
+             $LesproduitsNBETOILESA = $Lesproduits['NBETOILESA']; 
+                            for ($i = 0 ; $i < $LesproduitsNBETOILESA ; $i+=1){
+                                echo '<img src="../Image/etoilepleine.png"</img>';
+                                $iteration = $i;
+                            }
+                            if($LesproduitsNBETOILESA==0){
+                                $iteration = 0;
+                            }else{
+                                $iteration+=1;
+                            }
+                            for ($i = $iteration ; $i < 5; $i+=1){
+                                echo '<img src="../Image/etoilevide.png"</img>';
+                            }
+                            echo $LesproduitsNBETOILESA.'/5';echo '
+                        </div>
              </div>';
 	}
     echo '</div>';
