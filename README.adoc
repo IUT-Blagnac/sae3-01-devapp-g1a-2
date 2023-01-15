@@ -120,7 +120,7 @@ Backlog sprint 6 java : https://github.com/orgs/IUT-Blagnac/projects/47/views/1[
 |=============
 |*Nom fichier*|*Liens*
 |Test automatique python|xref:Tests/Python/test.py[fichier de code] / xref:Documentation/Python/documentation des tests python.adoc[Documentation des tests]
-|Documentation test web |xref:Documentation/Site_web/documentation_test_web.adoc[ici]
+|Test web |xref:Documentation/Site_web/documentation_test_web.adoc[ici]
 |=============
 
 == Travail d'équipe / Méthode AGILE
