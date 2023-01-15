@@ -9,6 +9,8 @@ $choix = isset($_SESSION['choix']) ? $_SESSION['choix']: '';
             <option value="option" >Notre sélection</option>
             <option value="croissant" <?php echo ($choix == 'croissant') ? 'selected' : ''; ?>>Prix croissant</option>
             <option value="decroissant" <?php echo ($choix == 'decroissant') ? 'selected' : ''; ?>>Prix décroissant</option>
+            <option value="a-z" <?php echo ($choix == 'a-z') ? 'selected' : ''; ?>>A - Z</option>
+            <option value="z-a" <?php echo ($choix == 'z-a') ? 'selected' : ''; ?>>Z - A</option>
         </select>
        
     <form>
@@ -23,6 +25,12 @@ $choix = isset($_SESSION['choix']) ? $_SESSION['choix']: '';
         }
         if($_POST["trier"] == "decroissant"){
             $var= "order by prixunita DESC";
+        }
+        if($_POST["trier"] == "a-z"){
+            $var= "order by categoriea ASC";
+        }
+        if($_POST["trier"] == "z-a"){
+            $var= "order by categoriea DESC";
         }
     }
 ?>

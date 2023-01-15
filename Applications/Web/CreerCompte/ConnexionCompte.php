@@ -1,8 +1,42 @@
-<?php 
-        session_start();
-         include_once("../Menu.php");
-         include_once("../Footer.php");
-         require_once("../include/connect.inc.php")
+<?php  
+
+        require_once("../Menu.php");
+        require_once("../Footer.php");
+        require_once("../include/connect.inc.php");
+
+        $var ="";
+        if(isset($_POST['valider'])){
+            $req = "SELECT * FROM Client";
+            $lesComptes = oci_parse($connect, $req);
+            $result = oci_execute($lesComptes);
+            if (!$result) {
+                $e = oci_error($lesComptes);
+                print htmlentities($e['message'].' pour cette requete : '.$e['sqltext']);		
+            }
+            while (($unCompte = oci_fetch_assoc($lesComptes)) != false) {
+                if($unCompte['EMAILC'] == htmlentities($_POST["login"]) 
+                   && password_verify(htmlentities($_POST["mdp"]),$unCompte['MDPC']) ) {
+                    $_SESSION['acces'] = "OK";
+                    $_SESSION['nom'] = $unCompte['PRENOMC'];
+                    $_SESSION['prenom'] = $unCompte['NOMC'];
+                    $_SESSION['numc'] = $unCompte['NUMC'];?>
+                    <script>
+                        window.location.href = "MonCompte.php";
+                    </script>
+                    <?php
+    
+                    /*
+                    header("Location: ./MonCompte.php");
+                    exit();*/
+                }else{
+                    $var ="non";
+                }
+            }
+            
+        }
+
+        
+   
 ?>
 
 
@@ -27,6 +61,7 @@
     avec la base de donné on pourras l'utiliser -->
 
 
+
 <form class="formulaire" method="post">
     <h1>Connexion :</h1>
     <?php
@@ -41,30 +76,13 @@
     <input class="input" type='submit' name='valider' value='valider' />
     <div class="creercompte">
             <a href="CreerCompte.php" ><p>Créer un compte </p></a><br><br><br>
-<?php
-    /*session_start(); J'ai mis la meme ligne tout en haut car il y avait une erreur sur la page*/
-    if(isset($_POST['valider'])){
-        $req = "SELECT * FROM Client";
-        $lesComptes = oci_parse($connect, $req);
-        $result = oci_execute($lesComptes);
-        if (!$result) {
-            $e = oci_error($lesComptes);
-            print htmlentities($e['message'].' pour cette requete : '.$e['sqltext']);		
-        }
-        while (($unCompte = oci_fetch_assoc($lesComptes)) != false) {
-            if($unCompte['EMAILC'] == htmlentities($_POST["login"]) && password_verify(htmlentities($_POST["mdp"]),$unCompte['MDPC']) ) {
-                $_SESSION['acces'] = "OK";
-				$_SESSION['nom'] = $unCompte['PRENOMC'];
-                $_SESSION['prenom'] = $unCompte['NOMC'];
-                $_SESSION['numc'] = $unCompte['NUMC'];
-                header('location:MonCompte.php');
-            }
-        }
-        echo "Adresse mail / mot de passe incorrect ... ";
-    }
-?>
-    
+            <?php
+                if($var === 'non'){
+                    echo "Adresse mail / mot de passe incorrect ... ";
+                }    
+            ?>
     </div>
+    
 </form>
 </div>
 
