@@ -1,109 +1,144 @@
 .containeur_flex{
-    width: 100vw;
-    height: 82vh;
-    /* background: red; */
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 2.5%; /* ou align-items: center si bug */
   
-  }
+  height: 82vh;
+  /* background: red; */
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 2.5%; /* ou align-items: center si bug */
+
+}
+
+.containeur_panier{
+  width: 55%;
   
-  .containeur_panier{
-    width: 55%;
-    height: 90%;
-    /* background: blue; */
-    border-radius: 10px;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+  min-height: 90%;
+  /* background: blue; */
+  border-radius: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content{
+  position: relative;
+  width: 90%;
+  height: 90%;
+  /* background: blue; */
+}
+
+.pdp{
+  width: 50px;
+  height: 50px;
+  background-color: grey;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+}
+
+.monPanier{
+  position: relative;
+  top: -55px;
+  left: 65px;
+}
+
+.horizontal_bar_panier{
+  width: 100%;
+  border: 1px solid;
+  position: relative;
+  top: -40px;
+}
+
+.containeur_recap{
+  width: 30%;
+  height: 60%;
+  /* background: blue; */
+  border-radius: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.recap{
+  position: relative;
+  top: 0px;
+  left: 0px;
+}
+
+.horizontal_bar_recap{
+  width: 100%;
+  border: 1px solid;
+  position: relative;
+  top: 10px
+}
+
+.sous_tot{
+  position: relative;
+  top: 30px;
+}
+
+.infoRecap{
+  position: relative;
+  top: 30px;
+}
+
+.horizontal_bar_recap2{
+  width: 100%;
+  border: 0.5px solid;
+  position: relative;
+  top: 50px
+}
+
+.tot_tva{
+  position: relative;
+  top: 70px;
+}
+
+.butt{
+  position: relative;
+  top: 100px;
+}
+
+.imagProduit{
+  width: 20%;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 10px;
+}
+
+.boxRecap{
+  display: flex;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 10px;
   
-  .content{
-    position: relative;
-    width: 90%;
-    height: 90%;
-    /* background: blue; */
-  }
-  
-  .pdp{
-    width: 50px;
-    height: 50px;
-    background-color: grey;
-    border-radius: 30px;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    padding: 10px;
-  }
-  
-  .monPanier{
-    position: relative;
-    top: -55px;
-    left: 65px;
-  }
-  
-  .horizontal_bar_panier{
-    width: 100%;
-    border: 1px solid;
-    position: relative;
-    top: -40px;
-  }
-  
-  .containeur_recap{
-    width: 30%;
-    height: 60%;
-    /* background: blue; */
-    border-radius: 10px;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  
-  .recap{
-    position: relative;
-    top: 0px;
-    left: 0px;
-  }
-  
-  .horizontal_bar_recap{
-    width: 100%;
-    border: 1px solid;
-    position: relative;
-    top: 10px
-  }
-  
-  .sous_tot{
-    position: relative;
-    top: 30px;
-  }
-  
-  .test6{
-    position: relative;
-    top: 30px;
-  }
-  
-  .horizontal_bar_recap2{
-    width: 100%;
-    border: 0.5px solid;
-    position: relative;
-    top: 50px
-  }
-  
-  .tot_tva{
-    position: relative;
-    top: 70px;
-  }
-  
-  .butt{
-    position: relative;
-    top: 100px;
-  }
-  
-  
-  
-  
-  
-  
+}
+
+.prixSous{
+  display: flex;
+  justify-content: space-between;
+}
+
+.trash{
+  display: table-cell; 
+  vertical-align: middle;
+  background-color: black;
+}
+
+.imagTrash{
+  padding-top: 10%;
+  width: 100%;
+
+}
+
+.selectquantite{
+  height: 40px;
+  width: 50px;
+  background-color: aliceblue;
+  border-radius: 5px;
+  padding-left: 10px;
+  font-size: 16px;
+  margin-bottom: 5%;
+}
