@@ -94,11 +94,11 @@ Backlog produit java : xref:Documentation/GestionProjet/Backlog_produit_java.pdf
 
 ``*Backlog sprint*`` : ::
 Sprint 6 :: 
-xref:Documentation/GestionProjet/Backlog_sprint6_java[Java] + 
-xref:Documentation/GestionProjet/Backlog_sprint6_web[Web] +
+xref:Documentation/GestionProjet/Backlog_sprint6_java.pdf[Java] + 
+xref:Documentation/GestionProjet/Backlog_sprint6_web.pdf[[Web] +
 Sprint 7 :: 
-xref:Documentation/GestionProjet/Backlog_sprint7_java[Java] + 
-xref:Documentation/GestionProjet/Backlog_sprint7_web[Web] + 
+xref:Documentation/GestionProjet/Backlog_sprint7_java.pdf[[Java] + 
+xref:Documentation/GestionProjet/Backlog_sprint7_web.pdf[[Web] + 
 
 ``*Backlog sprint en cours* :`` ::
 Backlog sprint 7 E-commerce : https://github.com/orgs/IUT-Blagnac/projects/29[classique] / https://github.com/orgs/IUT-Blagnac/projects/29/views/2[Par priorité] +
