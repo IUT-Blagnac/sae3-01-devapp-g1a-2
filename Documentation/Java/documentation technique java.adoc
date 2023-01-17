@@ -12,6 +12,10 @@ toc::[]
 
 == Présentation de l'application
 
+L'application Java servira d'interface avec l'utilisateur (dans notre cas, les administrateurs Noskia) pour paramétrer le fichier de configuration qui sera lu par le programme Python. L'utilisateur pourra paramétrer les types de données récupérées par les capteurs, la fréquence des données du capteur, la valeur des seuils d'alertes par type de donnée. + 
+
+L'application Java permettra aussi d'afficher en temps réel les valeurs des dernières données reçues.
+
 == Use case Global
 ``Use case :``
 
@@ -29,6 +33,55 @@ Les administrateurs Noskia pourront avoir accès à deux fonctionnalités : la c
 *Affichage des données:*  Les données seront affichées par salle. L'affichage des données se fera via un diagramme en bâton. De plus, une partie de la page d'affichage des données sera réservée
 
 == Architecture
+
+=== Architecture générale des sous-systèmes
+
+Sous-système python : ::
+Le sous-sytème de l'application python est composé de 4 fichiers. Le fichier config.ini, le fichier app.py, le fichier data.json et le fichier alarmes.txt. Voici comment ces différent fichier intéragisse entre eux :
+
+image::./images/sousSysPthon.png[Images sous-sytèmes python]
+
+Le rôle du fichier config.ini est d'enregistrer la configuration du programme python.
+
+=== Ressources externes utilisées
+
+=== Structuration en package de l'application 
+
+Nous avons donc choisi de structurer notre application en 3 partie afin de réaliser un MVC 
+
+image::./images/packageApp.png[Images des packages de l'application]
+
+``PARTIE Controller (en rouge) : `` :: 
+Cette partie du projet contiendra tous les fichiers de gestion de dialogue entre la partie Model et la partie View. Ces contrôleurs serviront principalement à faire dialoguer les différentes parties du projet entre elles. +
+Par exemple, si la page qui affiche les données (se situant dans la partie View) veut interagir avec le programme Python (pour par exemple récupérer de nouvelles données), elle devra faire appel à son contrôler de gestion de dialogues attitrés dans le package Controller. + 
+Voici les fichiers que contient ce package : 
+
+image::./images/packageController.png[Images du package controller]
+
+Description des classes : ::
+*FichierConfig.java :* le contrôleur de dialogues de la page de paramétrage du fichier de configuration. +
+*NoskiaMainFrame.java :* le contrôleur de dialogues de la page principale (= d'accueil) de l'application.
+
+``PARTIE View (en bleu) : `` ::
+La partie View du projet sera composé de toute les vues ou pages de l'application. Elle comportera aussi tout les contrôleurs des vues. Ce package servira globalement à afficher correctement les éléments des différentes pages de l'application.
+
+image::./images/packageView.png[Images du package view]
+
+Description des classes : ::
+*FichierConfigPane.fxml* le fichier de la vue de la page de paramétrage du fichier de configuration de l'application python et *FichierConfigController.java* le contrôleur de cette vue. + 
+*NoskiaMainFramePane* le fichier de la vue de la page principale de l'application, *NoskiaMainFramePane.css* le fichier qui permet de styliser la vue et *NoskiaMainFrameController* le contrôler de la vue.
+
+``PARTIE Model (en vert) : `` ::
+La dernière partie du projet sera la partie Model. Cette dernière contiendra l'application python ainsi que les différent fichier nécessaire à son bon fonctionnement. +
+Elle contiendra aussi la classe qui permettra d'intéragir avec l'application python et ses différents composants, pour par exemple récupérer les données du fichier de configuration (.ini) +
+
+image::./images/packageModel.png[Images du package model]
+
+Desription des classes : ::
+``Package model.data : `` contient les différents fichiers en lien avec l'application python : *app.py* l'appplication python, *config.ini* le fichier de configuration de l'application python, *data.json* le fichier de données qui sera incrémenté par l'application python et *alarmes.txt* le fichier qui contiendra toute les alarmes +
+``Package model.orm : ``permettra d'intéragir avec l'application pyton : *accesAppPython.java* permettra d'utiliser l'application python.
+
+=== Structure récurrente de code
 
 == Installation
 
