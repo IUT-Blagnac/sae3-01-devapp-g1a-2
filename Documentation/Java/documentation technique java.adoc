@@ -36,14 +36,35 @@ Les administrateurs Noskia pourront avoir accès à deux fonctionnalités : la c
 
 === Architecture générale des sous-systèmes
 
-Sous-système python : ::
+``Sous-système python :`` + 
 Le sous-sytème de l'application python est composé de 4 fichiers. Le fichier config.ini, le fichier app.py, le fichier data.json et le fichier alarmes.txt. Voici comment ces différent fichier intéragisse entre eux :
 
 image::./images/sousSysPthon.png[Images sous-sytèmes python]
 
-Le rôle du fichier config.ini est d'enregistrer la configuration du programme python.
+Le rôle du fichier _config.ini_ est d'enregistrer la configuration du programme python, cette dernière sera réalisé via l'application Java. Une page sera dédié à la configuration des types de données récupérées par les capteurs, de la fréquence des données du capteur, de la valeur des seuils d'alertes par type de donnée. Le programme Java va donc écrire dans fichier le paramétrage rentré par l'utilisateurs.
+
+Les fichiers _data.json_ et _alarmes.txt_ vont être lu par le programme Java pour pouvoir afficher leur contenu graphiquement. Leurs rôles est de stocker les informations envoyé par l'application python.
+
+``Sous-système des pages :`` +
+Le sous-sytèmes des pages correspond à la partie View (V) du MVC(Model, View, Controller). Voici comment ce sous-sytème fonctionne : 
+
+image::./images/sousSysPage.png[Images du sous-sytème des pages]
+
+Voici comment fonctionne l'affichage de chaque page. Pour chaque page, un fichier _.fxml_ lui est attribué. Ce dernier contiendra tout les éléments qui sont affiché sur la page. +
+Ensuite, à cette page sera reliée un fichier _.css_ qui permettra de styliser certain de la page pour améliorer le design de cette dernière. + 
+Et pour finir, chaque page aura un contrôler de vue. Ce dernier permettra de gérer l'affichage de la page. Par exemple, le contrôler de vue pourra afficher dynamiquement les éléments de la page, associer l'intéraction d'un élément de la page avec un évènement ou encore actualiser l'affichage de certaine partie de la page.
 
 === Ressources externes utilisées
+
+``Intéraction avec un fichier .ini : ``
+
+Nous avons utilisé l'API ini4j pour pouvoir communiquer avec un fichier .ini depuis un programme python 
+
+Lien : :: 
+* Vers la documentation , cliquez https://jar-download.com/artifacts/org.ini4j/ini4j/0.5.4/documentation[ici] +
+* Pour pouvoir télécharger le fichier jar, cliquez https://talend-update.talend.com/nexus/content/repositories/libraries/org/ini4j/ini4j/0.5.1/ini4j-0.5.1.jar[ici] +
+
+``Intéraction avec un fichier .json : ``
 
 === Structuration en package de l'application 
 
@@ -83,6 +104,12 @@ Desription des classes : ::
 
 === Structure récurrente de code
 
+Voici la politique de développement que respecte notre application.
+
+image::./images/foncionnementGlobal.png[Images du package model]
+
+La partie _vue_ de l'application ne pourra pas avoir à la partie model de l'application. Si la vue à besoin d'information venant du _package model_, il faut qu'il passe par la partie _controller_. Cette dernière va se charger de faire communiquer la partie _vue_ et _model_
+
 == Installation
 
 === Pour le développement
@@ -91,6 +118,9 @@ Desription des classes : ::
 
 == Explication des fonctionalités
 
+=== Actualisation de l'affichage des données avec thread
+
+image::./images/foncActualisationAffichageDonneeThread.png[Images de la fonctionnalité d'acutalisation des données avec thread]
 
 
 
