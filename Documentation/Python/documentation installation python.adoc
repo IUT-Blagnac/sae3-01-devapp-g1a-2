@@ -14,7 +14,7 @@ toc::[]
 
 ===  Prérequis
 
-Pour pouvoir lancer l'application, il faut la lancer sur une machine Ubuntu dans un environnement UNIX car une machine window ne reconnaitra pas les _signal.alarm()_ . 
+Hormis l'installation de bibliothèque(cf. section Installation), l'application n'a besoin d'aucun prérequis pour pouvoir.
 
 ===  Version de Python
 
@@ -37,4 +37,5 @@ Une fois installé correctement, récuperer la fichier de l'application https://
 
 Mettre tout ses fichier dans un dossier. 
 Et voici la commande qu'il faut exécuter pour lancer l'application : +
-``python3 app.py``
+``python3 app.py`` sur un environnement Ubuntu +
+``python app.py`` sur un environnement Window +

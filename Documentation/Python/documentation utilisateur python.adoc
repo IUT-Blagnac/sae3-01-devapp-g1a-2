@@ -76,27 +76,31 @@ On initialise ici la varaible *_data_* en fonction des différents cas.
 
 ==== Action lorsque l'on recoit un message
 
-``Partie 1 : Récupération de la données``
+``Partie 1 : Gestion du choix des données gardées``
+
+image::./images/data_p3.png[Image gestion de message reçu, partie 3]
+
+- Pour le choix des données, nous avons donc en ``partie 1`` récupérer toute les données du message. 
+- Ici, nous testons donc si les données du fichier de configuration sont en 'False'. Si c'est le cas, on retire l'information du message (car nous l'avons pas encore envoyé dans le fichier de donnée)
+
+``Partie 2 : Récupération de la données``
 
 image::./images/data_p1.png[Image gestion de message reçu, partie 1]
 
-Dans cette première partie de la fonction _get_data()_, nous commencons par récupérer entièremment le message que nous stockons dans la variable *_data_*. Cette variable est très importante car elle contient toute les données qui seront envoyé plus tard (cf. section "Fréquence et écriture"). 
+Dans cette deuxieme partie de la fonction _get_data()_, nous commencons par récupérer entièremment le message que nous stockons dans la variable *_data_*. Cette variable est très importante car elle contient toute les données qui seront envoyé plus tard (cf. section "Fréquence et écriture"). 
 
-La variable *_data_* est donc un tableau associatif qui associe en clé une chaine de caractère (qui représente le nom de l'appareil dont vient le message) et qui a pour valeur une liste, qui contient chaque message de données. Pour les différencier, nous avons rajouté à chaque message la date et l'heure à laquelle le message a été reçu.
+La variable *_data_* est donc une liste de dictionnaires. Les dictionnaires stockés contiendront deux clé : ::
+* *dev* : une chaine de charactères représentatnt le nom de l'apparail
+* *val* : une liste de dictionnaire, qui contiendra toute les données reçu par l'appreil (les données envoyé par l'émetteur sont des dictionnaires) Bous avons rajouté en fin de chaque dictionnaire de la liste la date et l'heure à laquelle ce dictionnaire a été rajouté à la liste pour historiser les données.
 
-``Partie 2 : Gestion des dépassement de seuil``
+``Partie 3 : Gestion des dépassement de seuil``
 
 image::./images/data_p2.png[Image gestion de message reçu, partie 2]
 
 - Pour gérer les seuils, nous commencons par créer un fichier alarme.txt s'il n'existe pas.
 - Ensuite, nous testons si chaque seuil est depassé. Si c'est le cas, nous écrivons un message adéquat au dépassement dans le fichier.
 
-``Partie 3 : Gestion du choix des données gardées``
 
-image::./images/data_p3.png[Image gestion de message reçu, partie 3]
-
-- Pour le choix des données, nous avons donc en ``partie 1`` récupérer toute les données du message. 
-- Ici, nous testons donc si les données du fichier de configuration sont en 'False'. Si c'est le cas, on retire l'information du message (car nous l'avons pas encore envoyé dans le fichier de donnée)
 
 ==== Abonnement
 
@@ -119,7 +123,6 @@ A compléter
 
 image::./images/structuredata.png[Image du fichier de données]
 
-Nous avons ici la structure du fichier de données. On voit bien ici la forme du dictionnaire clé / valeur. +
+Nous avons ici la structure du fichier de données. On remarque ici la liste principale qui conitent les différents dictionnaires pour chaque capteur. 
 
-- En clé, le nom du capteur
-- En valeur, les données sous forme de liste qui contient en plus la date et l'heure du message en plus des données.
+Uniquement le co2 s'affiche dans la partie 'val' pour que la documentation soit plus lisible. En temps normal, toute les données sélectionnées seront dans la partie 'val'.
