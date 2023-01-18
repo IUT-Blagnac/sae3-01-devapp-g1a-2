@@ -58,54 +58,36 @@ def get_data(mqtt, obj, msg):
         if donnee[1] == 'False' : 
             jsonMsg["object"].pop(donnee[0])
     # On rajoute une clé date au dictionnaire des donnés récuperé qui à pour valeur la date/heure/min/seconde à laquelle la fonction à été appellé
-    jsonMsg["object"]["date"] = datetime.now().strftime("%D %H:%M:%S")
+    jsonMsg["object"]["date"] = datetime.now().strftime("%d-%m-%Y %H:%M:%S")
 
-    # test si on a déjà reçu une donnée et enregistre l'indice de la donnée si oui
-    indice = 0
-    exist = False
-    for dic in data:
-        if(dic['dev'] == jsonMsg["deviceName"]):
-            exist = True
-            break
-        indice+=1
-            
-    # Si la donné n'existe pas, on ajout une entré dans le liste des dictionnaire {dev, val} et on ajoute à la partie val l'object du jsonMsg. 
-    # Sinon, on ajoute uniquement à la partie val l'object du jsonMsg
-    if(not exist) :
-        data.append({'dev':jsonMsg["deviceName"], 'val': []})
-        data[len(data)-1]['val'].append(jsonMsg["object"])
-    else :
-        data[indice]['val'].append(jsonMsg["object"])
+    # Ajoute la donnée reçu à la liste data
+    data.append({'dev':jsonMsg["deviceName"],'val':jsonMsg["object"]})
 
 
     # Gestion des alarmes
     alarm = False
-    if(not os.path.exists(sys.path[0]+'\\alarmes.txt')):
-        os.open(sys.path[0]+'\\alarmes.txt', os.O_CREAT)
-    else :
-        with open(sys.path[0]+'\\alarmes.txt', "r") as f:  
-            fichier = f.read()
-    
+
+    f = os.open(sys.path[0]+'\\alarmes.txt', os.O_CREAT | os.O_WRONLY)
+    fichier = ""
     if "co2" in jsonMsg["object"] :
         if jsonMsg["object"]["co2"] > s_co2:
-            fichier += "\nAttention le seuil de co2 a été dépassé le " + str (jsonMsg["object"]["date"]) + " (" + str (jsonMsg["object"]["co2"]) + "/" + config['seuils']['co2'] + " ppm)"
+            fichier += "Attention le seuil de co2 a été dépassé le " + str (jsonMsg["object"]["date"]) + " (" + str (jsonMsg["object"]["co2"]) + "/" + config['seuils']['co2'] + " ppm)\n"
             alarm = True
     if "humidity" in jsonMsg["object"] :
         if  jsonMsg["object"]["humidity"] > s_humidity_max or jsonMsg["object"]["humidity"] < s_humidity_min :
-            fichier += "\nAttention le seuil d'humidité à été dépassé le " + str (jsonMsg["object"]["date"]) + " (" + str (jsonMsg["object"]["humidity"]) + "%)"
+            fichier += "Attention le seuil d'humidité à été dépassé le " + str (jsonMsg["object"]["date"]) + " (" + str (jsonMsg["object"]["humidity"]) + "%)\n"
             alarm = True
     if "temperature" in jsonMsg["object"] :
         if jsonMsg["object"]["temperature"] > s_temperature_max or jsonMsg["object"]["temperature"] < s_temperature_min :
-            fichier += "\nAttention le seuil de température à été dépassé le " + str (jsonMsg["object"]["date"]) + " (" + str (jsonMsg["object"]["temperature"]) + "°C)"
+            fichier += "Attention le seuil de température à été dépassé le " + str (jsonMsg["object"]["date"]) + " (" + str (jsonMsg["object"]["temperature"]) + "°C)\n"
             alarm = True
     if "activity" in jsonMsg["object"] :
         if  jsonMsg["object"]["activity"] > s_activity :
-            fichier += "\nAttention le seuil d'activité à été dépassé le " + str (jsonMsg["object"]["date"]) + "(" + str (jsonMsg["object"]["activity"]) + "/" + config['seuils']['activity'] + ")"
+            fichier += "Attention le seuil d'activité à été dépassé le " + str (jsonMsg["object"]["date"]) + "(" + str (jsonMsg["object"]["activity"]) + "/" + config['seuils']['activity'] + ")\n"
             alarm = True 
     
     if alarm == True :
-        with open(sys.path[0]+'\\alarmes.txt', "w") as f:  
-            f.write (""+ fichier)
+        os.write(f, bytes(fichier, "utf-8"))
 
 
 
