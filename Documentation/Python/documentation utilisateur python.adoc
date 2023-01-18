@@ -91,13 +91,13 @@ Dans cette deuxieme partie de la fonction _get_data()_, nous commencons par réc
 
 La variable *_data_* est donc une liste de dictionnaires. Les dictionnaires stockés contiendront deux clé : ::
 * *dev* : une chaine de charactères représentatnt le nom de l'apparail
-* *val* : une liste de dictionnaire, qui contiendra toute les données reçu par l'appreil (les données envoyé par l'émetteur sont des dictionnaires) Bous avons rajouté en fin de chaque dictionnaire de la liste la date et l'heure à laquelle ce dictionnaire a été rajouté à la liste pour historiser les données.
+* *val* : le dictionnaire qui contient la partie que l'on veut récupérer du message reçu (la partie _object_)
 
 ``Partie 3 : Gestion des dépassement de seuil``
 
 image::./images/data_p2.png[Image gestion de message reçu, partie 2]
 
-- Pour gérer les seuils, nous commencons par créer un fichier alarme.txt s'il n'existe pas.
+- Pour gérer les seuils, nous commencons par créer un fichier alarme.txt et initialisons la variable _fichier_ qui contiendra le message d'alarme.
 - Ensuite, nous testons si chaque seuil est depassé. Si c'est le cas, nous écrivons un message adéquat au dépassement dans le fichier.
 
 
@@ -119,10 +119,8 @@ Pour gérer les fréquences, nous avons décider d'envoyer une alarme chaque _n 
 
 === Structure du fichier de donnée
 
-A compléter
-
 image::./images/structuredata.png[Image du fichier de données]
 
 Nous avons ici la structure du fichier de données. On remarque ici la liste principale qui conitent les différents dictionnaires pour chaque capteur. 
 
-Uniquement le co2 s'affiche dans la partie 'val' pour que la documentation soit plus lisible. En temps normal, toute les données sélectionnées seront dans la partie 'val'.
+Si nous recevons une nouvelle données d'un de ces capteurs, une nouvelle entrée dans le liste sera enregistré avec pour valeur en "dev" la même nom de capteur et en "val" la valeur de la donnée reçu.
