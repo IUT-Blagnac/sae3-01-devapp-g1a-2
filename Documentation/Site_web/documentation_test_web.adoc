@@ -73,3 +73,42 @@ Pour plus d'information sur le fonctionnement du projet, voici le lien de la xre
 | 2 | on modifie un ou plusieurs champs | les informations sont modifié lorsque l'on retourne sur la page, les modifications sont enregistrés sur la BD a| image::./images/icon_test_valider.png[test validé] 
 | 3 | on modifie les informations mais on laisse un ou plusieurs champs | on ne modifie pas les informations et on informe que les champs vide doivent être remplie a| image::./images/icon_test_valider.png[test validé] 
 |=============
+
+
+
+=== Espace Produit
+
+==== Afficher les produits
+
+|=============
+|*N°*|*Préconditions*|*Conditions de satisfaction*|*Résultats du test*
+| 1 | on peut afficher tous les produits | boutton dans le menu le permettant a| image::./images/icon_test_valider.png[test validé] 
+| 2 | on peut afficher les produits par catégorie | tous les produits ont élé classé par categorie, et un boutton dans le menu permet de les voir séparement a| image::./images/icon_test_valider.png[test validé] 
+| 3 | trier les produits selon plusieurs critères | possibilité de tier de façon: croissant, décroissant, alphabétiquement a| image::./images/icon_test_valider.png[test validé] 
+| 4 | rechercher un produit par son nom | barre de recherche fonctionnel, peut importe la caste a| image::./images/icon_test_valider.png[test validé] 
+| 5 | affichage détaillé du produit  | Page pour voir le prix, choisir une couleur/taille, une quantité et ajouté au panier a| image::./images/icon_test_valider.png[test validé] 
+| 6 | produit similaire dans la page detaillé du produit | utilisé les categories de chaque articles a| image::./images/icon_test_valider.png[test validé] 
+|=============
+
+=== Avis
+
+==== Voir et mettre un avis
+
+|=============
+|*N°*|*Préconditions*|*Conditions de satisfaction*|*Résultats du test*
+| 1 | on peut ecrire un avis un produit | avoir une table dans la bd permettant de stocker les avis a| image::./images/icon_test_valider.png[test validé] 
+| 2 | avoir une note de l'article avec les avis | avoir la possibilité de faire une moyenne de tous les avis pour un produit donné a| image::./images/icon_test_valider.png[test validé] 
+| 3 | on peut ecrire un avis que si on est connecter et que 1 par produit | savoir qui a ecris un avis et savoir si la personnes est connecté pour le faire a| image::./images/icon_test_valider.png[test validé] 
+| 4 | afficher les avis de tous le monde sur un article | requete sur la base de donné pour recuperer les avis par produit a| image::./images/icon_test_valider.png[test validé] 
+|=============
+
+=== Contact
+
+==== Notre histoire, nous contacter
+
+|=============
+|*N°*|*Préconditions*|*Conditions de satisfaction*|*Résultats du test*
+| 1 | on peut contacter le sav | creer un mail pour joindre les developpeur a| image::./images/icon_test_valider.png[test validé] 
+| 2 | avoir une description de l'entreprise | connaitre les dirigeants et l'entreprise a| image::./images/icon_test_valider.png[test validé] 
+| 3 | pouvoir localiser l'entreprise | afficher avec maps l'adresse de l'entreprise a| image::./images/icon_test_valider.png[test validé] 
+|=============
