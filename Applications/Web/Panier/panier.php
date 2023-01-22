@@ -39,6 +39,7 @@
             $tableau = $_SESSION['panier'];
             if($tableau['refa']==null){
               echo'Le panier est vide !';
+
             }
               $nbArticles=count($tableau['refa']);
               $prixSousTot = 0;
@@ -52,34 +53,28 @@
 
                     echo'<div class="boxRecap">';
 
+                      echo'<div class="img_info">';
                         echo'<img class="imagProduit" src="../ImageArticle/'.$Lesproduits['CATEGORIEA'].'_'.$Lesproduits['SOUSCATEGORIEA'].'_'.$Lesproduits['COULEURA'].'.jpg" alt="Titre de l image 1">';
-          
-                       
-    
-                            echo'<br>';
+        
                             echo $Lesproduits['CATEGORIEA'].' '.$Lesproduits['SOUSCATEGORIEA'];
                             echo'<br>';
                             echo 'Couleur: '.$Lesproduits['COULEURA'];
                             echo'<br>';
                             echo 'Taille: '.$Lesproduits['TAILLEA'];
-                            echo'<br>';
-                    
+                            echo'<br>';                  
                             echo'Quantité: '.$tableau['quantite'][$i];
-                            /*echo'
-                            <select name="selectquantite" id="selectquantite" class="selectquantite">
-                                    <option selected value="1">1</option>';
-                                    for($j=2;$j<11;$j+=1){
-                                        echo "<option value='".$j."'>" . $j . "</option>";
-                                    }  
-                            echo'
-                            </select>';*/
-                            
-
                             echo'<br>';
-                            $prixQuant = $Lesproduits['PRIXUNITA'] * ($tableau['quantite'][$i]);
-                            echo $prixQuant.' €';  
-                            echo'<a href="SupprimerPanier.php?msg='.$i.'"><img class="imagTrash" src="../Image/trash2.png"></a>';
-                            
+                            $prixQuant = $Lesproduits['PRIXUNITA'] * ($tableau['quantite'][$i]);   
+                            echo $prixQuant.' €';     
+                            echo'
+                             <form method="POST" action="SupprimerPanier.php?msg='.$i.'&art=1">
+                              <input type="submit" value="Supprimer 1 article" class="boutonsupprimer"/>
+                            </form>
+                            <form method="POST" action="SupprimerPanier.php?msg='.$i.'&art=tous">
+                              <input type="submit" value="Supprimer tout" class="boutonsupprimer2"/>
+                            </form>
+                            ';
+                      echo'</div>';
 
                             /*var_dump($tableau);
                             echo'</br>';
@@ -130,24 +125,30 @@
             
               <div class="horizontal_bar_recap2"></div>
               <h4 class="tot_tva">Total (TVA incluse)</h4>
-            
-
-              <div class="butt">
+                
+              <?php
+               if(isset($_SESSION['panier'])){
+                $tableau = $_SESSION['panier'];
+                if($tableau['refa']==null){
+                 echo' <form method="POST" action="../Commander/Commander.php">
+                     <input disabled type="submit" value="Passer la commande" class="commandesanshover"/>
+                     </form>';
+                }else{
+                     echo' <form method="POST" action="../Commander/Commander.php">
+                     <input type="submit" value="Passer la commande" class="commande"/>
+                     </form>';
+                }
+               } 
+              ?>
+              <!--<div class="butt">
                   <button class="commander">Commander</button></br></br>
                   <button class="paypal">Paypal</button>
-              </div>
+              </div>-->
 
-        </div>
-
-        
-      </div>
-
-      
+        </div>  
+      </div> 
 </div>
       
-      
-
-
 </body>     
 
 </html>
