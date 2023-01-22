@@ -30,3 +30,46 @@ CREATE TABLE Panier
 
 ALTER TABLE article
 ADD categorieArticle VARCHAR(25);
+
+DROP TABLE Avis;
+CREATE TABLE Avis
+(
+    categorieA VARCHAR(30),
+    numC NUMBER,
+    commAv VARCHAR(1000),
+    nbrEtoilesAv NUMBER,
+    dateAv DATE,
+    CONSTRAINT pk_Avis_categorieA_numC PRIMARY KEY (categorieA,numC),
+    CONSTRAINT fk_Avis_numC FOREIGN KEY (numC) REFERENCES Client(numC),
+    CONSTRAINT ck_Avis_Etoiles CHECK (nbrEtoilesAv BETWEEN 0 AND 5)
+)
+
+COMMIT;
+
+SELECT AV.commAv 
+FROM Avis AV, Article A
+WHERE AV.categorieA = A.categorieA;
+
+
+INSERT INTO Avis
+VALUES( 'Masques',102,'Tres beau masque, je le recommande a tout les amateurs de ski',3,'16-01-2023');
+
+INSERT INTO Avis
+VALUES( 'Masques',161,'Tres beau masque, je le recommande a tous les professionnels de ski',3,'16-01-2023');
+
+COMMIT;
+
+
+SELECT * FROM Avis;
+
+SELECT TO_CHAR(dateAv, 'dd-mm-yyyy') FROM Avis;
+
+ALTER TABLE Avis
+ADD titreAv VARCHAR (50);
+
+
+UPDATE Avis
+SET titreAv = 'Masque génial mais mousse trop dure';
+
+COMMIT;
+
