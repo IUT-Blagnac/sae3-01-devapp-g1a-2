@@ -112,3 +112,25 @@ Pour plus d'information sur le fonctionnement du projet, voici le lien de la xre
 | 2 | avoir une description de l'entreprise | connaitre les dirigeants et l'entreprise a| image::./images/icon_test_valider.png[test validé] 
 | 3 | pouvoir localiser l'entreprise | afficher avec maps l'adresse de l'entreprise a| image::./images/icon_test_valider.png[test validé] 
 |=============
+
+=== Panier
+
+==== voir le panier
+
+|=============
+|*N°*|*Préconditions*|*Conditions de satisfaction*|*Résultats du test*
+| 1 | consulter les articles du panier | requete sur la BD qui récupère les articles ajoutés au panier a| image::./images/icon_test_valider.png[test validé] 
+| 2 | changer la quantité d'un article | l'utilisateur peut réduire la quantité d'un article a| image::./images/icon_test_valider.png[test validé] 
+| 3 | supprimer un article | l'utilisateur peut supprimer définitivement un article du panier a| image::./images/icon_test_valider.png[test validé]
+| 3 | passer une commande | l'utilisateur est redirigé vers une page pour passer sa commande, s'il n'est pas connecté il est redirigé vers la page de connexion a| image::./images/icon_test_valider.png[test validé] 
+|=============
+
+=== Commande
+
+==== pouvoir commander, payer
+
+|=============
+|*N°*|*Préconditions*|*Conditions de satisfaction*|*Résultats du test*
+| 1 | choisir son mode de livraison | l'utilisateur peut choisir son mode de livraison en domicile et point relais a| image::./images/icon_test_valider.png[test validé] 
+| 2 | rentrer ses informations de paiement | l'utilisateur peut rentrer ses informations de paiement, avec la plupart pré remplies en fonction de son compte utilisateur a| image::./images/icon_test_valider.png[test validé] 
+|=============
