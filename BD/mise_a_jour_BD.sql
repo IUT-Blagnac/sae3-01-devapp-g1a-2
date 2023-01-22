@@ -28,9 +28,6 @@ CREATE TABLE Panier
     CONSTRAINT ck_Panier_quantite CHECK (quantite >0)
 );
 
-ALTER TABLE article
-ADD categorieArticle VARCHAR(25);
-
 DROP TABLE Avis;
 CREATE TABLE Avis
 (
@@ -46,9 +43,6 @@ CREATE TABLE Avis
 
 COMMIT;
 
-SELECT AV.commAv 
-FROM Avis AV, Article A
-WHERE AV.categorieA = A.categorieA;
 
 
 INSERT INTO Avis
