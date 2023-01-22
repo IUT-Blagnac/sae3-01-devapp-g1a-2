@@ -102,28 +102,6 @@ Pour plus d'information sur le fonctionnement du projet, voici le lien de la xre
 | 4 | afficher les avis de tous le monde sur un article | requete sur la base de donné pour recuperer les avis par produit a| image::./images/icon_test_valider.png[test validé] 
 |=============
 
-=== Panier
-
-==== afficher le panier
-
-|=============
-|*N°*|*Préconditions*|*Conditions de satisfaction*|*Résultats du test*
-| 1 | on peut contacter le sav | creer un mail pour joindre les developpeur a| image::./images/icon_test_valider.png[test validé] 
-| 2 | avoir une description de l'entreprise | connaitre les dirigeants et l'entreprise a| image::./images/icon_test_valider.png[test validé] 
-| 3 | pouvoir localiser l'entreprise | afficher avec maps l'adresse de l'entreprise a| image::./images/icon_test_valider.png[test validé] 
-|=============
-
-=== Commande
-
-==== Pouvoir passer une commande 
-
-|=============
-|*N°*|*Préconditions*|*Conditions de satisfaction*|*Résultats du test*
-| 1 | on peut contacter le sav | creer un mail pour joindre les developpeur a| image::./images/icon_test_valider.png[test validé] 
-| 2 | avoir une description de l'entreprise | connaitre les dirigeants et l'entreprise a| image::./images/icon_test_valider.png[test validé] 
-| 3 | pouvoir localiser l'entreprise | afficher avec maps l'adresse de l'entreprise a| image::./images/icon_test_valider.png[test validé] 
-|=============
-
 === Contact
 
 ==== Notre histoire, nous contacter
