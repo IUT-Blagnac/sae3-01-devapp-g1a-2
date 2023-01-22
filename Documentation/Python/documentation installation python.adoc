@@ -33,9 +33,9 @@ Les autres bibliothèque utilsé sont des import en python.
 
 == Lancement
 
-Une fois installé correctement, récuperer la fichier de l'application https://github.com/IUT-Blagnac/sae3-01-devapp-g1a-2/blob/master/Applications/Python/app.py[ici], le fichier de configuration https://github.com/IUT-Blagnac/sae3-01-devapp-g1a-2/blob/master/Applications/Python/config.ini[ici], le fichier d'alarmes https://github.com/IUT-Blagnac/sae3-01-devapp-g1a-2/blob/master/Applications/Python/alarmes.txt[ici] et le fichier des données https://github.com/IUT-Blagnac/sae3-01-devapp-g1a-2/blob/master/Applications/Python/data.json[ici] +
+Une fois installé correctement, récuperer la fichier zip de l'application https://drive.google.com/uc?export=download&id=1b-_rs9qroFYjm64nVdec-Ra4V6xQZ15Z[ici]. Une fois le fichier récupéré, de-zipper son contenu en veillant à le garder dans un même dossier.
 
-Mettre tout ses fichier dans un dossier. 
+Une fois cela fait, lancer une invite de commande à l'emplacement du dossier ou les fichiers on étaient extraits.
 Et voici la commande qu'il faut exécuter pour lancer l'application : +
-``python3 app.py`` sur un environnement Ubuntu +
-``python app.py`` sur un environnement Window +
+``python3 app.py`` sur un environnement *Ubuntu* +
+``python app.py`` sur un environnement *Window* +
