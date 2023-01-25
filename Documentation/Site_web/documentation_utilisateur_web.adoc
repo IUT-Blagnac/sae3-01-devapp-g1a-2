@@ -10,6 +10,10 @@
 
 toc::[]
 
+``*Version :*`` v7.0 +
+``*Client :*`` Noskia +
+``*Nom du site :*`` Site de Noskia +
+
 == Description du projet
 
 === Equipe
@@ -33,26 +37,34 @@ Avec la digitalisation des entreprises ces dernières années, Noskia a besoin d
 
 ``Objectif :`` Le but de ce projet est donc de relancer les ventes de Noskia tout en permettant à cette dernière de s'étendre dans tout l'Europe. Le projet permettra à Noskia de récupérer les parts de marché qu'elle a perdu en rattrapant son retard digital. 
 
-== Accèder au site web
+== Liens pour Accèder au site web 
 
-Pour accède au site web, il suffit de cliquer sur ce http://192.168.224.139/~SAESYS02/SAE/Index/[lien] si vous vous situé sur le réseau de l'iut et sur ce http://193.54.227.164/~SAESYS02/SAE/Index/[lien] sinon. 
+Pour accède au site web, il suffit de cliquer sur : ::
+ * ce http://192.168.224.139/~SAESYS02/SAE/Index/[lien] si vous vous situé sur le réseau de l'IUT + 
+ * ce http://193.54.227.164/~SAESYS02/SAE/Index/[lien] sinon. 
 
 == Utilisation du site
 
-=== Explication du fonctionnement
+=== Explication du fonctionnement visiteur/client (ou membre)
 
 Le site de Noskia comporte deux types d'utilisateurs : les visiteurs et les membres. + 
 
 Un visiteur pourra uniquement consulter les articles et pourra se créer un compte. Un visiteur aura accès aux nouveautés ainsi qu'à l'histoire de Noskia pour mieux comprendre qui est l'entreprise.+
 
-Un membre Noskai pourra lui effectuer des commandes : lorsqu'il consultera les articles, il pourra les ajouter à son panier. Et s'il est connecté il pourra passer commande sur le site. +
+Un membre Noskia pourra lui effectuer des commandes : lorsqu'il consultera les articles, il pourra les ajouter à son panier. Et s'il est connecté il pourra passer commande sur le site. +
 
-Les membres avantages ont différents avantages : ::
+Les membres connectés ont différents avantages : ::
 * la possibilité de laisser des avis sur les produits commandés
 * avoir accès à l'historique de ses commandes
 * pouvoir modifier ses informations à tout moment
 * recevoir des mails en fonction de l'avancement des commandes
 * et pouvoir passer des commandes
+
+=== Explication du fonctionnement administrateur
+
+
+== Fonctionnalités 
+
 
 === Création d'un compte
 
