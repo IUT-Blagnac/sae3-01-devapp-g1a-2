@@ -190,7 +190,11 @@ image::./images/ajouterAvis.png[Image ajout avis]
 
 On arrive sur la page panier en cliquant sur le bouton panier en haut de la page, avec un affichage qui nous notifie sur le nombre d'articles dans le panier
 
-image::./images/logoPanier.png[Image affichage panier]
+image::./images/logoPanier.png[Image affichage logo panier]
+
+On voit ensuite l'affichage des produits ajoutés au panier et un récapitulaif de commande.
+
+image::./images/affichageProduitsPanier.png[Image affichage panier]
 
 === Modifier le panier
 
