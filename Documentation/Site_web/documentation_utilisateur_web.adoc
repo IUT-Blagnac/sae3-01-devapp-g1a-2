@@ -188,6 +188,10 @@ image::./images/ajouterAvis.png[Image ajout avis]
 
 === Visualiser les articles du panier
 
+On arrive sur la page panier en cliquant sur le bouton panier en haut de la page, avec un affichage qui nous notifie sur le nombre d'articles dans le panier
+
+image::./images/logoPanier.png[Image affichage panier]
+
 === Modifier le panier
 
 === Choisir le mode de livraison
