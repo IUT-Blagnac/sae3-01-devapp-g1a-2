@@ -186,13 +186,11 @@ Une fois arrivé sur le formulaire de création d'un avis, voici l'interface que
 
 image::./images/ajouterAvis.png[Image ajout avis]
 
-=== Ajouter des articles à mon panier
+=== Visualiser les articles du panier
 
 === Modifier le panier
 
 === Choisir le mode de livraison
-
-=== Choisir le mode de paiement
 
 === Admin. fonctionnalité 1 
 
