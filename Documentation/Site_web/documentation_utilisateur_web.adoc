@@ -196,7 +196,7 @@ image::./images/logoPanier.png[Image affichage logo panier]
 
 ==== Voir le panier
 
-On voit ensuite l'affichage des produits ajoutés au panier et un récapitulaif de commande.
+On voit ensuite l'affichage des produits ajoutés au panier et un récapitulaif de commande. Pour finaliser la commande, on peut cliquer sur le bouton " passer la commande ".
 
 image::./images/affichageProduitsPanier.png[Image affichage panier]
 
@@ -206,7 +206,7 @@ image::./images/affichageProduitsPaniervide.png[Image affichage panier]
 
 === Modifier le panier
 
-On peut choisir pour chaque produits de réduire la quantité de 1, ou de supprimer complètement l'article du panier.
+On peut choisir pour chaque produits de réduire la quantité de 1, ou de supprimer complètement l'article du panier. Le prix du produit est actualisé en fonction de la quantité.
 
 image::./images/modifpanier1.png[Image affichage bouton supprimer]
 
