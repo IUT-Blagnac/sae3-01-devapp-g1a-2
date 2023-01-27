@@ -196,7 +196,7 @@ image::./images/logoPanier.png[Image affichage logo panier]
 
 ==== Voir le panier
 
-On voit ensuite l'affichage des produits ajoutés au panier et un récapitulaif de commande. Pour finaliser la commande, on peut cliquer sur le bouton " passer la commande ".
+On voit ensuite l'affichage des produits ajoutés au panier et un récapitulaif de commande. Pour passer à l'étape de livraison, on peut cliquer sur le bouton " passer la commande ".
 
 image::./images/affichageProduitsPanier.png[Image affichage panier]
 
@@ -213,6 +213,14 @@ image::./images/modifpanier1.png[Image affichage bouton supprimer]
 image::./images/modifpanier2.png[Image bouton supprimer effectué]
 
 === Choisir le mode de livraison
+
+Après avoir cliqué sur " passer la commande ", on arrive sur la page de livraison. Un bouton pour retourner au panier est également présent.
+
+image::./images/pageLivraison.png[Image affichage page livraison]
+
+On peut choisir entre 2 modes de livraison. Une fois la livraison choisis, le prix de livraison est actualisé en fonction du choix de livraison. On pourra ensuite passer à l'étape suivante.
+
+image::./images/pageLivraisonCoche.png[Image affichage page livraison coché]
 
 === Admin. fonctionnalité 1 
 
