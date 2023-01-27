@@ -150,7 +150,7 @@ image::./images/affichageToutProduit.png[Image des produit]
 
 ==== Choix de la disposition des produits afficher
 
-Une fois une catégorie d'article affichée, l'utilisateur pourra choisi comment il souhaite disposer les articles.
+Une fois une catégorie d'article affichée, l'utilisateur pourra choisir comment il souhaite disposer les articles.
 
 image::./images/choixAffichage1.png[Image accès choix de la disposition produit]
 
@@ -218,7 +218,7 @@ Après avoir cliqué sur " passer la commande ", on arrive sur la page de livrai
 
 image::./images/pageLivraison.png[Image affichage page livraison]
 
-On peut choisir entre 2 modes de livraison. Une fois la livraison choisis, le prix de livraison est actualisé en fonction du choix de livraison. On pourra ensuite passer à l'étape suivante.
+On peut choisir entre 2 modes de livraison. Une fois la livraison choisie, le prix de livraison est actualisé en fonction du choix de livraison. On pourra ensuite passer à l'étape suivante.
 
 image::./images/pageLivraisonCoche.png[Image affichage page livraison coché]
 
