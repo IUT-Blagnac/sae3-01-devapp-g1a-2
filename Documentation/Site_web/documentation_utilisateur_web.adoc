@@ -207,7 +207,7 @@ image::./images/affichageProduitsPaniervide.png[Image affichage panier]
 === Modifier le panier
 
 On peut choisir pour chaque produits de réduire la quantité de 1, ou de supprimer complètement l'article du panier.
-image::./images/modifpanier1.png[Image affichage bouton supprmier]
+image::./images/modifpanier1.png[Image affichage bouton supprimer]
 image::./images/modifpanier2.png[Image bouton supprimer effectué]
 
 === Choisir le mode de livraison
