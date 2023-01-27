@@ -10,6 +10,10 @@
 
 toc::[]
 
+``*Version :*`` v7.0 +
+``*Client :*`` Noskia +
+``*Nom du site :*`` Site de Noskia +
+
 == Description du projet
 
 === Equipe
@@ -33,26 +37,43 @@ Avec la digitalisation des entreprises ces dernières années, Noskia a besoin d
 
 ``Objectif :`` Le but de ce projet est donc de relancer les ventes de Noskia tout en permettant à cette dernière de s'étendre dans tout l'Europe. Le projet permettra à Noskia de récupérer les parts de marché qu'elle a perdu en rattrapant son retard digital. 
 
-== Accèder au site web
+== Liens pour Accèder au site web 
 
-Pour accède au site web, il suffit de cliquer sur ce http://192.168.224.139/~SAESYS02/SAE/Index/[lien] si vous vous situé sur le réseau de l'iut et sur ce http://193.54.227.164/~SAESYS02/SAE/Index/[lien] sinon. 
+Pour accède au site web, il suffit de cliquer sur : ::
+ * ce http://192.168.224.139/~SAESYS02/SAE/Index/[lien] si vous vous situé sur le réseau de l'IUT + 
+ * ce http://193.54.227.164/~SAESYS02/SAE/Index/[lien] sinon. 
 
 == Utilisation du site
 
-=== Explication du fonctionnement
+=== Explication du fonctionnement visiteur/client (ou membre)
 
 Le site de Noskia comporte deux types d'utilisateurs : les visiteurs et les membres. + 
 
-Un visiteur pourra uniquement consulter les articles et pourra se créer un compte. Un visiteur aura accès aux nouveautés ainsi qu'à l'histoire de Noskia pour mieux comprendre qui est l'entreprise.+
+Un visiteur pourra uniquement consulter les articles et pourra se créer un compte. Un visiteur aura accès aux nouveautés ainsi qu'à l'histoire de Noskia pour mieux comprendre qui est l'entreprise. +
 
-Un membre Noskai pourra lui effectuer des commandes : lorsqu'il consultera les articles, il pourra les ajouter à son panier. Et s'il est connecté il pourra passer commande sur le site. +
+Voici les cas d'utilisations des différentes actions que pourra réaliser un visiteur du site. 
 
-Les membres avantages ont différents avantages : ::
+image::./images/UC_visiteur.png[UC des visiteurs]
+
+
+Un membre Noskia pourra lui effectuer des commandes : lorsqu'il consultera les articles, il pourra les ajouter à son panier. Et s'il est connecté il pourra passer commande sur le site. +
+
+Les membres connectés ont différents avantages : ::
 * la possibilité de laisser des avis sur les produits commandés
 * avoir accès à l'historique de ses commandes
 * pouvoir modifier ses informations à tout moment
 * recevoir des mails en fonction de l'avancement des commandes
 * et pouvoir passer des commandes
+
+Voici les cas d'utilisations des différentes actions que pourra réaliser un membre connecté du site.
+
+image::./images/UC_client.png[UC des clients]
+
+=== Explication du fonctionnement administrateur
+
+
+== Fonctionnalités 
+
 
 === Création d'un compte
 
@@ -111,3 +132,133 @@ Une fois arrivé sur la page, voici l'interface qu'il verra. Il pourra modifier 
 
 image::./images/espacememnre_modifierinfos.png[Modifier les information d'un membre connecté]
 
+=== Affichage des produits
+
+==== Accèder aux produits
+
+Pour accèder aux différentes catégories de produit, il suffit de cliquer sur la bar de menu situé sur tout les pages du site.
+
+image::./images/MenuProduit.png[Image menu produit]
+
+Certaine catégorie son divisé en sous-catégorie. Par exemple la catégorie protection est divisé en deux sous-catégories.
+
+image::./images/sousMenu.png[Image sous-menu produit]
+
+Une fois que l'on clique sur une catégorie, voici l'affichage que l'on obtient.
+
+image::./images/affichageToutProduit.png[Image des produit]
+
+==== Choix de la disposition des produits afficher
+
+Une fois une catégorie d'article affichée, l'utilisateur pourra choisir comment il souhaite disposer les articles.
+
+image::./images/choixAffichage1.png[Image accès choix de la disposition produit]
+
+Voici les différents choix de disposition qu'il a.
+
+image::./images/choixAffichage2.png[Image  choix de la disposition produit]
+
+
+=== Choix des caractéristique d'un produit (couleur, taille, quantité)
+
+Voici l'affichage d'une page produit. +
+
+On peut noter sur l'image ::
+* en ``rouge``, les différentes informations d'un produit (image, titre, prix, avis, description)
+* en ``bleu``, la personnalisation de l'article : la couleur et taille peut être modifier et on peut choisir une quantité à ajouter au panier.
+* en ``vert``, le bouton pour ajouter l'article au panier
+
+image::./images/affichageProduit.png[Image d'un produit]
+
+=== Laisser un avis sur un produit
+
+==== Accès à la page
+
+Pour pouvoir laisser un avis sur un produit, il faudra être connecté donc être membre Noskia. De plus, on ne peut laisser qu'un seul avis par produit par compte.
+
+Pour accèder à la page permettant de laisser un avis, il faut cliquer sur un produit puis descendre légèrement la page jusqu'ici  :
+
+image::./images/accesAvis.png[Image de l'acces a l'avis]
+
+==== Écrire son avis
+
+Une fois arrivé sur le formulaire de création d'un avis, voici l'interface que l'utilisateur rencontrera. Il faudra qu'il entre le titre de son avis, le commentaire ainsi que le nombre d'étoiles (sur cinq) qu'il voudra laisser.
+
+image::./images/ajouterAvis.png[Image ajout avis]
+
+=== Visualiser les articles du panier
+
+==== Accès à la page panier
+
+On arrive sur la page panier en cliquant sur le bouton panier en haut de la page, avec un affichage qui nous notifie sur le nombre d'articles dans le panier
+
+image::./images/logo_panier.png[Image affichage logo panier]
+
+==== Voir le panier
+
+On voit ensuite l'affichage des produits ajoutés au panier et un récapitulaif de commande. Pour passer à l'étape de livraison, on peut cliquer sur le bouton " passer la commande ".
+
+image::./images/affichageProduitsPanier.png[Image affichage panier]
+
+Si le panier est vide, un message est affiché
+
+image::./images/affichageProduitsPaniervide.png[Image affichage panier]
+
+=== Modifier le panier
+
+On peut choisir pour chaque produits de réduire la quantité de 1, ou de supprimer complètement l'article du panier. Le prix du produit est actualisé en fonction de la quantité.
+
+image::./images/boutonSuppr.png[Image affichage bouton supprimer]
+
+image::./images/modifpanier2.png[Image bouton supprimer effectué]
+
+=== Choisir le mode de livraison
+
+Après avoir cliqué sur " passer la commande ", on arrive sur la page de livraison. Un bouton pour retourner au panier est également présent.
+
+image::./images/pageLivraison.png[Image affichage page livraison]
+
+On peut choisir entre 2 modes de livraison. Une fois la livraison choisie, le prix de livraison est actualisé en fonction du choix de livraison. On pourra ensuite passer à l'étape suivante.
+
+image::./images/pageLivraisonCoche.png[Image affichage page livraison coché]
+
+=== Remplir ses informations de paiement
+
+On peut voir ses informations utilisateur, puis remplir ses informations de carte bancaire indiqué en bleu, pour effectuer le paiement. Le prix total de la commande est affiché. L'utilisateur peut aussi retourner à la page de livraison. 
+
+image::./images/infPaiement.png[Image affichage info paiement]
+
+=== Confirmation de commande
+
+Après avoir cliqué sur le bouton " procéder au paiement" , on arrive sur la page de confirmation de commande, qui nous indique donc que la commande est enregistré, avec le temps de livraison de la commande.
+
+image::./images/commandeValide.png[Image affichage confirmation commande]
+
+=== Admin. fonctionnalité 1 
+
+Pour devenir admin il faudra le faire en dur dans la base de données, car les mails ne pouvant etre envoyé, et pour un minimun de sécurité sur notre site nous n'avons pas voulu mettre cette disponibilité à la porté de tous.
+  
+Dans un premier temps un admin va pouvoir ajouter un nouveau produit au site, en allant sur une des pages affichant tous les articles
+  
+image::./images/admin1.jpg[Image affichage admin bouton]
+  
+En cliquant dessus il sera redirigé vers une page sécurisé ou seul les admins peuvent y aller.
+  
+image::./images/admin2.jpg[Image affichage admin ajout produit]
+  
+Une fois toutes les valeurs bien renseignés, le produit sera ajouté lorsqu'il validera.
+
+=== Admin. fonctionnalité 2 
+
+L'admin peut aussi à tout moment changer la promotion sur un article, donc soit le mettre en promotion ou qu'il ne soit plus en promotion. Directement depuis la page détaillé du produit
+  
+image::./images/admin3.jpg[Image affichage admin modification promotion]
+  
+
+=== Photo Profil
+
+On peut ajouter une photo de profil en allant dans son comptes et en bas de modification des données ce trouve ceci
+    
+image::./images/PP1.jpg[Image affichage PP ajout]
+     
+image::./images/PP2.jpg[Image affichage PP ajouté]
