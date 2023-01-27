@@ -224,7 +224,7 @@ image::./images/pageLivraisonCoche.png[Image affichage page livraison coché]
 
 === Remplir ses informations de paiement
 
-On peut voir ses informations utilisateur, puis remplir ses informations de carte bancaire indiqué en bleu, pour effectuer le paiement. Le prix total de la commande est affiché.
+On peut voir ses informations utilisateur, puis remplir ses informations de carte bancaire indiqué en bleu, pour effectuer le paiement. Le prix total de la commande est affiché. L'utilisateur peut aussi retourner à la page de livraison. 
 
 image::./images/infoPaiement.png[Image affichage page livraison coché]
 
