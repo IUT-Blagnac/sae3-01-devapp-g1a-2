@@ -236,4 +236,29 @@ image::./images/commandeValide.png[Image affichage confirmation commande]
 
 === Admin. fonctionnalité 1 
 
-=== ...
+Pour devenir admin il faudra le faire en dur dans la base de données, car les mails ne pouvant etre envoyé, et pour un minimun de sécurité sur notre site nous n'avons pas voulu mettre cette disponibilité à la porté de tous.
+  
+Dans un premier temps un admin va pouvoir ajouter un nouveau produit au site, en allant sur une des pages affichant tous les articles
+  
+image::./images/admin1.jpg[Image affichage admin bouton]
+  
+En cliquant dessus il sera redirigé vers une page sécurisé ou seul les admins peuvent y aller.
+  
+image::./images/admin2.jpg[Image affichage admin ajout produit]
+  
+Une fois toutes les valeurs bien renseignés, le produit sera ajouté lorsqu'il validera.
+
+=== Admin. fonctionnalité 2 
+
+L'admin peut aussi à tout moment changer la promotion sur un article, donc soit le mettre en promotion ou qu'il ne soit plus en promotion. Directement depuis la page détaillé du produit
+  
+image::./images/admin3.jpg[Image affichage admin modification promotion]
+  
+
+=== Photo Profil
+
+On peut ajouter une photo de profil en allant dans son comptes et en bas de modification des données ce trouve ceci
+    
+image::./images/PP1.jpg[Image affichage PP ajout]
+     
+image::./images/PP2.jpg[Image affichage PP ajouté]
