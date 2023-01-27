@@ -222,6 +222,8 @@ On peut choisir entre 2 modes de livraison. Une fois la livraison choisie, le pr
 
 image::./images/pageLivraisonCoche.png[Image affichage page livraison coché]
 
+=== Remplir ses informations de paiement
+
 === Admin. fonctionnalité 1 
 
 === ...
