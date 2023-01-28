@@ -71,6 +71,9 @@ image::./images/UC_client.png[UC des clients]
 
 === Explication du fonctionnement administrateur
 
+Les administrateurs du site web de Noskia pourront avoir accès à deux fonctionalités : ::
+* ils pourront d'abord rajouter un artciles, en ajoutant toutes les caractéristiques de ce dernier (nom, description, prix, ...)
+* ou alors, ils pourront mettre un article en promotion afin de baisser son prix.
 
 == Fonctionnalités 
 
@@ -234,7 +237,7 @@ Après avoir cliqué sur le bouton " procéder au paiement" , on arrive sur la p
 
 image::./images/commandeValide.png[Image affichage confirmation commande]
 
-=== Admin. fonctionnalité 1 
+=== Rajouter un produit en tant qu'administrateur
 
 Pour devenir admin il faudra le faire en dur dans la base de données, car les mails ne pouvant etre envoyé, et pour un minimun de sécurité sur notre site nous n'avons pas voulu mettre cette disponibilité à la porté de tous.
   
@@ -248,7 +251,7 @@ image::./images/admin2.jpg[Image affichage admin ajout produit]
   
 Une fois toutes les valeurs bien renseignés, le produit sera ajouté lorsqu'il validera.
 
-=== Admin. fonctionnalité 2 
+=== Mettre un article en promotion en tant qu'administrateur
 
 L'admin peut aussi à tout moment changer la promotion sur un article, donc soit le mettre en promotion ou qu'il ne soit plus en promotion. Directement depuis la page détaillé du produit
   
