@@ -1,3 +1,5 @@
+lien vers la documentation utilisateur web fini : https://github.com/IUT-Blagnac/sae3-01-devapp-g1a-2/blob/master/Documentation/Site_web/documentation_utilisateur_web.adoc
+
 = SAÉ 3.01 2022-2023
 :icons: font
 :models: models
@@ -38,69 +40,144 @@ image:{baseURL}/actions/workflows/tests.yml/badge.svg[Tests]
 image:https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg[License: MPL-2.0, link="https://opensource.org/licenses/MPL-2.0"]
 //---------------------------------------------------------------
 
-TIP: Pensez à mettre à jour les infos dans ce fichier pour que les badges pointent sur les résultats effectifs de vos intégrations continue ou sur la bonne licence logicielle.
-
-WARNING: Ce dépôt présente le projet à développer dans le cadre de la SAÉ 3.01 du BUT1 Informatique de l'IUT de Blagnac.
-
-Ce fichier `README.adoc` (dont vous lisez sûrement le rendu HTML automatiquement effectué par GitHUb), fait partie du dépôt initial cloné à partir du lien GitHub classroom qui vous a été donné en cours (https://classroom.github.com/a/OUF7gxEa).
-Vous trouverez le dépôt "template" qui a servi de base ici : https://github.com/IUT-Blagnac/sae3-01-template. En complément du cours Moodle de la SAE 3.01 (cf. <<liensUtiles>>), ce dépôt template vous permet d'accéder à des exemples d'https://github.com/IUT-Blagnac/sae3-01-template/issues[issues], de https://github.com/IUT-Blagnac/sae3-01-template/releases[releases], ou d'autres artefacts à venir.
-
 toc::[]
 
 == Equipe
 
 Projet est réalisé par::
 
-- https://github.com/janeDoe[Jane Doe]
-- https://github.com/johnSmith[John Smith]
-...
+- https://github.com/jordanQuin[Jordan Quinveros]
+- https://github.com/Guilhamasse[Quentin Guilhamasse]
+- https://github.com/AdrielMarchant[Adriel Marchant]
+- https://github.com/Antoine3312[Antoine Mazeau]
+- https://github.com/mathislht[Mathis Lahitte]
 
-Tuteur/tutrice enseignant(e) de l'équipe:: mailto:jean-michel.bruel@univ-tlse2.fr[JMB]
+Tuteur/tutrice enseignant(e) de l'équipe:: mailto:andre.peninou@univ-tlse2.fr[Andre Peninou]
 
-== Contexte général
+== Réalisations
 
-TIP: Cette partie de votre `README.adoc` peut être supprimée ou mise ailleurs.
+=== Web
 
-=== Dépôt initial
+|=============
+|*Nom fichier*|*Liens*
+|Code du site web|https://github.com/IUT-Blagnac/sae3-01-devapp-g1a-2/tree/master/Applications/Web
+|Lien du site (interne IUT)|http://192.168.224.139/~SAESYS02/SAE/Index/
+|Lien du site (externe IUT)|http://193.54.227.164/~SAESYS02/SAE/Index/
+|=============
 
-Ce dépôt initial a été créé pour que tous les groupes de 2ème année aient les mêmes informations de départ.
+=== Applications
 
-Vous y trouverez des fichiers qui peuvent être supprimés s'ils ne vous sont pas utiles :
+|=============
+|*Nom fichier*|*Liens*
+|Application Python|https://github.com/IUT-Blagnac/sae3-01-devapp-g1a-2/tree/master/Applications/Web
+|=============
 
-- `.gitignore` => un fichier minimaliste des éléments à ne pas pousser en général sur vos dépôts (utiliser la commande `git add -f` pour forcer l'ajout d'un fichier Jar qui ne bougera plus, pour archive par exemple).
-- `.github` => le répertoire qui contient des éléments de gestion de projet :
-** `workflows` => le repertoire qui contient les actions à lancer à chaque push sur votre repo. 
-*** `blank.yml` => un exemple bidon mais dont vous pourrez vérifier l’exécution correcte (1er tag)
-** `ISSUE_TEMPLATE` => le repertoire qui contient quelques templates pour vos issues.
-*** `us.yml` => Exemple de template pour les User Stories
-*** `bug.yml` => Exemple de template pour les issues de bug report
+=== BD
 
-TIP: Adaptez ces fichiers à votre projet et à votre organisation. Et inspirez-vous en pour en ajouter.
-
-[[liensUtiles]]
-=== Liens utiles
-
-- Le https://webetud.iut-blagnac.fr/course/view.php?id=841[cours Moodle] sur la SAE
-- Le dépôt https://github.com/IUT-Blagnac/sae3-01-template[template] qui sert de base à tous les dépôts étudiants.
-- Le lien https://classroom.github.com/a/OUF7gxEa[classroom] si besoin.
-
-TIP: Pensez à utiliser les salons Discord dédiés pour poser vos questions.
-
-== Réalisations 
-
-TIP: Mettez ici toutes les informations nécessaire à l'utilisation de votre dépôt (comment on installe votre application, où sont les docs, etc.)
+|=============
+|*Nom fichier*|*Liens*
+|Script création BD|https://github.com/IUT-Blagnac/sae3-01-devapp-g1a-2/blob/master/BD/CreationBDSAE3.sql
+|Script insertion BD|https://github.com/IUT-Blagnac/sae3-01-devapp-g1a-2/blob/master/BD/InsertBDSAE3.sql
+|=============
 
 == Gestion de projet & Qualité
 
-Chaque sprint (semaine) vous devrez livrer une nouvelle version de votre application (release).
-Utilisez pour cela les fonctionnalités de GitHub pour les https://docs.github.com/en/repositories/releasing-projects-on-github[Releases].
+=== Gestion de projet
 
-De plus ce fichier `README.adoc` devra être à jour des informations suivantes :
+``*Liste des US en cours*`` https://github.com/IUT-Blagnac/sae3-01-devapp-g1a-2/milestone/7 +
+``*Version courante du projet*``https://github.com/IUT-Blagnac/sae3-01-devapp-g1a-2/releases/tag/V7.0[V7.0]
 
-- Version courante : https://github.com/IUT-Blagnac/sae3-01-template/releases/tag/v0.1.2[v0.1.2]
-- Lien vers la doc technique
-- Lien vers la doc utilisateur
-- Liste des (ou lien vers les) User Stories (ToDo/Ongoing/Done) et % restant
-- Tests unitaires et plans de test
-- Indicateurs de qualité du code (dette technique)
-- ... tout autre élément que vous jugerez utiles pour démontrer la qualité de votre application
+
+``*Backlog produit*`` : ::
+Backlog produit E-commerce : xref:Documentation/GestionProjet/Backlog_produit_E-commerce.pdf[ici] +
+Backlog produit Iot : xref:Documentation/GestionProjet/Backlog_produit_python.pdf[ici] +
+Backlog produit java : xref:Documentation/GestionProjet/Backlog_produit_java.pdf[ici] +
+
+
+``*Backlog sprint*`` : ::
+Sprint 6 :: 
+xref:Documentation/GestionProjet/Backlog_sprint6_java.pdf[Java] + 
+xref:Documentation/GestionProjet/Backlog_sprint6_web.pdf[Web] +
+Sprint 7 :: 
+xref:Documentation/GestionProjet/Backlog_sprint7_java.pdf[Java] + 
+xref:Documentation/GestionProjet/Backlog_sprint7_web.pdf[Web] + 
+Sprint 8 :: 
+xref:Documentation/GestionProjet/Backlog_Sprint8_Web.pdf[Web] + 
+
+``*Backlog sprint en cours* :`` ::
+Backlog sprint 8 E-commerce : https://github.com/orgs/IUT-Blagnac/projects/29[classique] / https://github.com/orgs/IUT-Blagnac/projects/29/views/2[Par priorité] +
+Backlog sprint 8 Iot : *//_TERMINÉ_//* +
+Backlog sprint 8 java : *//_TERMINÉ_//* +
+
+=== Documentation
+
+|=============
+|*Nom fichier*|*Liens*
+|Documentation installation de l'application python |https://github.com/IUT-Blagnac/sae3-01-devapp-g1a-2/blob/master/Documentation/Python/documentation%20installation%20python.adoc
+|Documentation utilisateur de l'application python |https://github.com/IUT-Blagnac/sae3-01-devapp-g1a-2/blob/master/Documentation/Python/documentation%20utilisateur%20python.adoc
+|Documentation des tests python  |xref:Documentation/Python/documentation des tests python.adoc[ici]
+|Documentation technique web |https://github.com/IUT-Blagnac/sae3-01-devapp-g1a-2/blob/master/Documentation/Site_web/documentation_technique_web.adoc[ici]
+|Documentation utilisateur web |https://github.com/IUT-Blagnac/sae3-01-devapp-g1a-2/blob/master/Documentation/Site_web/documentation_utilisateur_web.adoc[ici]
+|Documentation utilisateur java |https://github.com/IUT-Blagnac/sae3-01-devapp-g1a-2/blob/master/Documentation/Java/documentation_utilisateur_java.adoc[ici]
+|Documentation technique java |https://github.com/IUT-Blagnac/sae3-01-devapp-g1a-2/blob/master/Documentation/Java/documentation%20technique%20java.adoc[ici]
+|=============
+
+
+=== Tests
+
+|=============
+|*Nom fichier*|*Liens*
+|Test automatique python|xref:Tests/Python/test.py[fichier de code] / xref:Documentation/Python/documentation des tests python.adoc[Documentation des tests]
+|Test web |xref:Documentation/Site_web/documentation_test_web.adoc[ici]
+|=============
+
+== Travail d'équipe / Méthode AGILE
+
+=== Semaine 48
+
+Voici le travail de communcation que nous avons fait cette semaine : 
+
+* https://github.com/IUT-Blagnac/sae3-01-devapp-g1a-2/blob/master/Livrables/Communication/semaine48/Compte_rendu_de_speed_dating.pdf[Compte rendu du speed dating]
+
+=== Semaine 49
+
+Voici le travail de communcation que nous avons fait cette semaine : 
+
+* https://github.com/IUT-Blagnac/sae3-01-devapp-g1a-2/blob/master/Livrables/Communication/semaine49/Ordre_du_jour_G1A-2.pdf[Ordre du jour]
+* https://github.com/IUT-Blagnac/sae3-01-devapp-g1a-2/blob/master/Livrables/Communication/semaine49/CR_r%C3%A9union%2Banalyse_G1A-2.pdf[Compte rendu de la réunion et analyse]
+
+=== Semaine 50
+
+Voici le travail de communcation que nous avons fait cette semaine : 
+
+* https://github.com/IUT-Blagnac/sae3-01-devapp-g1a-2/blob/master/Livrables/Communication/semaine50/Ordre%20du%20jour%20SAE.pdf[Ordre du jour]
+* https://github.com/IUT-Blagnac/sae3-01-devapp-g1a-2/blob/master/Livrables/Communication/semaine50/Compte_rendu_Reunion_.pdf[Compte rendu de la réunion] 
+* https://github.com/IUT-Blagnac/sae3-01-devapp-g1a-2/blob/master/Livrables/Communication/semaine50/Analyse_G1A-2.pdf[Analyse]
+
+== Livrables
+
+|=============
+|*Nom fichier*|*Liens*
+|Rendu 1 BD|https://github.com/IUT-Blagnac/sae3-01-devapp-g1a-2/blob/master/Livrables/BD/BD_de_Noskia_G1A-2%20(1).pdf[Présentation de la BD]
+|Rendu 2 BD|https://github.com/IUT-Blagnac/sae3-01-devapp-g1a-2/blob/master/Livrables/BD/CR_BD_SAE02.pdf
+|Diapo oral com|https://github.com/IUT-Blagnac/sae3-01-devapp-g1a-2/blob/master/Livrables/Communication/Diapo_Dev_App.pdf[V1.0]
+|L'appel d'offre réalisé|https://github.com/IUT-Blagnac/sae3-01-devapp-g1a-2/tree/master/Livrables/AppelOffre
+|Rendu 2 Web|https://github.com/IUT-Blagnac/sae3-01-devapp-g1a-2/blob/master/Livrables/Web/semaine%201%20web%20G1A-2.pdf
+|=============
+
+== Évaluations hebdomadaires
+
+NOTE: Les notes ci-dessous sont mises à jour directement par les enseignants responsables de la compétence 5.
+
+ifdef::env-github[]
+image:https://docs.google.com/spreadsheets/d/e/2PACX-1vTc3HJJ9iSI4aa2I9a567wX1AUEmgGrQsPl7tHGSAJ_Z-lzWXwYhlhcVIhh5vCJxoxHXYKjSLetP6NS/pubchart?oid=1232553383&format=image[link=https://docs.google.com/spreadsheets/d/e/2PACX-1vTc3HJJ9iSI4aa2I9a567wX1AUEmgGrQsPl7tHGSAJ_Z-lzWXwYhlhcVIhh5vCJxoxHXYKjSLetP6NS/pubchart?oid=1232553383&format=image]
+endif::[]
+
+ifndef::env-github[]
+++++
+<iframe width="786" height="430" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTc3HJJ9iSI4aa2I9a567wX1AUEmgGrQsPl7tHGSAJ_Z-lzWXwYhlhcVIhh5vCJxoxHXYKjSLetP6NS/pubchart?oid=1232553383&format=image"></iframe>
+++++
+endif::[]
+
+=retour sprint 3 : 
+Il manque la prorité sur les US des backlogs. Le backlog E commerce reste incomplet. Les tâches ne sont pas assez décomposées, je dois avoir les tâches techniques … peu de tâches dans ce sprint et … rien en done ! Backlog IOT très limité ! Doc : uniquement le schéma web, pas de doc tech, pas de doc user. Release à V0 ... dans le readme. Rien sur les tests

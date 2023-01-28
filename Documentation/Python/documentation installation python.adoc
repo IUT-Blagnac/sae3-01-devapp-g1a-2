@@ -1,0 +1,41 @@
+= Documentation Installation Python
+:icons: font
+:models: models
+:experimental:
+:incremental:
+:numbered:
+:toc: macro
+:window: _blank
+:correction!:
+
+toc::[]
+
+== Installation
+
+===  Prérequis
+
+Hormis l'installation de bibliothèque(cf. section Installation), l'application n'a besoin d'aucun prérequis pour pouvoir.
+
+===  Version de Python
+
+Il faut utiliser à minima la ``version 3.2`` de Python (Pour que les _interpolation_ de _configparser_ fonctionne).
+
+Pour cela, faire la commande ``python --version``. +
+Si s'affiche un message d'erreur, c'est que python n'est pas installé ou si s'affiche une version de python antérieur à la version 3.2, faire la commande ``sudo apt-get install python3._X_`` avec X pour le numéro de version (soit 2 ou plus).
+
+===  Installation
+
+Installer la bibliothèque paho mqtt :
+``pip install paho-mqtt``
+
+Les autres bibliothèque utilsé sont des import en python.
+
+
+== Lancement
+
+Une fois installé correctement, récuperer la fichier zip de l'application https://drive.google.com/uc?export=download&id=1b-_rs9qroFYjm64nVdec-Ra4V6xQZ15Z[ici]. Une fois le fichier récupéré, de-zipper son contenu en veillant à le garder dans un même dossier.
+
+Une fois cela fait, lancer une invite de commande à l'emplacement du dossier ou les fichiers on étaient extraits.
+Et voici la commande qu'il faut exécuter pour lancer l'application : +
+``python3 app.py`` sur un environnement *Ubuntu* +
+``python app.py`` sur un environnement *Window* +

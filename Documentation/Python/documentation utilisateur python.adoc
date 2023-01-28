@@ -1,0 +1,126 @@
+= Documentation Utilisateur Python
+:icons: font
+:models: models
+:experimental:
+:incremental:
+:numbered:
+:toc: macro
+:window: _blank
+:correction!:
+
+toc::[]
+
+== Les données
+
+=== Explication
+ 
+Nous recevons des données toute les 10 min sur un bus. Voici la partie du bus que nous gardons et utilisons
+ 
+image::./images/objet.png[Images d'un objet MQTT]
+
+=== Seuil critique
+
+|=============
+|*Nom de la donnée*|*Seuil critique*|*justification*
+|Activité ou _activity_ |80|Au dessus de 80 d'activité, on considère qu'il y a une personne dans l'entrepôt
+|co2|1000|Au dessus de 1000 ppm, on considère que la concentration d'air n'est plus de bonne qualité car il n'est pas renouvellement assez fréquemment.
+|temperature| <15 ou >30 |On veut que la température soit comprise entre 15 et 30 degrès pour qu'un employé puisse convenablemment allez dans les entrep
+|humidité ou _humididty_|<40 ou >70| On veut que l'humidité soit entre 40% et 70%, sinon il risquerait d'y avoir de la condensation / secheresse qui risquerait d'abimer les produits
+|=============
+
+== Fonctionnement
+
+=== Fichier de configuration
+
+image::./images/config.png[Images des paramètres de configuration]
+
+Partie ``server`` ::
+- Ce champ contient les différents serveur que l'application recouvre. Pour l'instant, il n'y en a qu'un.
+- Ce champ du fichier de configuration sera utile pour une éventuelle amélioration de l'application et si elle a besoin d'un jour couvrir plusieurs serveurs.
+
+Partie ``application`` ::
+- Ici les différente application du serveur. 
+- Ce champ sera aussi plus utile dans le futur, si l'application à besoin de couvrir plusieurs applications différentes.
+
+Partie ``devices`` ::
+- Nous avons ici les différents appareils que couvre nos capteurs. La clef représente la nom de la salle dans laquel le capteur est et en valeur représente la valeur concrete du capteur sur le serveur.
+- Le champs _device_choisi_ sera la liste des devices choisis d'être suivi par un administrateur (utilisateur de l'application Java)
+
+Partie ``frequences`` ::
+- Ici sera stocké la fréquence (en seconde) à laquelle l'utilisateur recevra des données. Il recevrea tout les messages reçu dura l'intervalle de temps car nous avons choisi de ne pas perdre de la donnée. L'heure indiqué sur le message reçu pendant un intervalle de temps sera la valeur réelle à laquelle l'application à reçu le message et non le moment ou l'utilisateur recevra les informations. +
+Ces choix ont été réalisé car nous ne voulions pas perdre la véracité de l'information, ici nous gardons tous les messages et leur horaires réelles.
+
+Partie ``seuils`` ::
+- Nous avons ici les différents seuil critique, qui, lorsqu'un sera dépassé, déclenchera l'envoie d'une alarme dans un fichier texte.
+
+Partie ``data`` ::
+- Ici sera indiquer si nous devons récupérer une donnée ou non. Si c'est le cas, elle sera à True et sinon elle sera à False.
+- En dernier, nous avons un champ qui contient tous les noms de données avec pour information True ou False. Ce champ sera parcouru dans une boucle pour éviter de faire trop de _if_ imbriqué.
+
+=== le code de l'application
+
+==== Lecture du fichier de configuration
+
+image::./images/lectureConfig.png[Image de lecture des paramètres de configuration]
+
+- On commence par créer un objet _config_ qui va lire le fichier ``config.ini``
+- On récupère chaque champs qui nous intéresse (serveur, appareil choisi, application et fréquences)
+
+==== Création du fichier de donnée
+
+image::./images/fichierData.png[Image de lecture des paramètres de configuration]
+
+Cette partie de code permmetra de soit créer un fichier de donnée vide s'il n'existe pas. S'il existe mais qu'il est vide, ne pas récupérer de donnée. Et s'il existe et contient des/une donnée, récupérer ces données pour ne pas les perdre.
+
+On initialise ici la varaible *_data_* en fonction des différents cas.
+
+==== Action lorsque l'on recoit un message
+
+``Partie 1 : Gestion du choix des données gardées``
+
+image::./images/data_p3.png[Image gestion de message reçu, partie 3]
+
+- Pour le choix des données, nous avons donc en ``partie 1`` récupérer toute les données du message. 
+- Ici, nous testons donc si les données du fichier de configuration sont en 'False'. Si c'est le cas, on retire l'information du message (car nous l'avons pas encore envoyé dans le fichier de donnée)
+
+``Partie 2 : Récupération de la données``
+
+image::./images/data_p1.png[Image gestion de message reçu, partie 1]
+
+Dans cette deuxieme partie de la fonction _get_data()_, nous commencons par récupérer entièremment le message que nous stockons dans la variable *_data_*. Cette variable est très importante car elle contient toute les données qui seront envoyé plus tard (cf. section "Fréquence et écriture"). 
+
+La variable *_data_* est donc une liste de dictionnaires. Les dictionnaires stockés contiendront deux clé : ::
+* *dev* : une chaine de charactères représentatnt le nom de l'apparail
+* *val* : le dictionnaire qui contient la partie que l'on veut récupérer du message reçu (la partie _object_)
+
+``Partie 3 : Gestion des dépassement de seuil``
+
+image::./images/data_p2.png[Image gestion de message reçu, partie 2]
+
+- Pour gérer les seuils, nous commencons par créer un fichier alarme.txt et initialisons la variable _fichier_ qui contiendra le message d'alarme.
+- Ensuite, nous testons si chaque seuil est depassé. Si c'est le cas, nous écrivons un message adéquat au dépassement dans le fichier.
+
+
+
+==== Abonnement
+
+image::./images/abonnement.png[Image abonnement]
+
+Ici, on se connecte au serveur sur le bon port. Puis on s'abonne aux différents topics que l'utilisateur aura sélectionné, c'est-à-dire aux différents capteurs sélectionnés.
+
+==== Fréquence et écriture dans le fichier de donnée
+
+image::./images/ecriture.png[Image écriture et gestion des fréquences]
+
+Pour gérer les fréquences, nous avons décider d'envoyer une alarme chaque _n secondes_ (n = fréquence en seconde). Cette alarme déclenchera une fonction qui enverra les données sur le fichier de donnée.
+
+- On commence donc pas substituer l'usage normal du signal alarme pour le remplacer par la fonction _sendData_ qui permet d'écrire dans le fichier de configuration
+- On commence ensuite une boucle infine qui envoie une alarme, attend _n secondes_ (n = fréquence en seconde) et attend ensuite pour en renvoyer une autre.
+
+=== Structure du fichier de donnée
+
+image::./images/structuredata.png[Image du fichier de données]
+
+Nous avons ici la structure du fichier de données. On remarque ici la liste principale qui conitent les différents dictionnaires pour chaque capteur. 
+
+Si nous recevons une nouvelle données d'un de ces capteurs, une nouvelle entrée dans le liste sera enregistré avec pour valeur en "dev" la même nom de capteur et en "val" la valeur de la donnée reçu.

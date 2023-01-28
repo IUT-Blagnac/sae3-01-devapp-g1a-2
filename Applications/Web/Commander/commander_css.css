@@ -1,0 +1,195 @@
+
+body{
+    
+    overflow-x: hidden;
+}
+
+.containeur_flex{
+    width: 100vw;
+    height: 82vh;
+    /* background: red; */
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2.5%;
+
+}
+
+.containeur_comm{
+
+    width: 55%;
+    height: 150%;
+    
+    /* background: blue; */
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containeur_recapi{
+    width: 30%;
+    height: 65%;
+    
+    /* background: blue; */
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content{
+    position: relative;
+    width: 90%;
+    height: 90%;
+    /* background: blue; */
+}
+
+.nom_prenom{
+    position: relative;
+    top: -55px;
+    left: 65px;
+}
+
+.content a{
+    color: black;
+    text-decoration: none;
+}
+
+.horizontal_barv1{
+    width: 100%;
+    border: 1px solid;
+    position: relative;
+    top: -42px;
+}
+
+.pdp{
+    width: 50px;
+    height: 50px;
+    background-color: grey;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+}
+
+.im_pan{
+    position: absolute;
+    right: 35px;
+    top: 0;
+    width: 30px;
+    height: 30px;
+}
+.texte_pan{
+    position: absolute;
+    right: 0px;
+    top: 35px; 
+    font-size: 0.7rem;
+}
+
+.form-control{
+    padding-left: 2%;
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+    height: 50%;
+    
+}
+
+.nomPrenom{
+    display: flex;
+    gap: 3em;
+}
+
+.postvillepays{
+    display: flex;
+    gap: 3em;
+}
+
+.emailtel{
+    display: flex;
+    gap: 3em;
+}
+
+.groupCB{
+    display: flex;
+    gap: 3em;
+}
+
+.recapp{
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+
+.horizontal_barv2{
+  width: 100%;
+  border: 0.5px solid;
+  position: relative;
+  top: 10px
+}
+
+.btn-primary{
+  height: 40px;
+  width: 190px;
+  background-color: aliceblue;
+  border-radius: 20px;
+  font-size: 16px;
+  position: relative;
+  top: 50px;
+  justify-content: center;
+}
+
+.btn-primary:hover{
+    background-color: lightblue;
+    transition: 0.8s;
+    cursor: pointer;
+  }
+
+  #home-delivery{
+    position: relative;
+    
+  }
+
+  #pickup-point{
+    position: relative;
+    
+  }
+  
+  .group_liv {
+    margin-bottom: 1rem;
+  }
+  
+  input[type="radio"] {
+    margin-right: 0.5rem;
+  }
+
+  .infoRecap{
+    position: relative;
+    top: 30px;
+  }
+
+  .prixSous{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .horizontal_bar2v2{
+    width: 100%;
+    border: 0.5px solid;
+    position: relative;
+    top: 25px
+  }
+
+  .tot_tva{
+    position: relative;
+    top: 55px;
+  }
+
+  .prixliv{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  
