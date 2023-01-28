@@ -71,7 +71,7 @@ image::./images/UC_client.png[UC des clients]
 
 === Explication du fonctionnement administrateur
 
-Les administrateurs du site web de Noskia pourront avoir accès à deux fonctionalités : ::
+Les administrateurs du site web de Noskia pourront avoir accès à deux fonctionalitées : ::
 * ils pourront d'abord rajouter un artciles, en ajoutant toutes les caractéristiques de ce dernier (nom, description, prix, ...)
 * ou alors, ils pourront mettre un article en promotion afin de baisser son prix.
 
